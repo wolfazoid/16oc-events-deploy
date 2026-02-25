@@ -1,0 +1,41 @@
+<!--
+  Thalia Hall — Ticketmaster Events Widget Embed
+  Paste the <div> block into a Squarespace Code Block.
+  The <script> tag goes in Settings → Advanced → Code Injection → Footer.
+-->
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ticketmaster-venue-widget@1/dist/ticketmaster-venue-widget.min.css">
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/ticketmaster-venue-widget@1/dist/ticketmaster-venue-widget.min.js"></script>
+
+<script>
+  VenueEvents.init({
+    apiKey: 'placeholder', // Required by widget v1.0.x — ignored when proxyUrl is set
+    proxyUrl: 'https://16oc-events-proxy.<YOUR_SUBDOMAIN>.workers.dev',
+    venues: 'rZ7HnEZ17aJq7,rZ7HnEZ17aJq0,KovZpZAktlaA',
+    theme: {
+      primaryColor: '#5d071b'
+    },
+    tracking: {
+      utmSource: 'thaliahall-website',
+      utmMedium: 'widget',
+      utmCampaign: 'events'
+    }
+  });
+</script>
+
+<!--
+  Paste this into a Squarespace Code Block where events should appear:
+
+  <div data-venue-events
+       data-proxy-url="https://16oc-events-proxy.<YOUR_SUBDOMAIN>.workers.dev"
+       data-api-key="placeholder"
+       data-venues="rZ7HnEZ17aJq7,rZ7HnEZ17aJq0,KovZpZAktlaA"
+       data-theme-primary="#5d071b"
+       data-utm-source="thaliahall-website"
+       data-utm-medium="widget"
+       data-utm-campaign="events">
+  </div>
+-->

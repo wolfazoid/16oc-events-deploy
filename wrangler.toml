@@ -1,0 +1,14 @@
+name = "16oc-events-proxy"
+main = "worker/src/index.js"
+compatibility_date = "2024-12-01"
+
+[vars]
+UPSTREAM_BASE = "https://app.ticketmaster.com/discovery/v2"
+
+# Secrets (set via `npx wrangler secret put <NAME>`):
+# TM_KEY_THALIA
+# TM_KEY_SPACE
+# TM_KEY_SALTSHED
+# TM_KEY_EMPTYBOTTLE
+# TM_KEY_PROMONTORY
+# TM_KEY_DEFAULT
