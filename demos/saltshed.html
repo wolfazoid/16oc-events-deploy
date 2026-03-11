@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salt Shed Chicago - Upcoming Events</title>
+    <!-- Widget CSS from CDN -->
+    <!-- Local dev build (switch to CDN for production) -->
+    <link rel="stylesheet" href="lib/ticketmaster-venue-widget.min.css" />
+    <!-- Purista Web from Adobe Fonts (Salt Shed brand font) -->
+    <link rel="stylesheet" href="https://use.typekit.net/xxxxxxx.css" />
+    <!-- Fallback if Typekit unavailable -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      /* ========================================
+         Salt Shed Brand Tokens
+         ======================================== */
+      :root {
+        --ss-blue: #2D3B97;
+        --ss-blue-dark: #232E78;
+        --ss-cream: #FBF6DF;
+        --ss-mint: #D4ECE7;
+        --ss-sky: #9dbccb;
+        --ss-gold: #F8D89E;
+        --ss-white: #FFFFFF;
+        --ss-dark: #1a1a2e;
+        --ss-font: purista-web, 'Rajdhani', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      }
+
+      /* ========================================
+         Reset & Base
+         ======================================== */
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+        font-family: var(--ss-font);
+        background: var(--ss-cream);
+        color: var(--ss-dark);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* ========================================
+         Top Announcement Bar
+         ======================================== */
+      .ss-announce {
+        background: var(--ss-blue);
+        color: var(--ss-mint);
+        text-align: center;
+        padding: 0.6rem 1rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      .ss-announce a {
+        color: var(--ss-mint);
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+
+      /* ========================================
+         Navigation
+         ======================================== */
+      .ss-nav {
+        background: var(--ss-cream);
+        border-bottom: 1px solid rgba(45, 59, 151, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      .ss-nav-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 72px;
+      }
+
+      .ss-logo {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        text-decoration: none;
+        color: var(--ss-blue);
+      }
+
+      .ss-logo-icon {
+        width: 40px;
+        height: 40px;
+        background: var(--ss-blue);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .ss-logo-icon svg {
+        width: 24px;
+        height: 24px;
+        fill: var(--ss-cream);
+      }
+
+      .ss-logo-text {
+        font-size: 1.25rem;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
+
+      .ss-nav-links {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+      }
+
+      .ss-nav-links a {
+        text-decoration: none;
+        color: var(--ss-blue);
+        font-size: 0.85rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 0.25rem 0;
+        transition: color 0.2s;
+      }
+
+      .ss-nav-links a:hover,
+      .ss-nav-links a.active {
+        color: var(--ss-sky);
+      }
+
+      @media (max-width: 768px) {
+        .ss-nav-links { display: none; }
+        .ss-nav-inner { padding: 0 1rem; }
+      }
+
+      /* ========================================
+         Hero Section
+         ======================================== */
+      .ss-hero {
+        background: var(--ss-blue);
+        color: var(--ss-cream);
+        padding: 4rem 2rem;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .ss-hero::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -25%;
+        width: 150%;
+        height: 200%;
+        background: radial-gradient(ellipse at center, rgba(212, 236, 231, 0.08) 0%, transparent 70%);
+        pointer-events: none;
+      }
+
+      .ss-hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+      }
+
+      .ss-hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        line-height: 1.1;
+      }
+
+      .ss-hero p {
+        font-size: 1.1rem;
+        color: var(--ss-mint);
+        max-width: 500px;
+        margin: 0 auto;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+      }
+
+      @media (max-width: 768px) {
+        .ss-hero { padding: 3rem 1rem; }
+        .ss-hero h1 { font-size: 2rem; letter-spacing: 4px; }
+        .ss-hero p { font-size: 0.95rem; }
+      }
+
+      /* ========================================
+         Venue Tabs
+         ======================================== */
+      .ss-venue-tabs {
+        background: var(--ss-cream);
+        border-bottom: 2px solid rgba(45, 59, 151, 0.1);
+      }
+
+      .ss-venue-tabs-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        display: flex;
+        gap: 0;
+      }
+
+      .ss-venue-tab {
+        padding: 1rem 1.5rem;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--ss-blue);
+        opacity: 0.5;
+        border-bottom: 3px solid transparent;
+        margin-bottom: -2px;
+        cursor: default;
+        transition: opacity 0.2s;
+      }
+
+      .ss-venue-tab.active {
+        opacity: 1;
+        border-bottom-color: var(--ss-blue);
+      }
+
+      /* Venue dropdown — hidden on desktop, shown on mobile */
+      .ss-venue-dropdown {
+        display: none;
+        background: var(--ss-cream);
+        border-bottom: 2px solid rgba(45, 59, 151, 0.1);
+        padding: 0.75rem 1rem;
+      }
+
+      .ss-venue-select {
+        width: 100%;
+        padding: 0.6rem 1rem;
+        font-family: var(--ss-font);
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--ss-blue);
+        background: var(--ss-cream);
+        border: 1px solid rgba(45, 59, 151, 0.2);
+        border-radius: 2px;
+        -webkit-appearance: none;
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%232D3B97' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 1rem center;
+        padding-right: 2.5rem;
+      }
+
+      @media (max-width: 768px) {
+        .ss-venue-tabs { display: none; }
+        .ss-venue-dropdown { display: block; }
+      }
+
+      /* ========================================
+         Events Section
+         ======================================== */
+      .ss-events-section {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2.5rem 2rem 4rem;
+      }
+
+      .ss-section-header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .ss-section-title {
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: var(--ss-blue);
+      }
+
+      .ss-section-count {
+        font-size: 0.8rem;
+        color: rgba(45, 59, 151, 0.5);
+        letter-spacing: 1px;
+      }
+
+      @media (max-width: 768px) {
+        .ss-events-section { padding: 1.5rem 1rem 3rem; }
+      }
+
+      /* ========================================
+         Widget Theme Overrides
+         Matches original Salt Shed event-feed-widget
+         Font: purista-web | Colors: cream/blue/sky/gold
+         ======================================== */
+      [data-venue-events] {
+        --ve-primary: #2D3B97;
+        --ve-primary-hover: #232E78;
+        --ve-text: #2d3b97;
+        --ve-text-muted: #636363;
+        --ve-background: #FBF6DF;
+        --ve-card-bg: #FBF6DF;
+        --ve-border: rgba(45, 59, 151, 0.15);
+        --ve-shadow: rgba(0, 0, 0, 0.25);
+        --ve-font-family: purista-web, 'Rajdhani', sans-serif;
+        --ve-card-radius: 2px;
+        --ve-button-radius: 0px;
+        --ve-button-text-transform: uppercase;
+        --ve-button-letter-spacing: 0.1em;
+        --ve-button-font-weight: 700;
+      }
+
+      /* Card shadow — matches original widget box-shadow */
+      [data-venue-events] .ve-events__card {
+        box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.49);
+      }
+
+      /* Disable card hover lift and shadow change */
+      [data-venue-events] .ve-events__card:hover {
+        transform: none;
+        box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.49);
+      }
+
+      /* Disable image zoom on hover */
+      [data-venue-events] .ve-events__card:hover .ve-events__card-image img {
+        transform: none;
+      }
+
+      /* Card title — purista-web, uppercase, blue */
+      [data-venue-events] .ve-events__card-title {
+        font-family: purista-web, 'Rajdhani', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        color: #2d3b97;
+        line-height: 1.2;
+      }
+
+      /* Date & time — blue, medium weight */
+      [data-venue-events] .ve-events__card-date {
+        color: #2d3b97;
+        font-size: 0.9375rem;
+        font-weight: 500;
+      }
+
+      [data-venue-events] .ve-events__card-time {
+        color: #2d3b97;
+        font-weight: 500;
+      }
+
+      /* Venue name */
+      [data-venue-events] .ve-events__card-venue {
+        color: var(--ve-text-muted);
+      }
+
+      /* Buy/CTA button — sky blue bg, blue text (original widget) */
+      [data-venue-events] .ve-events__card-cta {
+        background: #9dbccb;
+        color: #2d3b97;
+        font-family: purista-web, 'Rajdhani', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 0;
+      }
+
+      [data-venue-events] .ve-events__card-cta:hover {
+        background: #8aaebb;
+        color: #2d3b97;
+      }
+
+      /* Right half — info icon + venue label, gold bg, all clickable */
+      [data-venue-events] .ve-events__card-info-side {
+        background: #F8D89E;
+        color: #2d3b97;
+        font-family: purista-web, 'Rajdhani', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+
+      [data-venue-events] .ve-events__card-info-side:hover {
+        background: #e6c88a;
+        color: #2d3b97;
+      }
+
+      /* Filter bar — cream bg, blue-tinted border */
+      [data-venue-events] .ve-events__filters {
+        background: var(--ss-cream);
+        border: 1px solid rgba(45, 59, 151, 0.2);
+        border-radius: 2px;
+      }
+
+      /* Filter inputs — cream bg to match cards */
+      [data-venue-events] .ve-events__search,
+      [data-venue-events] .ve-events__venue-select,
+      [data-venue-events] .ve-events__genre-select,
+      [data-venue-events] .ve-events__date-input {
+        background: var(--ss-cream);
+        border-color: rgba(45, 59, 151, 0.3);
+        color: #2d3b97;
+        font-family: purista-web, 'Rajdhani', sans-serif;
+      }
+
+      [data-venue-events] .ve-events__search::placeholder {
+        color: rgba(45, 59, 151, 0.4);
+      }
+
+      /* Genre badge on cards */
+      [data-venue-events] .ve-events__card-genre {
+        background: rgba(45, 59, 151, 0.1);
+        color: #2d3b97;
+        font-weight: 500;
+      }
+
+      /* Pagination — blue accent */
+      [data-venue-events] .ve-events__pagination-btn {
+        border-color: rgba(45, 59, 151, 0.3);
+        color: #2d3b97;
+        background: var(--ss-cream);
+      }
+
+      [data-venue-events] .ve-events__pagination-btn:hover:not(:disabled) {
+        border-color: #2d3b97;
+        background: #2d3b97;
+        color: var(--ss-cream);
+      }
+
+      /* Modal — cream bg, blue accents */
+      [data-venue-events] .ve-events__modal {
+        background: var(--ss-cream);
+      }
+
+      [data-venue-events] .ve-events__modal-title {
+        font-family: purista-web, 'Rajdhani', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #2d3b97;
+      }
+
+      [data-venue-events] .ve-events__modal-overlay {
+        background: rgba(26, 26, 46, 0.7);
+      }
+
+      [data-venue-events] .ve-events__modal-header {
+        border-bottom-color: rgba(45, 59, 151, 0.15);
+      }
+
+      [data-venue-events] .ve-events__modal-footer {
+        border-top-color: rgba(45, 59, 151, 0.15);
+      }
+
+      [data-venue-events] .ve-events__modal-footer .ve-events__card-cta {
+        background: #9dbccb;
+        color: #2d3b97;
+      }
+
+      /* ========================================
+         Footer
+         ======================================== */
+      .ss-footer {
+        background: var(--ss-blue);
+        color: var(--ss-mint);
+        padding: 3rem 2rem;
+      }
+
+      .ss-footer-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+      }
+
+      .ss-footer h4 {
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        color: var(--ss-cream);
+      }
+
+      .ss-footer p, .ss-footer a {
+        font-size: 0.85rem;
+        line-height: 1.8;
+        color: var(--ss-mint);
+        text-decoration: none;
+      }
+
+      .ss-footer a:hover { text-decoration: underline; }
+
+      .ss-footer-links {
+        list-style: none;
+      }
+
+      .ss-footer-links li { margin-bottom: 0.25rem; }
+
+      .ss-footer-bottom {
+        max-width: 1200px;
+        margin: 2rem auto 0;
+        padding-top: 1.5rem;
+        border-top: 1px solid rgba(212, 236, 231, 0.2);
+        text-align: center;
+        font-size: 0.75rem;
+        color: rgba(212, 236, 231, 0.5);
+        letter-spacing: 1px;
+      }
+
+      @media (max-width: 768px) {
+        .ss-footer-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+        .ss-footer { padding: 2rem 1rem; }
+      }
+
+      /* ========================================
+         Demo Badge (remove for production)
+         ======================================== */
+      .ss-demo-badge {
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        background: var(--ss-blue);
+        color: var(--ss-mint);
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        z-index: 9999;
+        box-shadow: 0 2px 12px rgba(45, 59, 151, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Announcement Bar -->
+    <div class="ss-announce">
+      Now Booking Private Events &mdash; <a href="#">Learn More</a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="ss-nav">
+      <div class="ss-nav-inner">
+        <a href="#" class="ss-logo">
+          <div class="ss-logo-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18L19.82 8 12 11.82 4.18 8 12 4.18zM4 9.64l7 3.5V19.5l-7-3.5V9.64zm9 9.86v-6.36l7-3.5v6.36l-7 3.5z"/>
+            </svg>
+          </div>
+          <span class="ss-logo-text">Salt Shed</span>
+        </a>
+        <ul class="ss-nav-links">
+          <li><a href="#" class="active">Events</a></li>
+          <li><a href="#">Venues</a></li>
+          <li><a href="#">Food &amp; Drink</a></li>
+          <li><a href="#">Plan Your Visit</a></li>
+          <li><a href="#">Private Events</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="ss-hero">
+      <div class="ss-hero-content">
+        <h1>Upcoming Events</h1>
+        <p>Live music, comedy, and unforgettable experiences on Chicago's North Branch.</p>
+      </div>
+    </section>
+
+    <!-- Venue Tabs (desktop) -->
+    <div class="ss-venue-tabs">
+      <div class="ss-venue-tabs-inner">
+        <div class="ss-venue-tab active">All Venues</div>
+        <div class="ss-venue-tab">Salt Shed</div>
+        <div class="ss-venue-tab">Fairgrounds</div>
+        <div class="ss-venue-tab">Three Top Lounge</div>
+      </div>
+    </div>
+
+    <!-- Venue Dropdown (mobile) -->
+    <div class="ss-venue-dropdown">
+      <select class="ss-venue-select">
+        <option value="">All Venues</option>
+        <option value="salt-shed">Salt Shed</option>
+        <option value="fairgrounds">Fairgrounds</option>
+        <option value="three-top">Three Top Lounge</option>
+      </select>
+    </div>
+
+    <!-- Events Section -->
+    <section class="ss-events-section">
+      <div class="ss-section-header">
+        <span class="ss-section-title">Showing All Events</span>
+      </div>
+
+      <!-- Ticketmaster Widget -->
+      <div
+        data-venue-events
+        data-api-key="VlcOb6C2Y4W0iGius6pFX1Gh7a9GnKyg"
+        data-venue-id="KovZ917AI5F,KovZ917Amf0,rZ7HnEZ17_Skd"
+        data-venue-short-names='{"KovZ917AI5F":"Shed","KovZ917Amf0":"Fairgrounds","rZ7HnEZ17_Skd":"Three Top"}'
+        data-limit="12"
+        data-columns="4"
+        data-show-price="false"
+        data-show-filters="true"
+        data-show-venue-filter="true"
+        data-show-venue-label="true"
+        data-theme-primary="#2D3B97"
+        data-theme-primary-hover="#232E78"
+        data-theme-bg="#FBF6DF"
+        data-tracking="true"
+        data-utm-source="saltshed_website"
+        data-utm-campaign="events_page"
+        data-modal-sections="image,info,startTime,ageRestriction,venue,price,performers"
+        data-modal-time-display="doors"
+        data-modal-start-time-label="Doors"
+        data-modal-doors-offset-minutes="60"
+        data-modal-show-venue-city="false">
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="ss-footer">
+      <div class="ss-footer-inner">
+        <div>
+          <h4>Salt Shed</h4>
+          <p>
+            1357 N Elston Ave<br>
+            Chicago, IL 60642<br><br>
+            <a href="#">info@saltshedchicago.com</a>
+          </p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="ss-footer-links">
+            <li><a href="#">Upcoming Events</a></li>
+            <li><a href="#">Venue Info</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Visit Us</h4>
+          <p>
+            Located in Chicago's Goose Island neighborhood. Convenient to public transit and rideshare with on-site parking available.
+          </p>
+        </div>
+      </div>
+      <div class="ss-footer-bottom">
+        &copy; 2026 Salt Shed Chicago. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- Demo Badge -->
+    <div class="ss-demo-badge">Proof of Concept</div>
+
+    <!-- Widget JS from CDN -->
+    <!-- Local dev build (switch to CDN for production) -->
+    <script src="lib/ticketmaster-venue-widget.min.js"></script>
+  </body>
+</html>
