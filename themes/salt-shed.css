@@ -1,0 +1,155 @@
+/*
+ * Salt Shed — Venue Theme
+ * Brand overrides for ticketmaster-venue-widget
+ */
+
+[data-venue-events] {
+  --ve-primary: #2D3B97;
+  --ve-primary-hover: #232E78;
+  --ve-text: #2d3b97;
+  --ve-text-muted: #636363;
+  --ve-background: #FBF6DF;
+  --ve-card-bg: #FBF6DF;
+  --ve-border: rgba(45, 59, 151, 0.15);
+  --ve-shadow: rgba(0, 0, 0, 0.25);
+  --ve-font-family: purista-web, 'Rajdhani', sans-serif;
+  --ve-card-radius: 2px;
+  --ve-button-radius: 0px;
+  --ve-button-text-transform: uppercase;
+  --ve-button-letter-spacing: 0.1em;
+  --ve-button-font-weight: 700;
+}
+
+[data-venue-events] .ve-events__card {
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.49);
+}
+
+[data-venue-events] .ve-events__card:hover {
+  transform: none;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.49);
+}
+
+[data-venue-events] .ve-events__card:hover .ve-events__card-image img {
+  transform: none;
+}
+
+[data-venue-events] .ve-events__card-title {
+  font-family: purista-web, 'Rajdhani', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  color: #2d3b97;
+  line-height: 1.2;
+}
+
+[data-venue-events] .ve-events__card-date {
+  color: #2d3b97;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+[data-venue-events] .ve-events__card-time {
+  color: #2d3b97;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+[data-venue-events] .ve-events__card-venue {
+  color: #636363;
+}
+
+[data-venue-events] .ve-events__card-cta {
+  background: #9dbccb;
+  color: #2d3b97;
+  font-family: purista-web, 'Rajdhani', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+[data-venue-events] .ve-events__card-cta:hover {
+  background: #8aaebb;
+  color: #2d3b97;
+}
+
+[data-venue-events] .ve-events__card-info-side {
+  background: #F8D89E;
+  color: #2d3b97;
+  font-family: purista-web, 'Rajdhani', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+[data-venue-events] .ve-events__card-info-side:hover {
+  background: #e6c88a;
+  color: #2d3b97;
+}
+
+[data-venue-events] .ve-events__filters {
+  background: #FBF6DF;
+  border: 1px solid rgba(45, 59, 151, 0.2);
+  border-radius: 2px;
+}
+
+[data-venue-events] .ve-events__search,
+[data-venue-events] .ve-events__venue-select,
+[data-venue-events] .ve-events__genre-select,
+[data-venue-events] .ve-events__date-input,
+[data-venue-events] .ve-events__date-btn {
+  background: #FBF6DF;
+  border-color: rgba(45, 59, 151, 0.3);
+  color: #2d3b97;
+  font-family: purista-web, 'Rajdhani', sans-serif;
+}
+
+[data-venue-events] .ve-events__search::placeholder {
+  color: rgba(45, 59, 151, 0.4);
+}
+
+[data-venue-events] .ve-events__card-genre {
+  background: rgba(45, 59, 151, 0.1);
+  color: #2d3b97;
+  font-weight: 500;
+}
+
+[data-venue-events] .ve-events__pagination-btn {
+  border-color: rgba(45, 59, 151, 0.3);
+  color: #2d3b97;
+  background: #FBF6DF;
+}
+
+[data-venue-events] .ve-events__pagination-btn:hover:not(:disabled) {
+  border-color: #2d3b97;
+  background: #2d3b97;
+  color: #FBF6DF;
+}
+
+[data-venue-events] .ve-events__modal {
+  background: #FBF6DF;
+}
+
+[data-venue-events] .ve-events__modal-title {
+  font-family: purista-web, 'Rajdhani', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2d3b97;
+}
+
+[data-venue-events] .ve-events__modal-overlay {
+  background: rgba(26, 26, 46, 0.7);
+}
+
+[data-venue-events] .ve-events__modal-header {
+  border-bottom-color: rgba(45, 59, 151, 0.15);
+}
+
+[data-venue-events] .ve-events__modal-footer {
+  border-top-color: rgba(45, 59, 151, 0.15);
+}
+
+[data-venue-events] .ve-events__modal-footer .ve-events__card-cta {
+  background: #9dbccb;
+  color: #2d3b97;
+}
