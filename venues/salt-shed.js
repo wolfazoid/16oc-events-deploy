@@ -22,10 +22,9 @@
   script.onload = function () {
     VenueEvents.init({
       apiKey: API_KEY,
-      venues: ['KovZ917AI5F', 'KovZ917Amf0', 'rZ7HnEZ17_Skd'],
+      venues: ['KovZ917AI5F', 'KovZ917Amf0'],
       subVenues: {
         'KovZ917Amf0': 'Fairgrounds',
-        'rZ7HnEZ17_Skd': 'Three Top Lounge'
       },
       tracking: {
         utmSource: 'saltshed-website',
