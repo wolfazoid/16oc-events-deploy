@@ -28,6 +28,10 @@
       el.dataset.showVenueFilter = 'true';
       el.dataset.showVenueLabel = 'true';
       el.dataset.showPrice = 'false';
+      el.dataset.venueShortNames = JSON.stringify({
+        'KovZ917AI5F': 'Shed',
+        'KovZ917Amf0': 'Fairgrounds',
+      });
     });
 
     VenueEvents.init({
