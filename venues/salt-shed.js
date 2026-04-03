@@ -34,5 +34,8 @@
       }
     });
   };
+  script.onerror = function () {
+    console.error('[VenueEvents] Failed to load widget from CDN:', script.src);
+  };
   document.head.appendChild(script);
 })();
