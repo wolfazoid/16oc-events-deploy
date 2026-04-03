@@ -2,7 +2,7 @@
   var VERSION = '1.1.0';
   var CDN = 'https://cdn.jsdelivr.net/npm/ticketmaster-venue-widget@' + VERSION + '/dist';
   var PAGES = 'https://wolfazoid.github.io/16oc-events-deploy';
-  var PROXY = 'https://16oc-events-proxy.<YOUR_SUBDOMAIN>.workers.dev';
+  var API_KEY = '<YOUR_TM_API_KEY>';
 
   // Widget base CSS from CDN
   var widgetCss = document.createElement('link');
@@ -21,7 +21,7 @@
   script.src = CDN + '/ticketmaster-venue-widget.min.js';
   script.onload = function () {
     VenueEvents.init({
-      proxyUrl: PROXY,
+      apiKey: API_KEY,
       venues: 'KovZ917AI5F,KovZ917Amf0,rZ7HnEZ17_Skd',
       subVenues: {
         'KovZ917Amf0': 'Fairgrounds',
