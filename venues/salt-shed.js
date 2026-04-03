@@ -1,5 +1,5 @@
 (function () {
-  var VERSION = '1.3.1';
+  var VERSION = '1.3.2';
   var CDN = 'https://cdn.jsdelivr.net/npm/ticketmaster-venue-widget@' + VERSION + '/dist';
   var PAGES = 'https://wolfazoid.github.io/16oc-events-deploy';
   var API_KEY = window.SALTSHED_API_KEY;
@@ -25,6 +25,12 @@
     featuredEls.forEach(function (el) {
       if (!el.dataset.label) el.dataset.label = 'Happening Soon';
       if (!el.dataset.option) el.dataset.option = 'upcoming';
+      if (!el.dataset.venueShortNames) {
+        el.dataset.venueShortNames = JSON.stringify({
+          'KovZ917AI5F': 'Shed',
+          'KovZ917Amf0': 'Fairgrounds',
+        });
+      }
     });
 
     // Set defaults on curated strip elements
