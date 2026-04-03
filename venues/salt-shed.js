@@ -1,5 +1,5 @@
 (function () {
-  var VERSION = '1.2.1';
+  var VERSION = '1.3.0';
   var CDN = 'https://cdn.jsdelivr.net/npm/ticketmaster-venue-widget@' + VERSION + '/dist';
   var PAGES = 'https://wolfazoid.github.io/16oc-events-deploy';
   var API_KEY = 'VlcOb6C2Y4W0iGius6pFX1Gh7a9GnKyg';
@@ -20,6 +20,28 @@
   var script = document.createElement('script');
   script.src = CDN + '/ticketmaster-venue-widget.min.js';
   script.onload = function () {
+    // Set defaults on featured hero elements
+    var featuredEls = document.querySelectorAll('[data-ve-featured]');
+    featuredEls.forEach(function (el) {
+      if (!el.dataset.label) el.dataset.label = 'Happening Soon';
+      if (!el.dataset.option) el.dataset.option = 'upcoming';
+    });
+
+    // Set defaults on curated strip elements
+    var curatedEls = document.querySelectorAll('[data-ve-curated]');
+    curatedEls.forEach(function (el) {
+      if (!el.dataset.label) el.dataset.label = 'Featured Events';
+      if (!el.dataset.option) el.dataset.option = 'upcoming';
+      if (!el.dataset.count) el.dataset.count = '4';
+      if (!el.dataset.showVenueLabel) el.dataset.showVenueLabel = 'true';
+      if (!el.dataset.venueShortNames) {
+        el.dataset.venueShortNames = JSON.stringify({
+          'KovZ917AI5F': 'Shed',
+          'KovZ917Amf0': 'Fairgrounds',
+        });
+      }
+    });
+
     // Set element-level display options on all widget divs
     var elements = document.querySelectorAll('[data-venue-events]');
     elements.forEach(function (el) {
