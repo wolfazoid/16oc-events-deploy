@@ -153,3 +153,34 @@
   background: #9dbccb;
   color: #2d3b97;
 }
+
+/* Collapse filter bar at tablet widths to match 2-column grid breakpoint */
+@media (max-width: 1024px) {
+  [data-venue-events] .ve-events__filter-toggle {
+    display: flex;
+  }
+
+  [data-venue-events] .ve-events__filter-drawer {
+    display: none;
+    flex-direction: column;
+    gap: var(--ve-spacing-sm);
+    width: 100%;
+    margin-top: var(--ve-spacing-sm);
+  }
+
+  [data-venue-events] .ve-events__filter-drawer--open {
+    display: flex;
+  }
+
+  [data-venue-events] .ve-events__filter-row {
+    flex-wrap: wrap;
+  }
+
+  [data-venue-events] .ve-events__venue-select,
+  [data-venue-events] .ve-events__genre-select,
+  [data-venue-events] .ve-events__date-input,
+  [data-venue-events] .ve-events__date-btn {
+    min-width: 0;
+    width: 100%;
+  }
+}
