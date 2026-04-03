@@ -1,45 +1,21 @@
 <!--
   Salt Shed — Ticketmaster Events Widget Embed
-  Paste the <div> block into a Squarespace Code Block.
-  The <script> tag goes in Settings → Advanced → Code Injection → Footer.
+
+  Step 1: Paste the <script> tag into:
+          Settings → Advanced → Code Injection → Footer
+
+  Step 2: Paste the <div> into a Squarespace Code Block
+          on the page where events should appear.
+
+  That's it. All updates (theme, config, widget version) deploy
+  automatically via git push — no Squarespace changes needed.
+
+  To upgrade the widget: bump VERSION in venues/salt-shed.js and push.
+  To test a new version: point a local HTML file at the test version.
 -->
 
-<!-- CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ticketmaster-venue-widget@1/dist/ticketmaster-venue-widget.min.css">
+<!-- Footer Code Injection (set once, never touch again) -->
+<script src="https://wolfazoid.github.io/16oc-events-deploy/venues/salt-shed.js"></script>
 
-<!-- JS -->
-<script src="https://cdn.jsdelivr.net/npm/ticketmaster-venue-widget@1/dist/ticketmaster-venue-widget.min.js"></script>
-
-<script>
-  VenueEvents.init({
-    apiKey: 'placeholder', // Required by widget v1.0.x — ignored when proxyUrl is set
-    proxyUrl: 'https://16oc-events-proxy.<YOUR_SUBDOMAIN>.workers.dev',
-    venues: 'KovZ917AI5F,KovZ917Amf0,rZ7HnEZ17_Skd',
-    subVenues: {
-      'KovZ917Amf0': 'Fairgrounds',
-      'rZ7HnEZ17_Skd': 'Three Top Lounge'
-    },
-    theme: {
-      primaryColor: '#2d3b97'
-    },
-    tracking: {
-      utmSource: 'saltshed-website',
-      utmMedium: 'widget',
-      utmCampaign: 'events'
-    }
-  });
-</script>
-
-<!--
-  Paste this into a Squarespace Code Block where events should appear:
-
-  <div data-venue-events
-       data-proxy-url="https://16oc-events-proxy.<YOUR_SUBDOMAIN>.workers.dev"
-       data-api-key="placeholder"
-       data-venues="KovZ917AI5F,KovZ917Amf0,rZ7HnEZ17_Skd"
-       data-theme-primary="#2d3b97"
-       data-utm-source="saltshed-website"
-       data-utm-medium="widget"
-       data-utm-campaign="events">
-  </div>
--->
+<!-- Code Block on the events page -->
+<div data-venue-events></div>
