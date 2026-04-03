@@ -198,6 +198,11 @@
   font-size: 1.25rem;
 }
 
+[data-venue-events] .ve-events__label {
+  color: #fff;
+  font-size: 1.25rem;
+}
+
 /* Collapse filter bar at tablet widths to match 2-column grid breakpoint */
 @media (max-width: 1024px) {
   [data-venue-events] .ve-events__filter-toggle {
