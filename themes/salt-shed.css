@@ -3,7 +3,9 @@
  * Brand overrides for ticketmaster-venue-widget
  */
 
-[data-venue-events] {
+[data-venue-events],
+[data-ve-featured],
+[data-ve-curated] {
   --ve-primary: #2D3B97;
   --ve-primary-hover: #232E78;
   --ve-text: #2d3b97;
@@ -20,20 +22,24 @@
   --ve-button-font-weight: 700;
 }
 
-[data-venue-events] .ve-events__card {
+[data-venue-events] .ve-events__card,
+[data-ve-curated] .ve-events__card {
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.49);
 }
 
-[data-venue-events] .ve-events__card:hover {
+[data-venue-events] .ve-events__card:hover,
+[data-ve-curated] .ve-events__card:hover {
   transform: none;
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.49);
 }
 
-[data-venue-events] .ve-events__card:hover .ve-events__card-image img {
+[data-venue-events] .ve-events__card:hover .ve-events__card-image img,
+[data-ve-curated] .ve-events__card:hover .ve-events__card-image img {
   transform: none;
 }
 
-[data-venue-events] .ve-events__card-title {
+[data-venue-events] .ve-events__card-title,
+[data-ve-curated] .ve-events__card-title {
   font-family: purista-web, 'Rajdhani', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -42,24 +48,32 @@
   line-height: 1.2;
 }
 
-[data-venue-events] .ve-events__card-date {
+[data-venue-events] .ve-events__card-date,
+[data-ve-curated] .ve-events__card-date,
+[data-ve-featured] .ve-featured__date {
   color: #2d3b97;
   font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 0;
 }
 
-[data-venue-events] .ve-events__card-time {
+[data-venue-events] .ve-events__card-time,
+[data-ve-curated] .ve-events__card-time,
+[data-ve-featured] .ve-featured__time {
   color: #2d3b97;
   font-size: 0.8rem;
   font-weight: 500;
 }
 
-[data-venue-events] .ve-events__card-venue {
+[data-venue-events] .ve-events__card-venue,
+[data-ve-curated] .ve-events__card-venue,
+[data-ve-featured] .ve-featured__venue {
   color: #636363;
 }
 
-[data-venue-events] .ve-events__card-cta {
+[data-venue-events] .ve-events__card-cta,
+[data-ve-curated] .ve-events__card-cta,
+[data-ve-featured] .ve-events__card-cta {
   background: #9dbccb;
   color: #2d3b97;
   font-family: purista-web, 'Rajdhani', sans-serif;
@@ -68,12 +82,16 @@
   border-radius: 0;
 }
 
-[data-venue-events] .ve-events__card-cta:hover {
+[data-venue-events] .ve-events__card-cta:hover,
+[data-ve-curated] .ve-events__card-cta:hover,
+[data-ve-featured] .ve-events__card-cta:hover {
   background: #8aaebb;
   color: #2d3b97;
 }
 
-[data-venue-events] .ve-events__card-info-side {
+[data-venue-events] .ve-events__card-info-side,
+[data-ve-curated] .ve-events__card-info-side,
+[data-ve-featured] .ve-events__card-info-side {
   background: #F8D89E;
   color: #2d3b97;
   font-family: purista-web, 'Rajdhani', sans-serif;
@@ -82,7 +100,9 @@
   letter-spacing: 0.1em;
 }
 
-[data-venue-events] .ve-events__card-info-side:hover {
+[data-venue-events] .ve-events__card-info-side:hover,
+[data-ve-curated] .ve-events__card-info-side:hover,
+[data-ve-featured] .ve-events__card-info-side:hover {
   background: #e6c88a;
   color: #2d3b97;
 }
@@ -108,7 +128,8 @@
   color: rgba(45, 59, 151, 0.4);
 }
 
-[data-venue-events] .ve-events__card-genre {
+[data-venue-events] .ve-events__card-genre,
+[data-ve-curated] .ve-events__card-genre {
   background: rgba(45, 59, 151, 0.1);
   color: #2d3b97;
   font-weight: 500;
@@ -126,30 +147,42 @@
   color: #FBF6DF;
 }
 
-[data-venue-events] .ve-events__modal {
+[data-venue-events] .ve-events__modal,
+[data-ve-featured] .ve-events__modal,
+[data-ve-curated] .ve-events__modal {
   background: #FBF6DF;
 }
 
-[data-venue-events] .ve-events__modal-title {
+[data-venue-events] .ve-events__modal-title,
+[data-ve-featured] .ve-events__modal-title,
+[data-ve-curated] .ve-events__modal-title {
   font-family: purista-web, 'Rajdhani', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #2d3b97;
 }
 
-[data-venue-events] .ve-events__modal-overlay {
+[data-venue-events] .ve-events__modal-overlay,
+[data-ve-featured] .ve-events__modal-overlay,
+[data-ve-curated] .ve-events__modal-overlay {
   background: rgba(26, 26, 46, 0.7);
 }
 
-[data-venue-events] .ve-events__modal-header {
+[data-venue-events] .ve-events__modal-header,
+[data-ve-featured] .ve-events__modal-header,
+[data-ve-curated] .ve-events__modal-header {
   border-bottom-color: rgba(45, 59, 151, 0.15);
 }
 
-[data-venue-events] .ve-events__modal-footer {
+[data-venue-events] .ve-events__modal-footer,
+[data-ve-featured] .ve-events__modal-footer,
+[data-ve-curated] .ve-events__modal-footer {
   border-top-color: rgba(45, 59, 151, 0.15);
 }
 
-[data-venue-events] .ve-events__modal-footer .ve-events__card-cta {
+[data-venue-events] .ve-events__modal-footer .ve-events__card-cta,
+[data-ve-featured] .ve-events__modal-footer .ve-events__card-cta,
+[data-ve-curated] .ve-events__modal-footer .ve-events__card-cta {
   background: #9dbccb;
   color: #2d3b97;
 }
