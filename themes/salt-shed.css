@@ -203,6 +203,14 @@
   font-size: 1.25rem;
 }
 
+[data-ve-curated] .ve-curated__dot {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+[data-ve-curated] .ve-curated__dot--active {
+  background: #fff;
+}
+
 /* Collapse filter bar at tablet widths to match 2-column grid breakpoint */
 @media (max-width: 1024px) {
   [data-venue-events] .ve-events__filter-toggle {
