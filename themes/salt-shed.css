@@ -187,20 +187,17 @@
   color: #2d3b97;
 }
 
-/* Label sizing & color overrides */
+/* Label color overrides — heading element handles sizing */
 [data-ve-featured] .ve-featured__label {
   color: #fff;
-  font-size: 1.5rem;
 }
 
 [data-ve-curated] .ve-curated__label {
   color: #fff;
-  font-size: 1.25rem;
 }
 
 [data-venue-events] .ve-events__label {
   color: #fff;
-  font-size: 1.25rem;
 }
 
 [data-ve-curated] .ve-curated__dot {

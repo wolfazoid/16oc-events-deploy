@@ -1,5 +1,5 @@
 (function () {
-  var VERSION = '1.3.5';
+  var VERSION = '1.3.6';
   var CDN = 'https://cdn.jsdelivr.net/npm/ticketmaster-venue-widget@' + VERSION + '/dist';
   var PAGES = 'https://wolfazoid.github.io/16oc-events-deploy';
   var API_KEY = window.SALTSHED_API_KEY;
@@ -24,6 +24,7 @@
     var featuredEls = document.querySelectorAll('[data-ve-featured]');
     featuredEls.forEach(function (el) {
       if (!el.dataset.label) el.dataset.label = 'Happening Soon';
+      if (!el.dataset.heading) el.dataset.heading = 'h2';
       if (!el.dataset.option) el.dataset.option = 'upcoming';
       if (!el.dataset.venueShortNames) {
         el.dataset.venueShortNames = JSON.stringify({
@@ -37,6 +38,7 @@
     var curatedEls = document.querySelectorAll('[data-ve-curated]');
     curatedEls.forEach(function (el) {
       if (!el.dataset.label) el.dataset.label = 'Featured Events';
+      if (!el.dataset.heading) el.dataset.heading = 'h3';
       if (!el.dataset.option) el.dataset.option = 'upcoming';
       if (!el.dataset.count) el.dataset.count = '3';
       if (!el.dataset.showVenueLabel) el.dataset.showVenueLabel = 'true';
@@ -52,6 +54,7 @@
     var elements = document.querySelectorAll('[data-venue-events]');
     elements.forEach(function (el) {
       el.dataset.columns = '4';
+      if (!el.dataset.heading) el.dataset.heading = 'h3';
       el.dataset.showFilters = 'true';
       el.dataset.showVenueFilter = 'true';
       el.dataset.showVenueLabel = 'true';
