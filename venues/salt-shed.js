@@ -69,6 +69,7 @@
       apiKey: API_KEY,
       venues: ['KovZ917AI5F', 'KovZ917Amf0'],
       subVenues: {
+        'KovZ917AI5F': 'Shed',
         'KovZ917Amf0': 'Fairgrounds',
       },
       tracking: {
