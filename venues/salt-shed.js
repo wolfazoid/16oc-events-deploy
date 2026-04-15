@@ -1,5 +1,5 @@
 (function () {
-  var VERSION = '1.3.16';
+  var VERSION = '1.3.18';
   var CDN = 'https://cdn.jsdelivr.net/npm/ticketmaster-venue-widget@' + VERSION + '/dist';
   var PAGES = 'https://wolfazoid.github.io/16oc-events-deploy';
   var API_KEY = window.SALTSHED_API_KEY;
@@ -73,11 +73,6 @@
     VenueEvents.init({
       apiKey: API_KEY,
       venues: ['KovZ917AI5F', 'KovZ917Amf0'],
-      subVenues: {
-        'KovZ917AI5F': 'Shed',
-        'rZ7HnEZ17pa4z': 'Shed',
-        'KovZ917Amf0': 'Fairgrounds',
-      },
       tracking: {
         enabled: true,
         utmSource: 'saltshed-website',
