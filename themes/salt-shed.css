@@ -114,6 +114,11 @@
   color: #2d3b97;
 }
 
+[data-venue-events] .ve-events__loading {
+  background: #2D3B97;
+  color: #F8D89E;
+}
+
 [data-venue-events] .ve-events__filters {
   background: #FBF6DF;
   border: 1px solid rgba(45, 59, 151, 0.2);

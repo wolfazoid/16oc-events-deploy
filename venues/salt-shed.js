@@ -1,5 +1,5 @@
 (function () {
-  var VERSION = '1.3.13';
+  var VERSION = '1.3.14';
   var CDN = 'https://cdn.jsdelivr.net/npm/ticketmaster-venue-widget@' + VERSION + '/dist';
   var PAGES = 'https://wolfazoid.github.io/16oc-events-deploy';
   var API_KEY = window.SALTSHED_API_KEY;
