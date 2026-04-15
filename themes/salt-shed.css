@@ -107,6 +107,13 @@
   color: #2d3b97;
 }
 
+[data-venue-events] .ve-events__badge--offsale,
+[data-ve-curated] .ve-events__badge--offsale,
+[data-ve-featured] .ve-events__badge--offsale {
+  background: #F8D89E;
+  color: #2d3b97;
+}
+
 [data-venue-events] .ve-events__filters {
   background: #FBF6DF;
   border: 1px solid rgba(45, 59, 151, 0.2);
