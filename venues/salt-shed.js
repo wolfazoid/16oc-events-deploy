@@ -85,7 +85,7 @@
         utmCampaign: 'events'
       },
       modal: {
-        sections: ['image', 'info', 'startTime', 'ageRestriction', 'venue', 'price', 'performers'],
+        sections: ['image', 'info', 'description', 'startTime', 'ageRestriction', 'venue', 'price', 'performers'],
         timeDisplay: 'doors',
         startTimeLabel: 'Doors',
         doorsOffsetMinutes: 60,
