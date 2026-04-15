@@ -29,6 +29,7 @@
       if (!el.dataset.venueShortNames) {
         el.dataset.venueShortNames = JSON.stringify({
           'KovZ917AI5F': 'Shed',
+          'rZ7HnEZ17pa4z': 'Shed',
           'KovZ917Amf0': 'Fairgrounds',
         });
       }
@@ -46,6 +47,7 @@
       if (!el.dataset.venueShortNames) {
         el.dataset.venueShortNames = JSON.stringify({
           'KovZ917AI5F': 'Shed',
+          'rZ7HnEZ17pa4z': 'Shed',
           'KovZ917Amf0': 'Fairgrounds',
         });
       }
@@ -62,6 +64,7 @@
       el.dataset.showPrice = 'false';
       el.dataset.venueShortNames = JSON.stringify({
         'KovZ917AI5F': 'Shed',
+        'rZ7HnEZ17pa4z': 'Shed',
         'KovZ917Amf0': 'Fairgrounds',
       });
     });
@@ -71,6 +74,7 @@
       venues: ['KovZ917AI5F', 'KovZ917Amf0'],
       subVenues: {
         'KovZ917AI5F': 'Shed',
+        'rZ7HnEZ17pa4z': 'Shed',
         'KovZ917Amf0': 'Fairgrounds',
       },
       tracking: {
