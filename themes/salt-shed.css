@@ -109,7 +109,10 @@
 
 [data-venue-events] .ve-events__badge--offsale,
 [data-ve-curated] .ve-events__badge--offsale,
-[data-ve-featured] .ve-events__badge--offsale {
+[data-ve-featured] .ve-events__badge--offsale,
+[data-venue-events] .ve-events__badge--rescheduled,
+[data-ve-curated] .ve-events__badge--rescheduled,
+[data-ve-featured] .ve-events__badge--rescheduled {
   background: #F8D89E;
   color: #2d3b97;
 }
