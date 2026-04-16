@@ -31,6 +31,7 @@
           'KovZ917AI5F': 'Shed',
           'rZ7HnEZ17pa4z': 'Shed',
           'KovZ917Amf0': 'Fairgrounds',
+          'rZ7HnEZ17qokf': 'Fairgrounds',
         });
       }
     });
@@ -49,6 +50,7 @@
           'KovZ917AI5F': 'Shed',
           'rZ7HnEZ17pa4z': 'Shed',
           'KovZ917Amf0': 'Fairgrounds',
+          'rZ7HnEZ17qokf': 'Fairgrounds',
         });
       }
     });
@@ -67,6 +69,7 @@
         'KovZ917AI5F': 'Shed',
         'rZ7HnEZ17pa4z': 'Shed',
         'KovZ917Amf0': 'Fairgrounds',
+        'rZ7HnEZ17qokf': 'Fairgrounds',
       });
     });
 
