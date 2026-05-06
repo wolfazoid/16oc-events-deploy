@@ -90,7 +90,28 @@
         showVenueCity: false,
       }
     });
+
+    relocateFilterBar();
   };
+
+  // If a [data-ve-top-filters] mount exists on the page, move each grid's
+  // .ve-events__filters into it. The widget's filter listeners are closure-bound
+  // to the grid instance, so the bar keeps working at its new location.
+  // A MutationObserver re-runs the move on widget refresh()/re-render.
+  function relocateFilterBar() {
+    var target = document.querySelector('[data-ve-top-filters]');
+    if (!target) return;
+    document.querySelectorAll('[data-venue-events]').forEach(function (gridEl) {
+      moveFilters(gridEl, target);
+      new MutationObserver(function () { moveFilters(gridEl, target); })
+        .observe(gridEl, { childList: true });
+    });
+  }
+
+  function moveFilters(gridEl, target) {
+    var filters = gridEl.querySelector(':scope > .ve-events__filters');
+    if (filters && filters.parentNode !== target) target.appendChild(filters);
+  }
   script.onerror = function () {
     console.error('[VenueEvents] Failed to load widget from CDN:', script.src);
   };
