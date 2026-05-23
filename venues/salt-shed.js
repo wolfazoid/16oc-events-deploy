@@ -82,6 +82,12 @@
         utmMedium: 'widget',
         utmCampaign: 'events'
       },
+      // TODO(ticketweb-exclude): client wants TicketWeb-hosted events hidden on
+      // every surface (grid, featured, curated). The widget does not yet expose
+      // an exclusion option. When ticketmaster-venue-widget ships this, bump
+      // VERSION above and uncomment the line below. The final option name is
+      // owned by the widget repo — confirm it matches before uncommenting.
+      // excludeProviders: ['ticketweb'],
       modal: {
         sections: ['image', 'info', 'description', 'startTime', 'ageRestriction', 'venue', 'price', 'performers', 'pleaseNote'],
         timeDisplay: 'doors',
