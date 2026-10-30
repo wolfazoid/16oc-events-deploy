@@ -124,9 +124,95 @@ test("drop guard refuses a collapse", async () => {
   assert.deepEqual(await loadSnapshot(kv, "space"), prev);
 
   const kv2 = makeKV({ "snapshot:space": { ...prev, events: prev.events.slice(0, 5) } });
+  const shrunk = { site: "space", builtAt: "new", events: [ev("x")], requests: [] };
+  assert.deepEqual(await saveSnapshot(kv2, shrunk), { saved: true });
+  assert.deepEqual(await loadSnapshot(kv2, "space"), shrunk);
+});
+
+test("drop guard refuses emptying a small site", async () => {
+  const prev = { site: "space", builtAt: "old", events: Array.from({ length: 6 }, (_, i) => ev(`p${i}`)), requests: [] };
+  const kv = makeKV({ "snapshot:space": prev });
   const empty = { site: "space", builtAt: "new", events: [], requests: [] };
+  const r = await saveSnapshot(kv, empty);
+  assert.equal(r.saved, false);
+  assert.equal(r.reason, "drop-guard");
+  assert.match(r.detail, /empty/);
+  assert.deepEqual(await loadSnapshot(kv, "space"), prev);
+});
+
+test("drop guard lets an empty site stay empty", async () => {
+  const kv = makeKV({ "snapshot:space": { site: "space", builtAt: "old", events: [], requests: [] } });
+  const empty = { site: "space", builtAt: "new", events: [], requests: [] };
+  assert.deepEqual(await saveSnapshot(kv, empty), { saved: true });
+  assert.deepEqual(await loadSnapshot(kv, "space"), empty);
+  const kv2 = makeKV();
   assert.deepEqual(await saveSnapshot(kv2, empty), { saved: true });
-  assert.deepEqual(await loadSnapshot(kv2, "space"), empty);
+});
+
+test("drop guard refuses a request that silently went to zero", async () => {
+  const req = (params, totalElements) => ({ params, totalElements, pagesRead: 1, capped: false });
+  const prev = {
+    site: "space",
+    builtAt: "old",
+    events: Array.from({ length: 6 }, (_, i) => ev(`p${i}`)),
+    requests: [req({ venueId: "V" }, 5), req({ promoterId: "6085" }, 3)],
+  };
+  const kv = makeKV({ "snapshot:space": prev });
+  const next = {
+    site: "space",
+    builtAt: "new",
+    events: Array.from({ length: 5 }, (_, i) => ev(`n${i}`)),
+    requests: [req({ venueId: "V" }, 5), req({ promoterId: "6085" }, 0)],
+  };
+  const r = await saveSnapshot(kv, next);
+  assert.equal(r.saved, false);
+  assert.equal(r.reason, "drop-guard");
+  assert.match(r.detail, /promoterId/);
+  assert.deepEqual(await loadSnapshot(kv, "space"), prev);
+
+  // A request that was already 0, or a changed request, does not trip it.
+  const kv2 = makeKV({ "snapshot:space": { ...prev, requests: [req({ venueId: "V" }, 5), req({ promoterId: "6085" }, 0)] } });
+  assert.deepEqual(await saveSnapshot(kv2, next), { saved: true });
+  const kv3 = makeKV({ "snapshot:space": { ...prev, requests: [req({ venueId: "OLD" }, 5)] } });
+  assert.deepEqual(await saveSnapshot(kv3, { ...next, requests: [req({ venueId: "NEW" }, 0)] }), { saved: true });
+});
+
+test("refreshAll records which guard refused the save", async () => {
+  const prev = { site: "thalia", builtAt: "old", events: [ev("p1"), ev("p2")], requests: [] };
+  const kv = makeKV({ "snapshot:thalia": prev, "meta:thalia": { lastSuccessAt: "earlier" } });
+  const fetchImpl = fakeFetch(() => ({ events: [] }));
+  const res = await refreshAll(envFor(kv), { fetchImpl, now: NOW, delayMs: 0, siteIds: ["thalia"] });
+  assert.equal(res[0].reason, "drop-guard");
+  const meta = await kv.get("meta:thalia", "json");
+  assert.match(meta.lastError, /^drop-guard: kept 2 events, refused 0 \(.*empty.*\)$/);
+  assert.equal(meta.lastSuccessAt, "earlier");
+});
+
+test("force bypasses every drop guard", async () => {
+  const req = (params, totalElements) => ({ params, totalElements, pagesRead: 1, capped: false });
+  const prev = {
+    site: "space",
+    builtAt: "old",
+    events: Array.from({ length: 20 }, (_, i) => ev(`p${i}`)),
+    requests: [req({ venueId: "V" }, 20)],
+  };
+  const empty = { site: "space", builtAt: "new", events: [], requests: [req({ venueId: "V" }, 0)] };
+  const kv = makeKV({ "snapshot:space": prev });
+  assert.equal((await saveSnapshot(kv, empty)).saved, false);
+  assert.deepEqual(await saveSnapshot(kv, empty, { force: true }), { saved: true });
+  assert.deepEqual(await loadSnapshot(kv, "space"), empty);
+});
+
+test("refreshAll with force saves a genuine collapse", async () => {
+  const prev = { site: "thalia", builtAt: "old", events: Array.from({ length: 20 }, (_, i) => ev(`p${i}`)), requests: [] };
+  const kv = makeKV({ "snapshot:thalia": prev, "meta:thalia": { lastSuccessAt: "earlier", lastError: "drop-guard: x" } });
+  const fetchImpl = fakeFetch(() => ({ events: [ev("a"), ev("b"), ev("c")] }));
+  const res = await refreshAll(envFor(kv), { fetchImpl, now: NOW, delayMs: 0, force: true, siteIds: ["thalia"] });
+  assert.equal(res[0].saved, true);
+  assert.equal((await kv.get("snapshot:thalia", "json")).events.length, 3);
+  const meta = await kv.get("meta:thalia", "json");
+  assert.equal(meta.lastError, null);
+  assert.equal(meta.lastSuccessAt, NOW.toISOString());
 });
 
 test("loadSnapshot returns null when absent", async () => {

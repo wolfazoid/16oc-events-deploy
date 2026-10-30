@@ -24,11 +24,38 @@ export async function loadSnapshot(kv, siteId) {
   return kv.get(`snapshot:${siteId}`, "json");
 }
 
-export async function saveSnapshot(kv, snapshot) {
-  const prev = await loadSnapshot(kv, snapshot.site);
+function paramsKey(params) {
+  return JSON.stringify(Object.keys(params ?? {}).sort().map((k) => [k, params[k]]));
+}
+
+/** Returns null when the save is safe, else { saved: false, reason, detail? }. */
+function dropGuard(prev, snapshot) {
   const prevCount = prev?.events?.length ?? 0;
-  if (prevCount >= DROP_GUARD_MIN_PREVIOUS && snapshot.events.length < prevCount * DROP_GUARD_RATIO) {
+  const count = snapshot.events.length;
+  if (prevCount >= DROP_GUARD_MIN_PREVIOUS && count < prevCount * DROP_GUARD_RATIO) {
     return { saved: false, reason: "drop-guard" };
+  }
+  if (prevCount >= 1 && count === 0) {
+    return { saved: false, reason: "drop-guard", detail: "snapshot would be empty" };
+  }
+  const prevTotals = new Map((prev?.requests ?? []).map((r) => [paramsKey(r.params), r.totalElements]));
+  for (const r of snapshot.requests ?? []) {
+    const before = prevTotals.get(paramsKey(r.params));
+    if (before > 0 && r.totalElements === 0) {
+      return {
+        saved: false,
+        reason: "drop-guard",
+        detail: `request ${new URLSearchParams(r.params)} returned 0, previously ${before}`,
+      };
+    }
+  }
+  return null;
+}
+
+export async function saveSnapshot(kv, snapshot, { force = false } = {}) {
+  if (!force) {
+    const refused = dropGuard(await loadSnapshot(kv, snapshot.site), snapshot);
+    if (refused) return refused;
   }
   await kv.put(`snapshot:${snapshot.site}`, JSON.stringify(snapshot));
   return { saved: true };
@@ -47,6 +74,7 @@ export async function refreshAll(
     now = new Date(),
     delayMs = 250,
     timeoutMs = 15000,
+    force = false,
     siteIds = Object.keys(SITES),
   } = {},
 ) {
@@ -67,12 +95,13 @@ export async function refreshAll(
       if (!apiKey) throw new Error(`missing key binding ${site.keyBinding}`);
       const snapshot = await buildSnapshot(site, { apiKey, baseUrl: env.UPSTREAM_BASE, fetchImpl, now, delayMs, timeoutMs });
       const prevCount = (await loadSnapshot(kv, id))?.events?.length ?? 0;
-      const saved = await saveSnapshot(kv, snapshot);
+      const saved = await saveSnapshot(kv, snapshot, { force });
       capped = snapshot.requests.some((r) => r.capped);
       if (saved.saved) {
         outcome = { site: id, saved: true, kept: false };
       } else {
         lastError = `${saved.reason}: kept ${prevCount} events, refused ${snapshot.events.length}`;
+        if (saved.detail) lastError += ` (${saved.detail})`;
         outcome = { site: id, saved: false, kept: true, reason: saved.reason };
       }
     } catch (err) {

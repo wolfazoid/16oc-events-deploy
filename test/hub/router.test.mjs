@@ -287,3 +287,29 @@ test("pass-through forwards only allowed params, sorted into the cache key", asy
     assert.ok(!k.includes("foo") && !k.includes("apikey") && !k.includes("CLIENTKEY"), k);
   }
 });
+
+test("admin refresh with force=1 overrides the drop guard", async () => {
+  globalThis.fetch = async () =>
+    new Response(
+      JSON.stringify({
+        _embedded: { events: [ev("x"), ev("y"), ev("z")] },
+        page: { size: 200, totalElements: 3, totalPages: 1, number: 0 },
+      }),
+      { status: 200 },
+    );
+  const seeded = snap(Array.from({ length: 20 }, (_, i) => `p${i}`));
+  const auth = { method: "POST", headers: { Authorization: "Bearer admintoken123" } };
+
+  const kv = makeKV({ "snapshot:saltshed": seeded });
+  const refused = await (await get("/admin/refresh?site=saltshed", mkEnv(kv), auth)).json();
+  assert.equal(refused[0].saved, false);
+  assert.equal(refused[0].reason, "drop-guard");
+
+  const forced = await (await get("/admin/refresh?site=saltshed&force=1", mkEnv(kv), auth)).json();
+  assert.equal(forced[0].saved, true);
+  assert.equal((await kv.get("snapshot:saltshed", "json")).events.length, 3);
+  assert.equal((await kv.get("meta:saltshed", "json")).lastError, null);
+
+  // force still requires the token
+  assert.equal((await get("/admin/refresh?site=saltshed&force=1", mkEnv(kv), { method: "POST" })).status, 401);
+});

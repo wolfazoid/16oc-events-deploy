@@ -46,7 +46,9 @@ async function adminRefresh(request, url, env) {
   }
   const siteId = url.searchParams.get('site');
   if (siteId && !getSite(siteId)) return jsonResponse({ error: 'Not found' }, 404);
-  const results = await refreshAll(env, siteId ? { siteIds: [siteId] } : {});
+  // force=1 bypasses the drop guards for this run only (a genuine drop would otherwise stick).
+  const force = url.searchParams.get('force') === '1';
+  const results = await refreshAll(env, siteId ? { siteIds: [siteId], force } : { force });
   return jsonResponse(results);
 }
 
