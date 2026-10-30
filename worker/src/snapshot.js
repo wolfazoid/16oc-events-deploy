@@ -49,25 +49,36 @@ export async function refreshAll(
   for (const id of siteIds) {
     const site = SITES[id];
     const attemptAt = now.toISOString();
-    const prevMeta = (await kv.get(`meta:${id}`, "json")) ?? {};
+    let prevMeta = null;
     const apiKey = site ? env[site.keyBinding] : undefined;
     let outcome;
-    let capped = prevMeta.capped ?? false;
+    let capped = false;
     let lastError = null;
     try {
+      prevMeta = (await kv.get(`meta:${id}`, "json")) ?? {};
+      capped = prevMeta.capped ?? false;
       if (!site) throw new Error(`unknown site ${id}`);
       if (!apiKey) throw new Error(`missing key binding ${site.keyBinding}`);
       const snapshot = await buildSnapshot(site, { apiKey, baseUrl: env.UPSTREAM_BASE, fetchImpl, now, delayMs });
+      const prevCount = (await loadSnapshot(kv, id))?.events?.length ?? 0;
       const saved = await saveSnapshot(kv, snapshot);
       capped = snapshot.requests.some((r) => r.capped);
-      outcome = saved.saved
-        ? { site: id, saved: true, kept: false }
-        : { site: id, saved: false, kept: true, reason: saved.reason };
+      if (saved.saved) {
+        outcome = { site: id, saved: true, kept: false };
+      } else {
+        lastError = `${saved.reason}: kept ${prevCount} events, refused ${snapshot.events.length}`;
+        outcome = { site: id, saved: false, kept: true, reason: saved.reason };
+      }
     } catch (err) {
       lastError = errorMessage(err, apiKey);
       outcome = { site: id, saved: false, kept: true, error: lastError };
     }
     const succeeded = !lastError;
+    if (!prevMeta) {
+      // Meta unreadable: do not overwrite it with a guess.
+      results.push(outcome);
+      continue;
+    }
     try {
       await kv.put(
         `meta:${id}`,

@@ -123,3 +123,34 @@ test("meta carries capped", async () => {
   await refreshAll(envFor(kv), { fetchImpl, now: NOW, delayMs: 0, siteIds: ["sixteenoc"] });
   assert.equal((await kv.get("meta:sixteenoc", "json")).capped, true);
 });
+
+test("refreshAll records a drop-guard block as an error and does not advance lastSuccessAt", async () => {
+  const prev = { site: "thalia", builtAt: "old", events: Array.from({ length: 20 }, (_, i) => ev(`p${i}`)), requests: [] };
+  const kv = makeKV({ "snapshot:thalia": prev, "meta:thalia": { lastSuccessAt: "earlier", lastError: null } });
+  const fetchImpl = fakeFetch(() => ({ events: [ev("a"), ev("b"), ev("c")] }));
+  const res = await refreshAll(envFor(kv), { fetchImpl, now: NOW, delayMs: 0, siteIds: ["thalia"] });
+  assert.deepEqual(await kv.get("snapshot:thalia", "json"), prev);
+  const meta = await kv.get("meta:thalia", "json");
+  assert.match(meta.lastError, /drop-guard/);
+  assert.equal(meta.lastError, "drop-guard: kept 20 events, refused 3");
+  assert.equal(meta.lastSuccessAt, "earlier");
+  assert.equal(meta.kept, true);
+  assert.equal(res[0].saved, false);
+  assert.equal(res[0].reason, "drop-guard");
+});
+
+test("refreshAll never throws when the meta read fails", async () => {
+  const kv = makeKV();
+  const realGet = kv.get.bind(kv);
+  kv.get = async (key, type) => {
+    if (key === "meta:space") throw new Error("kv down");
+    return realGet(key, type);
+  };
+  const fetchImpl = fakeFetch(() => ({ events: [ev("t1")] }));
+  const res = await refreshAll(envFor(kv), { fetchImpl, now: NOW, delayMs: 0, siteIds: ["space", "thalia"] });
+  assert.equal(res.length, 2);
+  assert.match(res[0].error, /kv down/);
+  assert.equal(res[0].saved, false);
+  assert.equal(res[1].saved, true);
+  assert.equal((await kv.get("snapshot:thalia", "json")).events.length, 1);
+});
