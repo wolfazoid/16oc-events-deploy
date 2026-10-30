@@ -92,24 +92,32 @@ async function siteRoute(url, env, ctx) {
 
 export default {
   async fetch(request, env, ctx) {
-    const url = new URL(request.url);
-
-    if (request.method === 'OPTIONS') {
-      return new Response(null, { status: 204, headers: CORS_HEADERS });
+    try {
+      return await handle(request, env, ctx);
+    } catch {
+      return jsonResponse({ error: 'unavailable' }, 503);
     }
-    if (request.method === 'POST' && url.pathname === '/admin/refresh') {
-      return adminRefresh(request, url, env);
-    }
-    if (request.method !== 'GET') {
-      return jsonResponse({ error: 'Method not allowed' }, 405);
-    }
-    if (url.pathname === '/health') return health(env);
-
-    const res = await siteRoute(url, env, ctx);
-    return res ?? jsonResponse({ error: 'Not found' }, 404);
   },
 
   async scheduled(event, env, ctx) {
     ctx.waitUntil(refreshAll(env, {}));
   },
 };
+
+async function handle(request, env, ctx) {
+  const url = new URL(request.url);
+
+  if (request.method === 'OPTIONS') {
+    return new Response(null, { status: 204, headers: CORS_HEADERS });
+  }
+  if (request.method === 'POST' && url.pathname === '/admin/refresh') {
+    return adminRefresh(request, url, env);
+  }
+  if (request.method !== 'GET') {
+    return jsonResponse({ error: 'Method not allowed' }, 405);
+  }
+  if (url.pathname === '/health') return health(env);
+
+  const res = await siteRoute(url, env, ctx);
+  return res ?? jsonResponse({ error: 'Not found' }, 404);
+}

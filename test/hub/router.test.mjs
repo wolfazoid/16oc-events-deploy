@@ -188,3 +188,37 @@ test("responses never contain an api key", async () => {
     assert.ok(!(await res.text()).includes("SECRETKEY"), p);
   }
 });
+
+const throwingKV = () => ({
+  async get() {
+    throw new Error("kv down SECRETKEY-saltshed");
+  },
+  async put() {},
+});
+
+test("KV failure on events returns 503 JSON with CORS", async () => {
+  const res = await get("/v1/saltshed/events.json", mkEnv(throwingKV()));
+  assert.equal(res.status, 503);
+  assert.equal(res.headers.get("access-control-allow-origin"), "*");
+  const text = await res.text();
+  assert.deepEqual(JSON.parse(text), { error: "unavailable" });
+});
+
+test("KV failure on health returns 503 JSON with CORS", async () => {
+  const res = await get("/health", mkEnv(throwingKV()));
+  assert.equal(res.status, 503);
+  assert.equal(res.headers.get("access-control-allow-origin"), "*");
+  assert.deepEqual(await res.json(), { error: "unavailable" });
+});
+
+test("upstream network failure on venues returns 502 JSON with CORS", async () => {
+  globalThis.fetch = async () => {
+    throw new Error("boom apikey=SECRETKEY-saltshed");
+  };
+  const res = await get("/v1/saltshed/venues/X.json", mkEnv(makeKV()));
+  assert.equal(res.status, 502);
+  assert.equal(res.headers.get("access-control-allow-origin"), "*");
+  const text = await res.text();
+  assert.ok(!text.includes("SECRETKEY"));
+  assert.deepEqual(JSON.parse(text), { error: "upstream unavailable" });
+});

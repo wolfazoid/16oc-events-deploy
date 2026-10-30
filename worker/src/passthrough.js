@@ -43,12 +43,22 @@ export async function proxyToTicketmaster(
   for (const [k, v] of searchParams.entries()) upstream.searchParams.set(k, v);
   upstream.searchParams.set('apikey', apiKey);
 
-  const tm = await fetchImpl(upstream.toString(), { headers: { Accept: 'application/json' } });
+  let tm;
+  try {
+    tm = await fetchImpl(upstream.toString(), { headers: { Accept: 'application/json' } });
+  } catch {
+    return jsonResponse({ error: 'upstream unavailable' }, 502);
+  }
   if (!tm.ok) {
     return jsonResponse({ error: 'Upstream error', status: tm.status }, tm.status);
   }
 
-  const body = await tm.text();
+  let body;
+  try {
+    body = await tm.text();
+  } catch {
+    return jsonResponse({ error: 'upstream unavailable' }, 502);
+  }
   const cacheControl = `public, max-age=${ttl}`;
   if (cache) {
     const put = cache.put(
