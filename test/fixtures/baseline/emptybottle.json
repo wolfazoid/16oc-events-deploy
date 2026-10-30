@@ -1,0 +1,750 @@
+{
+  "site": "emptybottle",
+  "capturedAt": "2026-10-30T19:04:29.769Z",
+  "page": "https://www.emptybottle.com/home",
+  "code": "legacy/event-feed-widget.venues.live-2026-10-30.js (venue 'empty-bottle')",
+  "requests": [
+    {
+      "params": {
+        "size": "200",
+        "venueId": "rZ7HnEZ178gfg,KovZpZAId16A,rZ7HnEZ17aJ47",
+        "source": "ticketmaster,ticketweb"
+      },
+      "totalElements": 73,
+      "pagesRead": 1,
+      "truncated": false
+    },
+    {
+      "params": {
+        "promoterId": "6084"
+      },
+      "totalElements": 1,
+      "pagesRead": 1,
+      "truncated": false
+    }
+  ],
+  "listHasDescription": 0,
+  "listEventCount": 74,
+  "events": [
+    {
+      "id": "rZ7HnEZ1AfZE0f",
+      "name": "Hard Country Honky Tonk with The Hoyle Brothers",
+      "localDate": "2026-10-30",
+      "localTime": "17:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/hard-country-honky-tonk-with-empty-bottle-tickets/14027914"
+    },
+    {
+      "id": "rZ7HnEZ1Af08-N",
+      "name": "*SOLD OUT* Sweeping Promises / Clickbait / Uniflora",
+      "localDate": "2026-10-30",
+      "localTime": "22:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/sold-out-sweeping-promises-empty-bottle-tickets/14910863"
+    },
+    {
+      "id": "rZ7HnEZ1A4ZUZN",
+      "name": "*SOLD OUT* The Empty Bottle Turns 34 with Post Animal / Gift (Early Show)",
+      "localDate": "2026-10-31",
+      "localTime": "18:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/sold-out-the-empty-bottle-empty-bottle-tickets/15036023"
+    },
+    {
+      "id": "rZ7HnEZ1A4ZaZd",
+      "name": "*SOLD OUT* The Empty Bottle Turns 34 with Post Animal / Gift (Late Show)",
+      "localDate": "2026-10-31",
+      "localTime": "22:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/sold-out-the-empty-bottle-empty-bottle-tickets/15009003"
+    },
+    {
+      "id": "rZ7HnEZ1AfGp_f",
+      "name": "International Anthem Presents: Jeremiah Chiu and Josh Johnson - Edge Conditions and Animative Dual Release Show",
+      "localDate": "2026-11-01",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/international-anthem-presents-jeremiah-chiu-empty-bottle-tickets/14316654"
+    },
+    {
+      "id": "rZ7HnEZ1AfC7A7",
+      "name": "FREE MONDAY w/ Chocolate Labs / Tri-County Liquidators / Joe Glass / Rent Party",
+      "localDate": "2026-11-02",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/free-monday-w-chocolate-labs-empty-bottle-tickets/14384144"
+    },
+    {
+      "id": "rZ7HnEZ1AfGt8V",
+      "name": "Tear Dungeon / Bussy Kween Power Trip / Bliss Cemetery",
+      "localDate": "2026-11-03",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/tear-dungeon-bussy-kween-empty-bottle-tickets/14329434"
+    },
+    {
+      "id": "rZ7HnEZ1AfC7-0",
+      "name": "Rikki G. Godd (Album Release) / Sarah Lutkenhaus / Mr. Yipeman / DJ Pluto",
+      "localDate": "2026-11-04",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/rikki-g-godd-album-release-empty-bottle-tickets/14384864"
+    },
+    {
+      "id": "rZ7HnEZ1Af0gQd",
+      "name": "Desire / Johnny Jewel / Mothermary / Omar S",
+      "localDate": "2026-11-05",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/desire-johnny-jewel-empty-bottle-tickets/14935683"
+    },
+    {
+      "id": "rZ7HnEZ1AfZE-7",
+      "name": "Hard Country Honky Tonk with The Hoyle Brothers",
+      "localDate": "2026-11-06",
+      "localTime": "17:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/hard-country-honky-tonk-with-empty-bottle-tickets/14027844"
+    },
+    {
+      "id": "rZ7HnEZ1AfCoCf",
+      "name": "Strapped Presents: STUFFED",
+      "localDate": "2026-11-06",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/strapped-presents-stuffed-empty-bottle-tickets/14391394"
+    },
+    {
+      "id": "rZ7HnEZ1AfGoGf",
+      "name": "Agriculture / Genital Shame / Pure Hex",
+      "localDate": "2026-11-07",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/agriculture-genital-shame-empty-bottle-tickets/14311314"
+    },
+    {
+      "id": "rZ7HnEZ1AfF_Ff",
+      "name": "*SOLD OUT* Agriculture / Genital Shame / Pure Hex",
+      "localDate": "2026-11-08",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/sold-out-agriculture-genital-empty-bottle-tickets/14219214"
+    },
+    {
+      "id": "rZ7HnEZ1A4ZeoS",
+      "name": "Los Gaiteros de San Jacinto and Carmelo Torres Present: Madre Cumbia",
+      "localDate": "2026-11-09",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/los-gaiteros-de-san-jacinto-empty-bottle-tickets/15002473"
+    },
+    {
+      "id": "rZ7HnEZ1Af0z0N",
+      "name": "*SOLD OUT* Genesis Owusu / After Louise",
+      "localDate": "2026-11-10",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/sold-out-genesis-owusu-empty-bottle-tickets/14938923"
+    },
+    {
+      "id": "rZ7HnEZ1Af0-Gd",
+      "name": "*SOLD OUT* mary in the junkyard / Lefty Parker",
+      "localDate": "2026-11-11",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/sold-out-mary-in-the-empty-bottle-tickets/14921303"
+    },
+    {
+      "id": "rZ7HnEZ1Afap-V",
+      "name": "Improvement Movement / Jalen Reyes",
+      "localDate": "2026-11-12",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/improvement-movement-jalen-reyes-empty-bottle-tickets/14256874"
+    },
+    {
+      "id": "rZ7HnEZ1AfZEPV",
+      "name": "Hard Country Honky Tonk with The Hoyle Brothers",
+      "localDate": "2026-11-13",
+      "localTime": "17:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/hard-country-honky-tonk-with-empty-bottle-tickets/14027974"
+    },
+    {
+      "id": "rZ7HnEZ1AfuKP0",
+      "name": "Handmade Market",
+      "localDate": "2026-11-14",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/handmade-market-empty-bottle-tickets/14353964"
+    },
+    {
+      "id": "rZ7HnEZ1AfFbof",
+      "name": "Heavens To Betsy / Bonfire Madigan",
+      "localDate": "2026-11-14",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/heavens-to-betsy-bonfire-empty-bottle-tickets/14218454"
+    },
+    {
+      "id": "rZ7HnEZ1AfFtGV",
+      "name": "Heavens To Betsy / NO MEN",
+      "localDate": "2026-11-15",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/heavens-to-betsy-no-empty-bottle-tickets/14229334"
+    },
+    {
+      "id": "rZ7HnEZ1AfCeQ7",
+      "name": "FREE MONDAY w/ Rent Control featuring Nonnie Parry / Twice Told Tale / Timelife / Tender Object Systems",
+      "localDate": "2026-11-16",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/free-monday-w-rent-control-empty-bottle-tickets/14382684"
+    },
+    {
+      "id": "rZ7HnEZ1Afudkf",
+      "name": "Porcelain / Zastava / Attic Reels",
+      "localDate": "2026-11-17",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/porcelain-zastava-attic-empty-bottle-tickets/14343194"
+    },
+    {
+      "id": "rZ7HnEZ1AfG377",
+      "name": "*SOLD OUT* Makaya McCraven",
+      "localDate": "2026-11-18",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/sold-out-makaya-mccraven-empty-bottle-tickets/14312104"
+    },
+    {
+      "id": "rZ7HnEZ1AfPMkd",
+      "name": "Packaging / Discus / Leo",
+      "localDate": "2026-11-19",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/packaging-discus-leo-empty-bottle-tickets/14977183"
+    },
+    {
+      "id": "rZ7HnEZ1AfZE-f",
+      "name": "Hard Country Honky Tonk with The Hoyle Brothers",
+      "localDate": "2026-11-20",
+      "localTime": "17:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/hard-country-honky-tonk-with-empty-bottle-tickets/14027854"
+    },
+    {
+      "id": "rZ7HnEZ1Af13q7",
+      "name": "Omni (Deluxe 10 Year Anniversary)",
+      "localDate": "2026-11-20",
+      "localTime": "22:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/omni-deluxe-10-year-anniversary-empty-bottle-tickets/14292744"
+    },
+    {
+      "id": "rZ7HnEZ1Afu7uf",
+      "name": "Blue Earth Sound (Album Release) / PXM / Ferny DJ Set",
+      "localDate": "2026-11-21",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/blue-earth-sound-album-release-empty-bottle-tickets/14344354"
+    },
+    {
+      "id": "rZ7HnEZ1AfGxCf",
+      "name": "Bears vs Saints At The Bottle",
+      "localDate": "2026-11-22",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/bears-vs-saints-at-the-empty-bottle-tickets/14322394"
+    },
+    {
+      "id": "rZ7HnEZ1AfG717",
+      "name": "Rivkah Reyes / mozey",
+      "localDate": "2026-11-24",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/rivkah-reyes-mozey-empty-bottle-tickets/14304284"
+    },
+    {
+      "id": "rZ7HnEZ1AfGPuV",
+      "name": "Jaff Graffner (Album Release Show) / Earl Gary / AJ / Jacob Ciocci DJ Set",
+      "localDate": "2026-11-25",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/jaff-graffner-album-release-show-empty-bottle-tickets/14325374"
+    },
+    {
+      "id": "rZ7HnEZ1AfZEj0",
+      "name": "Hard Country Honky Tonk with The Hoyle Brothers",
+      "localDate": "2026-11-27",
+      "localTime": "17:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/hard-country-honky-tonk-with-empty-bottle-tickets/14027724"
+    },
+    {
+      "id": "rZ7HnEZ1AfGPa7",
+      "name": "*SOLD OUT* Petey USA / Linus Hablot",
+      "localDate": "2026-11-27",
+      "localTime": "22:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/sold-out-petey-usa-empty-bottle-tickets/14325244"
+    },
+    {
+      "id": "rZ7HnEZ1AfGt40",
+      "name": "*SOLD OUT* Petey USA / Linus Hablot",
+      "localDate": "2026-11-28",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/sold-out-petey-usa-empty-bottle-tickets/14329564"
+    },
+    {
+      "id": "rZ7HnEZ1AfGZ17",
+      "name": "Michael Meyers Stand Up Comedy Special Recording (Early Show)",
+      "localDate": "2026-12-01",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/michael-meyers-stand-up-comedy-empty-bottle-tickets/14300284"
+    },
+    {
+      "id": "rZ7HnEZ1AfGZ1f",
+      "name": "Michael Meyers Stand Up Comedy Special Recording (Late Show)",
+      "localDate": "2026-12-01",
+      "localTime": "21:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/michael-meyers-stand-up-comedy-empty-bottle-tickets/14300294"
+    },
+    {
+      "id": "rZ7HnEZ1AfuF0f",
+      "name": "Citric Dummies / Lost Legion / Lavender / The Alices",
+      "localDate": "2026-12-02",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/citric-dummies-lost-legion-empty-bottle-tickets/14348914"
+    },
+    {
+      "id": "rZ7HnEZ1AfuUkf",
+      "name": "Krampusnacht feat. Wild Earp & the Free for Alls / Iris Marlowe / MEoW Puppet Show / MC Santa",
+      "localDate": "2026-12-03",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/krampusnacht-feat-wild-earp-empty-bottle-tickets/14376194"
+    },
+    {
+      "id": "rZ7HnEZ1AfZE0V",
+      "name": "Hard Country Honky Tonk with The Hoyle Brothers",
+      "localDate": "2026-12-04",
+      "localTime": "17:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/hard-country-honky-tonk-with-empty-bottle-tickets/14027934"
+    },
+    {
+      "id": "rZ7HnEZ1AfuZv7",
+      "name": "Dos Santos",
+      "localDate": "2026-12-05",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/dos-santos-empty-bottle-tickets/14340044"
+    },
+    {
+      "id": "rZ7HnEZ1AfGx87",
+      "name": "Bears vs Jaguars At The Bottle",
+      "localDate": "2026-12-06",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/bears-vs-jaguars-at-the-empty-bottle-tickets/14322404"
+    },
+    {
+      "id": "rZ7HnEZ1A4Zw7S",
+      "name": "Whitmer Thomas with comedy from Clay Tatum",
+      "localDate": "2026-12-06",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/whitmer-thomas-with-comedy-from-empty-bottle-tickets/15032133"
+    },
+    {
+      "id": "rZ7HnEZ1AfuNO0",
+      "name": "FREE MONDAY w/ Answering Machines / Oildrum / Pebbles Inc",
+      "localDate": "2026-12-07",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/free-monday-w-answering-machines-empty-bottle-tickets/14363824"
+    },
+    {
+      "id": "rZ7HnEZ1AfuIk7",
+      "name": "Genre Is Death / The Art Gray Noizz Quintet",
+      "localDate": "2026-12-08",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/genre-is-death-the-empty-bottle-tickets/14368184"
+    },
+    {
+      "id": "rZ7HnEZ1Afu7G7",
+      "name": "JEFF The Brotherhood",
+      "localDate": "2026-12-09",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/jeff-the-brotherhood-empty-bottle-tickets/14344304"
+    },
+    {
+      "id": "rZ7HnEZ1AfZEjf",
+      "name": "Hard Country Honky Tonk with The Hoyle Brothers",
+      "localDate": "2026-12-11",
+      "localTime": "17:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/hard-country-honky-tonk-with-empty-bottle-tickets/14027714"
+    },
+    {
+      "id": "rZ7HnEZ1AfPv_K",
+      "name": "HEATHEN AXE / Prime Angel Weather / Mild Violence / DJ Bill Roe",
+      "localDate": "2026-12-11",
+      "localTime": "22:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/heathen-axe-prime-angel-empty-bottle-tickets/14941653"
+    },
+    {
+      "id": "rZ7HnEZ1AfuKPV",
+      "name": "Handmade Market",
+      "localDate": "2026-12-12",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/handmade-market-empty-bottle-tickets/14353974"
+    },
+    {
+      "id": "rZ7HnEZ1AfGJ0f",
+      "name": "FACS / PARKiNG / TEMPS.",
+      "localDate": "2026-12-12",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/facs-parking-temps-empty-bottle-tickets/14326914"
+    },
+    {
+      "id": "rZ7HnEZ1AfGx8f",
+      "name": "Bears vs Dolphins At The Bottle",
+      "localDate": "2026-12-13",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/bears-vs-dolphins-at-the-empty-bottle-tickets/14322414"
+    },
+    {
+      "id": "rZ7HnEZ1AfZEOV",
+      "name": "Hard Country Honky Tonk with The Hoyle Brothers",
+      "localDate": "2026-12-18",
+      "localTime": "17:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/hard-country-honky-tonk-with-empty-bottle-tickets/14027834"
+    },
+    {
+      "id": "rZ7HnEZ1Af8kjf",
+      "name": "Oscarbate Film Collective Presents: The All-Chicago Tenants Alliance Fundraiser",
+      "localDate": "2026-12-20",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/oscarbate-film-collective-presents-the-empty-bottle-tickets/14406714"
+    },
+    {
+      "id": "rZ7HnEZ1AfC3pf",
+      "name": "The Spits / Uranium Club",
+      "localDate": "2026-12-31",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/the-spits-uranium-club-empty-bottle-tickets/14392594"
+    },
+    {
+      "id": "rZ7HnEZ1AfuIA7",
+      "name": "Don't Want To Go Fest 4 featuring Pure Intention / Heet Deth / Babe Report / Bog Power",
+      "localDate": "2027-01-08",
+      "localTime": "22:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/dont-want-to-go-fest-empty-bottle-tickets/14368144"
+    },
+    {
+      "id": "rZ7HnEZ1AfufZ7",
+      "name": "Handmade Market",
+      "localDate": "2027-01-09",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/handmade-market-empty-bottle-tickets/14354004"
+    },
+    {
+      "id": "rZ7HnEZ1AfuIA0",
+      "name": "Don't Want To Go Fest 4 featuring daarling / Plum / Tapegun / Snowcuffs",
+      "localDate": "2027-01-09",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/dont-want-to-go-fest-empty-bottle-tickets/14368164"
+    },
+    {
+      "id": "rZ7HnEZ1Afu_j7",
+      "name": "FREE MONDAY w/ Astrobrite / Fauvely / Emily Jane Powers",
+      "localDate": "2027-01-11",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/free-monday-w-astrobrite-empty-bottle-tickets/14359704"
+    },
+    {
+      "id": "rZ7HnEZ1Af8ej0",
+      "name": "MANCHO sounds / Charlie Otto / Ryan Behling / Chromabeats",
+      "localDate": "2027-01-13",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/mancho-sounds-charlie-otto-empty-bottle-tickets/14402724"
+    },
+    {
+      "id": "rZ7HnEZ1Af400d",
+      "name": "*MOVED TO THALIA HALL* Anna von Hausswolff",
+      "localDate": "2027-01-15",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/moved-to-thalia-hall-anna-empty-bottle-tickets/14564903"
+    },
+    {
+      "id": "rZ7HnEZ1AfuZF7",
+      "name": "Willi Carlisle",
+      "localDate": "2027-01-23",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/willi-carlisle-empty-bottle-tickets/14340204"
+    },
+    {
+      "id": "rZ7HnEZ1Af8F0f",
+      "name": "Empty Bottle presents KatzPascale w/ ridgeclub @ Epiphany Center for the Arts",
+      "localDate": "2027-01-30",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17bbPI",
+      "venueName": "Epiphany Center for the Arts",
+      "url": "https://www.ticketweb.com/event/empty-bottle-presents-katzpascale-w-epiphany-center-for-the-arts-tickets/14408914"
+    },
+    {
+      "id": "rZ7HnEZ1Afu0v0",
+      "name": "Girl Ultra: el Tour de RRRomeo",
+      "localDate": "2027-02-03",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/girl-ultra-el-tour-de-empty-bottle-tickets/14364064"
+    },
+    {
+      "id": "rZ7HnEZ1AfufZf",
+      "name": "Handmade Market",
+      "localDate": "2027-02-13",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/handmade-market-empty-bottle-tickets/14354014"
+    },
+    {
+      "id": "rZ7HnEZ1Af0UON",
+      "name": "*SOLD OUT* Way Dynamic / Star Moles",
+      "localDate": "2027-03-05",
+      "localTime": "22:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/sold-out-way-dynamic-empty-bottle-tickets/14936823"
+    },
+    {
+      "id": "rZ7HnEZ1AfufZ0",
+      "name": "Handmade Market",
+      "localDate": "2027-03-13",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/handmade-market-empty-bottle-tickets/14354024"
+    },
+    {
+      "id": "rZ7HnEZ1AfG_G7",
+      "name": "Jake Xerxes Fussell",
+      "localDate": "2027-03-13",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/jake-xerxes-fussell-empty-bottle-tickets/14319304"
+    },
+    {
+      "id": "rZ7HnEZ1AfCKo7",
+      "name": "Alex Cameron",
+      "localDate": "2027-03-19",
+      "localTime": "22:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/alex-cameron-empty-bottle-tickets/14393444"
+    },
+    {
+      "id": "rZ7HnEZ1AfGOF7",
+      "name": "The Lemonheads",
+      "localDate": "2027-03-20",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/the-lemonheads-empty-bottle-tickets/14320204"
+    },
+    {
+      "id": "rZ7HnEZ1AfC71f",
+      "name": "Fenne Lily / villagerrr",
+      "localDate": "2027-04-08",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/fenne-lily-villagerrr-empty-bottle-tickets/14384294"
+    },
+    {
+      "id": "rZ7HnEZ1AfufZV",
+      "name": "Handmade Market",
+      "localDate": "2027-04-10",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/handmade-market-empty-bottle-tickets/14354034"
+    },
+    {
+      "id": "rZ7HnEZ1Af8eA0",
+      "name": "Gyasi",
+      "localDate": "2027-04-15",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/gyasi-empty-bottle-tickets/14402164"
+    },
+    {
+      "id": "rZ7HnEZ1AfOUjS",
+      "name": "The Limiñanas / Native Sun",
+      "localDate": "2027-05-09",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/the-limianas-native-sun-empty-bottle-tickets/14836733"
+    }
+  ]
+}

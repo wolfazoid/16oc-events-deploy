@@ -1,0 +1,724 @@
+{
+  "site": "thalia",
+  "capturedAt": "2026-10-30T19:04:29.769Z",
+  "page": "https://www.thaliahallchicago.com/home",
+  "code": "legacy/event-feed-widget.venues.live-2026-10-30.js (venue 'thalia') + legacy/recently-announced-widget.live-2026-10-30.js (feed 'thalia')",
+  "requests": [
+    {
+      "params": {
+        "size": "200",
+        "venueId": "rZ7HnEZ17aJq7,rZ7HnEZ17aJq0,KovZpZAktlaA",
+        "source": "ticketweb"
+      },
+      "totalElements": 67,
+      "pagesRead": 1,
+      "truncated": false
+    }
+  ],
+  "listHasDescription": 0,
+  "listEventCount": 67,
+  "events": [
+    {
+      "id": "rZ7HnEZ1Afa84f",
+      "name": "Sanctum Dark Music Festival - 2 DAY PASS",
+      "localDate": "2026-10-30",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/sanctum-dark-music-festival-thalia-hall-tickets/14250554"
+    },
+    {
+      "id": "rZ7HnEZ1Afa8fV",
+      "name": "Sanctum Dark Music Festival",
+      "localDate": "2026-10-30",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/sanctum-dark-music-festival-thalia-hall-tickets/14250534"
+    },
+    {
+      "id": "rZ7HnEZ1Afa847",
+      "name": "Sanctum Dark Music Festival",
+      "localDate": "2026-10-31",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/sanctum-dark-music-festival-thalia-hall-tickets/14250544"
+    },
+    {
+      "id": "rZ7HnEZ1Afa0G7",
+      "name": "New Constellations: It Comes In Waves Tour with Vox Rea",
+      "localDate": "2026-11-01",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/new-constellations-it-comes-in-thalia-hall-tickets/14264304"
+    },
+    {
+      "id": "rZ7HnEZ1AfaZjf",
+      "name": "Elanor Moss with Max Subar and Magnus Ferguson",
+      "localDate": "2026-11-01",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ178PQ4",
+      "venueName": "Tack Room",
+      "url": "https://www.ticketweb.com/event/elanor-moss-with-max-subar-tack-room-tickets/14240714"
+    },
+    {
+      "id": "rZ7HnEZ1AfFeCf",
+      "name": "The Blasting Company plays Over The Garden Wall with Patrick McHale & J.R. Kaufman",
+      "localDate": "2026-11-02",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/the-blasting-company-plays-over-thalia-hall-tickets/14202394"
+    },
+    {
+      "id": "rZ7HnEZ1AfPKqd",
+      "name": "Best Friends Podcast",
+      "localDate": "2026-11-03",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/best-friends-podcast-thalia-hall-tickets/14953743"
+    },
+    {
+      "id": "rZ7HnEZ1AfOVGN",
+      "name": "Donny Benét with OTNES",
+      "localDate": "2026-11-05",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/donny-bent-with-otnes-thalia-hall-tickets/14834323"
+    },
+    {
+      "id": "rZ7HnEZ1AfqIAd",
+      "name": "Phoebe Robinson: Feral & Fired Up!",
+      "localDate": "2026-11-06",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/phoebe-robinson-feral-fired-thalia-hall-tickets/14768143"
+    },
+    {
+      "id": "rZ7HnEZ1Af0oqd",
+      "name": "Hovvdy with Christian Lee Hutson",
+      "localDate": "2026-11-11",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/hovvdy-with-christian-lee-hutson-thalia-hall-tickets/14911743"
+    },
+    {
+      "id": "rZ7HnEZ1AfAke7",
+      "name": "Hiss Golden Messenger - I'm People Tour with Sam Amidon",
+      "localDate": "2026-11-12",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/hiss-golden-messenger-thalia-hall-tickets/14146084"
+    },
+    {
+      "id": "rZ7HnEZ1AfPpaK",
+      "name": "Ethan Regan - Young Regan Tour with Lily Kershaw",
+      "localDate": "2026-11-13",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/ethan-regan-young-thalia-hall-tickets/14956253"
+    },
+    {
+      "id": "rZ7HnEZ1AfFdbf",
+      "name": "Victor Wooten & The Wooten Brothers",
+      "localDate": "2026-11-14",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/victor-wooten-the-wooten-thalia-hall-tickets/14203614"
+    },
+    {
+      "id": "rZ7HnEZ1AfGoO0",
+      "name": "Hamilton Leithauser + Rostam - The Joint Tour with Johanna Samuels",
+      "localDate": "2026-11-15",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/hamilton-leithauser-rostam-thalia-hall-tickets/14311824"
+    },
+    {
+      "id": "rZ7HnEZ1Afu_f0",
+      "name": "Mountainfilm On Tour",
+      "localDate": "2026-11-18",
+      "localTime": "18:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/mountainfilm-on-tour-thalia-hall-tickets/14359524"
+    },
+    {
+      "id": "rZ7HnEZ1AfaZA7",
+      "name": "Edgar Alejandro",
+      "localDate": "2026-11-19",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/edgar-alejandro-thalia-hall-tickets/14240144"
+    },
+    {
+      "id": "rZ7HnEZ1Af0obS",
+      "name": "Squirrel Flower with Sour Widows and Free Range",
+      "localDate": "2026-11-20",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/squirrel-flower-with-sour-widows-thalia-hall-tickets/14911633"
+    },
+    {
+      "id": "rZ7HnEZ1Af1K_f",
+      "name": "The Rock and Roll Playhouse plays Music of Taylor Swift for Kids",
+      "localDate": "2026-11-22",
+      "localTime": "11:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/the-rock-and-roll-playhouse-thalia-hall-tickets/14293654"
+    },
+    {
+      "id": "rZ7HnEZ1AfOV7S",
+      "name": "Kyle Kinane",
+      "localDate": "2026-11-23",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/kyle-kinane-thalia-hall-tickets/14834133"
+    },
+    {
+      "id": "rZ7HnEZ1AfOVAd",
+      "name": "Kyle Kinane",
+      "localDate": "2026-11-24",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/kyle-kinane-thalia-hall-tickets/14834143"
+    },
+    {
+      "id": "rZ7HnEZ1A4ZfCK",
+      "name": "Venna with Khal!l",
+      "localDate": "2026-11-25",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/venna-with-khall-thalia-hall-tickets/15014393"
+    },
+    {
+      "id": "rZ7HnEZ1AfG_-0",
+      "name": "Pigface with En Esch and I Speak Machine",
+      "localDate": "2026-11-27",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/pigface-with-en-esch-and-thalia-hall-tickets/14319864"
+    },
+    {
+      "id": "rZ7HnEZ1Af1bA7",
+      "name": "Standing On Christmas Live 2026 with Evrod Cassimy",
+      "localDate": "2026-11-28",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/standing-on-christmas-live-2026-thalia-hall-tickets/14298144"
+    },
+    {
+      "id": "rZ7HnEZ1AfFeGV",
+      "name": "Shintaro Sakamoto with Rudy De Anda",
+      "localDate": "2026-12-02",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/shintaro-sakamoto-with-rudy-de-thalia-hall-tickets/14202334"
+    },
+    {
+      "id": "rZ7HnEZ1Af0-Cd",
+      "name": "King Buffalo with Doom Gong",
+      "localDate": "2026-12-04",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/king-buffalo-with-doom-gong-thalia-hall-tickets/14921383"
+    },
+    {
+      "id": "rZ7HnEZ1AfCfAf",
+      "name": "House Calls 'In the Round' with Enzo Siragusa",
+      "localDate": "2026-12-05",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/house-calls-in-the-round-thalia-hall-tickets/14394154"
+    },
+    {
+      "id": "rZ7HnEZ1A4ZfaS",
+      "name": "Jamila Woods: 10 Years of HEAVN featuring support from Ayanna Woods and a Sound Bath led by Shawnee Dez hosted by Raych Jackson",
+      "localDate": "2026-12-06",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/jamila-woods-10-years-of-thalia-hall-tickets/15014273"
+    },
+    {
+      "id": "rZ7HnEZ1AfuIof",
+      "name": "Wilco",
+      "localDate": "2026-12-07",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/wilco-thalia-hall-tickets/14368454"
+    },
+    {
+      "id": "rZ7HnEZ1AfuIf0",
+      "name": "Wilco",
+      "localDate": "2026-12-08",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/wilco-thalia-hall-tickets/14368524"
+    },
+    {
+      "id": "rZ7HnEZ1AfPEjS",
+      "name": "Jalen Ngonda: Doctrine of Love Tour with Brooke Combe",
+      "localDate": "2026-12-09",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/jalen-ngonda-doctrine-of-love-thalia-hall-tickets/14967733"
+    },
+    {
+      "id": "rZ7HnEZ1A4Za_K",
+      "name": "*SOLD OUT* Thee Sinseers: Love Stories Tour with Taylor Williams",
+      "localDate": "2026-12-10",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/sold-out-thee-sinseers-love-thalia-hall-tickets/15009653"
+    },
+    {
+      "id": "rZ7HnEZ1AfGZjf",
+      "name": "Hollyy - 6th Annual Hollyy-Days Celebration with Nico Segal",
+      "localDate": "2026-12-11",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/hollyy-6th-annual-thalia-hall-tickets/14300714"
+    },
+    {
+      "id": "rZ7HnEZ1AfC3Z0",
+      "name": "Intonation Student Showcase",
+      "localDate": "2026-12-12",
+      "localTime": "10:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/intonation-student-showcase-thalia-hall-tickets/14392024"
+    },
+    {
+      "id": "rZ7HnEZ1Af-e8S",
+      "name": "Temples: The BLISS Tour with GIFT",
+      "localDate": "2026-12-12",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/temples-the-bliss-tour-with-thalia-hall-tickets/14842433"
+    },
+    {
+      "id": "rZ7HnEZ1Af8a8V",
+      "name": "The Rock and Roll Playhouse plays Music of The Beatles for Kids",
+      "localDate": "2026-12-13",
+      "localTime": "11:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/the-rock-and-roll-playhouse-thalia-hall-tickets/14409434"
+    },
+    {
+      "id": "rZ7HnEZ1AfGOf7",
+      "name": "Dogs In A Pile presented by Thalia Hall and Deep Cut - TWO DAY PASS",
+      "localDate": "2026-12-17",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/dogs-in-a-pile-presented-thalia-hall-tickets/14320504"
+    },
+    {
+      "id": "rZ7HnEZ1AfGOof",
+      "name": "Dogs In A Pile presented by Thalia Hall and Deep Cut",
+      "localDate": "2026-12-18",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/dogs-in-a-pile-presented-thalia-hall-tickets/14320454"
+    },
+    {
+      "id": "rZ7HnEZ1AfCkFf",
+      "name": "Pivot Gang x Saba - John Walt Day + 10 years of Bucket List Celebration",
+      "localDate": "2026-12-19",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/pivot-gang-x-saba-thalia-hall-tickets/14386214"
+    },
+    {
+      "id": "rZ7HnEZ1A4Z0jN",
+      "name": "Mariachi Herencia De México - A Mariachi Christmas",
+      "localDate": "2026-12-20",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/mariachi-herencia-de-mxico-thalia-hall-tickets/15024723"
+    },
+    {
+      "id": "rZ7HnEZ1Afq4FS",
+      "name": "Anna von Hausswolff presented by Thalia Hall and Empty Bottle",
+      "localDate": "2027-01-15",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/anna-von-hausswolff-presented-by-thalia-hall-tickets/14755233"
+    },
+    {
+      "id": "rZ7HnEZ1AfuKFf",
+      "name": "Jess Williamson with Riley Downing",
+      "localDate": "2027-01-21",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/jess-williamson-with-riley-downing-thalia-hall-tickets/14353214"
+    },
+    {
+      "id": "rZ7HnEZ1AfuKbV",
+      "name": "State Radio Performing Us Against The Crown",
+      "localDate": "2027-01-22",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/state-radio-performing-us-against-thalia-hall-tickets/14353634"
+    },
+    {
+      "id": "rZ7HnEZ1Afk3u0",
+      "name": "The War And Treaty",
+      "localDate": "2027-01-27",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/the-war-and-treaty-thalia-hall-tickets/14192364"
+    },
+    {
+      "id": "rZ7HnEZ1AfGNFf",
+      "name": "Rayland Baxter: The True Violet Tour with Dylan LeBlanc",
+      "localDate": "2027-02-01",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/rayland-baxter-the-true-violet-thalia-hall-tickets/14323214"
+    },
+    {
+      "id": "rZ7HnEZ1Afk4ZV",
+      "name": "Ibeyi",
+      "localDate": "2027-02-02",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/ibeyi-thalia-hall-tickets/14195034"
+    },
+    {
+      "id": "rZ7HnEZ1AfGK8f",
+      "name": "Tophouse",
+      "localDate": "2027-02-05",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/tophouse-thalia-hall-tickets/14313414"
+    },
+    {
+      "id": "rZ7HnEZ1AfGZG0",
+      "name": "La Roux - The Old Flames Tour",
+      "localDate": "2027-02-09",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/la-roux-the-thalia-hall-tickets/14300324"
+    },
+    {
+      "id": "rZ7HnEZ1AfG3F0",
+      "name": "Rhiannon Giddens",
+      "localDate": "2027-02-17",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/rhiannon-giddens-thalia-hall-tickets/14312224"
+    },
+    {
+      "id": "rZ7HnEZ1A4v8qS",
+      "name": "Dogpark with Never Ending Fall",
+      "localDate": "2027-02-19",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/dogpark-with-never-ending-fall-thalia-hall-tickets/15050773"
+    },
+    {
+      "id": "rZ7HnEZ1AfGOb0",
+      "name": "*SOLD OUT* Ikkimel: Gib Mir Die Bratwurst Tour",
+      "localDate": "2027-02-20",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/sold-out-ikkimel-gib-mir-thalia-hall-tickets/14320624"
+    },
+    {
+      "id": "rZ7HnEZ1AfJo4d",
+      "name": "Vansire",
+      "localDate": "2027-02-25",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/vansire-thalia-hall-tickets/14991543"
+    },
+    {
+      "id": "rZ7HnEZ1AfGZZ0",
+      "name": "Andrew Sa 'In the Round'",
+      "localDate": "2027-02-26",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/andrew-sa-in-the-round-thalia-hall-tickets/14300024"
+    },
+    {
+      "id": "rZ7HnEZ1Afu7rf",
+      "name": "Mei Semones + aron!",
+      "localDate": "2027-03-02",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/mei-semones-aron-thalia-hall-tickets/14344794"
+    },
+    {
+      "id": "rZ7HnEZ1AfPs7d",
+      "name": "Conor Moore: Me, myself and IRELAND",
+      "localDate": "2027-03-11",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/conor-moore-me-myself-and-thalia-hall-tickets/14971103"
+    },
+    {
+      "id": "rZ7HnEZ1AfC770",
+      "name": "Caroline Rose - Uncle Carols World of Fun Tour",
+      "localDate": "2027-03-16",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/caroline-rose-uncle-thalia-hall-tickets/14384124"
+    },
+    {
+      "id": "rZ7HnEZ1Afxfqd",
+      "name": "Death From Above 1979 - Private Lives Tour",
+      "localDate": "2027-03-17",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/death-from-above-1979-thalia-hall-tickets/14894743"
+    },
+    {
+      "id": "rZ7HnEZ1Afuwbf",
+      "name": "Ruby Waters - Suppre$$ions North America Tour",
+      "localDate": "2027-03-29",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/ruby-waters-suppreions-thalia-hall-tickets/14372614"
+    },
+    {
+      "id": "rZ7HnEZ1Afuvp7",
+      "name": "Gustavo Santaolalla Ronroco North America Tour 2027",
+      "localDate": "2027-04-05",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/gustavo-santaolalla-ronroco-north-america-thalia-hall-tickets/14341584"
+    },
+    {
+      "id": "rZ7HnEZ1AfCob0",
+      "name": "Destroy Boys with illuminati hotties and The Rat Utopia Experiment presented by Thalia Hall & Riot Fest",
+      "localDate": "2027-04-06",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/destroy-boys-with-illuminati-hotties-thalia-hall-tickets/14391624"
+    },
+    {
+      "id": "rZ7HnEZ1AfCAf7",
+      "name": "Cornelius",
+      "localDate": "2027-04-07",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/cornelius-thalia-hall-tickets/14385504"
+    },
+    {
+      "id": "rZ7HnEZ1A4Zf8N",
+      "name": "Iceage",
+      "localDate": "2027-04-08",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/iceage-thalia-hall-tickets/15014423"
+    },
+    {
+      "id": "rZ7HnEZ1AfCp7f",
+      "name": "DIIV - ZIRP! The World with Grumpy",
+      "localDate": "2027-04-09",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/diiv-zirp-the-thalia-hall-tickets/14396114"
+    },
+    {
+      "id": "rZ7HnEZ1Af7f-V",
+      "name": "Foy Vance World Tour: Celebrating \"The Wake\" And The Songs of \"If\" with Bonnie Bishop and Ryan McMullan",
+      "localDate": "2027-04-17",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/foy-vance-world-tour-celebrating-thalia-hall-tickets/14114874"
+    },
+    {
+      "id": "rZ7HnEZ1AfOVFS",
+      "name": "French 79 - CLOSE TO THE GIANTS",
+      "localDate": "2027-04-27",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/french-79-close-thalia-hall-tickets/14834233"
+    },
+    {
+      "id": "rZ7HnEZ1AfCd0f",
+      "name": "The Sheepdogs - Out All Night Tour",
+      "localDate": "2027-04-30",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/the-sheepdogs-out-thalia-hall-tickets/14383914"
+    },
+    {
+      "id": "rZ7HnEZ1AfC737",
+      "name": "Clap Your Hands Say Yeah",
+      "localDate": "2027-05-08",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/clap-your-hands-say-yeah-thalia-hall-tickets/14384484"
+    }
+  ],
+  "recentlyAnnounced": [
+    {
+      "id": "rZ7HnEZ1Af8a8V",
+      "name": "The Rock and Roll Playhouse plays Music of The Beatles for Kids",
+      "localDate": "2026-12-13",
+      "localTime": "11:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/the-rock-and-roll-playhouse-thalia-hall-tickets/14409434"
+    },
+    {
+      "id": "rZ7HnEZ1AfCp7f",
+      "name": "DIIV - ZIRP! The World with Grumpy",
+      "localDate": "2027-04-09",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/diiv-zirp-the-thalia-hall-tickets/14396114"
+    },
+    {
+      "id": "rZ7HnEZ1AfCob0",
+      "name": "Destroy Boys with illuminati hotties and The Rat Utopia Experiment presented by Thalia Hall & Riot Fest",
+      "localDate": "2027-04-06",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/destroy-boys-with-illuminati-hotties-thalia-hall-tickets/14391624"
+    },
+    {
+      "id": "rZ7HnEZ1A4v8qS",
+      "name": "Dogpark with Never Ending Fall",
+      "localDate": "2027-02-19",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/dogpark-with-never-ending-fall-thalia-hall-tickets/15050773"
+    }
+  ]
+}

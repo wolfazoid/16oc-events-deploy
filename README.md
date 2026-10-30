@@ -53,6 +53,8 @@ Two pieces live in Squarespace. Once set, they never change — all future updat
 <script src="https://wolfazoid.github.io/16oc-events-deploy/venues/salt-shed.js"></script>
 ```
 
+Optionally, add `window.SALTSHED_EXCLUDE_EVENTS = [...]` before the loader script to hide specific events — see "Hide a specific event" below.
+
 **2. Code Block on the events page:**
 
 ```html
@@ -133,6 +135,60 @@ curl "https://app.ticketmaster.com/discovery/v2/events.json?apikey=$KEY&keyword=
 ```
 
 …then add the ID to all three maps with the desired label.
+
+### Self-contained bundle (what the live site actually runs)
+
+As of September 2026 the live site does **not** load the GitHub Pages loader. It loads a single self-contained file uploaded to Squarespace file storage, served at `https://www.saltshedchicago.com/s/salt-shed.js`, and referenced from Code Injection as:
+
+```html
+<script>window.SALTSHED_API_KEY = 'YOUR_TICKETMASTER_KEY';</script>
+<script src="/s/salt-shed.js"></script>
+```
+
+That file is built from the parts in `bundle/salt-shed/`:
+
+| Part | Contents |
+|---|---|
+| `01-styles.js` | Base widget CSS + Salt Shed theme, injected via `<style>` |
+| `02-runtime.js` | Widget runtime. A **fork** of `ticketmaster-venue-widget` `src/index.js` carrying changes not yet published upstream (`excludedArtists`, `venueFilterIds`, presale handling, `excludeEvents`) |
+| `03-bootstrap.js` | Per-element defaults, venue list, and the `VenueEvents.init()` call |
+
+```bash
+npm run build:salt-shed     # writes sites/salt-shed.js
+npm test                    # loads the built file and checks the bootstrap + exclusions
+```
+
+Then upload `sites/salt-shed.js` to Squarespace (Settings → Files), replacing the existing `salt-shed.js`. Squarespace keeps the same `/s/salt-shed.js` URL. `sites/live-snapshot-2026-08-11-salt-shed.js` is the file that was live before this build process existed; keep it for diffing.
+
+Widget-level changes should still be made upstream and released to npm; when that happens, replace `02-runtime.js` with the upstream `src/index.js` and drop this fork.
+
+### Hide a specific event (self-serve for the client)
+
+Both the bundle and the loader hide listed events on every surface (grid, featured, curated). The client can manage the list in either of two places, no deploy needed.
+
+**Option A — on the events grid in the Squarespace Code Block** (comma-separated ids from the Ticketmaster link, or full links):
+
+```html
+<div data-venue-events data-exclude-events="0400652BB8ACB1CF, 0400643BF736AC2E"></div>
+```
+
+**Option B — in Settings → Advanced → Code Injection → Footer**, right next to the API key line:
+
+```html
+<script>window.SALTSHED_API_KEY = 'YOUR_TICKETMASTER_KEY';</script>
+<script>
+  window.SALTSHED_EXCLUDE_EVENTS = [
+    'https://www.ticketmaster.com/event/0400652BB8ACB1CF',
+  ];
+</script>
+<script src="https://wolfazoid.github.io/16oc-events-deploy/venues/salt-shed.js"></script>
+```
+
+Each entry can be a full `ticketmaster.com/event/...` link (easiest — copy it from the event page), the ID from that link, or a Discovery API event ID. Matching is case-insensitive. Remove the entry to show the event again. The exclusion applies to visitors' cached data too, so changes are visible on the next page load.
+
+Both sources merge. Artist-level exclusion (`excludedArtists`, currently `['Oliver Tree']`) is still hardcoded in `bundle/salt-shed/03-bootstrap.js` and needs a rebuild + upload to change.
+
+Requires the September 2026 bundle or newer, or widget `1.3.21` or newer via the loader (the `excludeEvents` option).
 
 ### Change modal sections / order
 

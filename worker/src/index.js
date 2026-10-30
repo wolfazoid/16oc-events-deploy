@@ -1,174 +1,128 @@
 /**
- * 16OC Events Proxy — Cloudflare Worker
+ * 16OC Events Hub — Cloudflare Worker
  *
- * Pass-through proxy to the Ticketmaster Discovery API.
- * Hides API keys server-side, adds edge caching and CORS.
+ * Serves per-site event snapshots (refreshed by cron) and a small
+ * Ticketmaster pass-through for venue and classification lookups.
  */
 
-import {
-  VENUE_KEY_MAP,
-  DEFAULT_KEY_BINDING,
-  ALLOWED_ENDPOINTS,
-  getCacheTtl,
-} from './config.js';
+import { getSite, SITES } from './sites.js';
+import { loadSnapshot, refreshAll } from './snapshot.js';
+import { queryEvents, findEvent } from './query.js';
+import { getCacheTtl } from './config.js';
+import { CORS_HEADERS, jsonResponse, proxyToTicketmaster } from './passthrough.js';
 
-const CORS_HEADERS = {
-  'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Methods': 'GET, OPTIONS',
-  'Access-Control-Allow-Headers': 'Content-Type',
-};
+const STALE_MS = 30 * 60 * 1000;
 
-function jsonResponse(body, status = 200, extraHeaders = {}) {
-  return new Response(JSON.stringify(body), {
-    status,
-    headers: {
-      'Content-Type': 'application/json',
-      ...CORS_HEADERS,
-      ...extraHeaders,
-    },
-  });
+function tokenMatches(header, token) {
+  if (!token) return false;
+  const expected = `Bearer ${token}`;
+  const given = header || '';
+  if (given.length !== expected.length) return false;
+  const enc = new TextEncoder();
+  const a = enc.encode(given);
+  const b = enc.encode(expected);
+  if (a.length !== b.length) return false;
+  let diff = 0;
+  for (let i = 0; i < a.length; i++) diff |= a[i] ^ b[i];
+  return diff === 0;
 }
 
-/**
- * Resolve the correct TM API key binding name for a request.
- * Returns { key, error } — key is the actual secret value, error is a Response.
- */
-function resolveApiKey(url, env, pathname) {
-  // /classifications.json needs no venue context — use default key
-  if (pathname === '/classifications.json') {
-    const key = env[DEFAULT_KEY_BINDING];
-    if (!key) {
-      return { key: null, error: jsonResponse({ error: 'Server misconfiguration: default key not set' }, 500) };
-    }
-    return { key, error: null };
+async function health(env) {
+  const sites = {};
+  let degraded = false;
+  const now = Date.now();
+  for (const id of Object.keys(SITES)) {
+    const meta = (await env.SNAPSHOTS.get(`meta:${id}`, 'json')) ?? null;
+    sites[id] = meta;
+    const last = meta?.lastSuccessAt ? Date.parse(meta.lastSuccessAt) : NaN;
+    if (!(now - last <= STALE_MS) || meta.capped) degraded = true;
+  }
+  return jsonResponse({ status: degraded ? 'degraded' : 'ok', sites }, degraded ? 503 : 200);
+}
+
+async function adminRefresh(request, url, env) {
+  if (!tokenMatches(request.headers.get('Authorization'), env.ADMIN_TOKEN)) {
+    return jsonResponse({ error: 'Unauthorized' }, 401);
+  }
+  const siteId = url.searchParams.get('site');
+  if (siteId && !getSite(siteId)) return jsonResponse({ error: 'Not found' }, 404);
+  // force=1 bypasses the drop guards for this run only (a genuine drop would otherwise stick).
+  const force = url.searchParams.get('force') === '1';
+  const results = await refreshAll(env, siteId ? { siteIds: [siteId], force } : { force });
+  return jsonResponse(results);
+}
+
+async function siteRoute(url, env, ctx) {
+  const m = url.pathname.match(/^\/v1\/([^/]+)\/(.+)$/);
+  if (!m) return null;
+  const site = getSite(m[1]);
+  if (!site) return jsonResponse({ error: 'Not found' }, 404);
+  const rest = m[2];
+
+  if (rest === 'events.json') {
+    const snapshot = await loadSnapshot(env.SNAPSHOTS, site.id);
+    if (!snapshot) return jsonResponse({ error: 'snapshot unavailable' }, 503);
+    return jsonResponse(queryEvents(snapshot.events, url.searchParams), 200, {
+      'Cache-Control': 'public, max-age=300',
+    });
   }
 
-  // All other endpoints require a venueId
-  const venueIdParam = url.searchParams.get('venueId');
-  if (!venueIdParam) {
-    return {
-      key: null,
-      error: jsonResponse({ error: 'Unknown or missing venueId', venueId: null }, 400),
-    };
+  const detail = rest.match(/^events\/([A-Za-z0-9_-]+)\.json$/);
+  if (detail) {
+    const snapshot = await loadSnapshot(env.SNAPSHOTS, site.id);
+    if (!snapshot) return jsonResponse({ error: 'snapshot unavailable' }, 503);
+    const event = findEvent(snapshot.events, detail[1]);
+    if (!event) return jsonResponse({ error: 'not found' }, 404);
+    return jsonResponse(event, 200, { 'Cache-Control': 'public, max-age=300' });
   }
 
-  // First venue ID in a comma-separated list wins
-  const firstVenueId = venueIdParam.split(',')[0].trim();
-  const bindingName = VENUE_KEY_MAP[firstVenueId];
-
-  if (!bindingName) {
-    return {
-      key: null,
-      error: jsonResponse({ error: 'Unknown or missing venueId', venueId: firstVenueId }, 400),
-    };
+  const venue = rest.match(/^venues\/([A-Za-z0-9_-]+)\.json$/);
+  if (venue || rest === 'classifications.json') {
+    const apiKey = env[site.keyBinding];
+    if (!apiKey) return jsonResponse({ error: 'Server misconfiguration' }, 500);
+    const pathname = venue ? `/venues/${venue[1]}.json` : '/classifications.json';
+    return proxyToTicketmaster(pathname, url.searchParams, {
+      apiKey,
+      siteId: site.id,
+      baseUrl: env.UPSTREAM_BASE,
+      cache: globalThis.caches?.default,
+      ttl: getCacheTtl(pathname),
+      waitUntil: ctx?.waitUntil?.bind(ctx),
+    });
   }
-
-  const key = env[bindingName];
-  if (!key) {
-    return {
-      key: null,
-      error: jsonResponse({ error: `Server misconfiguration: key binding ${bindingName} not set` }, 500),
-    };
-  }
-
-  return { key, error: null };
+  return null;
 }
 
 export default {
   async fetch(request, env, ctx) {
-    const url = new URL(request.url);
-    const pathname = url.pathname;
-
-    // --- CORS preflight ---
-    if (request.method === 'OPTIONS') {
-      return new Response(null, { status: 204, headers: CORS_HEADERS });
+    try {
+      return await handle(request, env, ctx);
+    } catch (err) {
+      // Name only: messages can contain upstream URLs with an API key.
+      console.error('hub request failed', err && err.name);
+      return jsonResponse({ error: 'unavailable' }, 503);
     }
+  },
 
-    // --- Health check ---
-    if (pathname === '/health') {
-      return jsonResponse({
-        status: 'ok',
-        timestamp: new Date().toISOString(),
-        worker: '16oc-events-proxy',
-      });
-    }
-
-    // --- Only GET allowed ---
-    if (request.method !== 'GET') {
-      return jsonResponse({ error: 'Method not allowed' }, 405);
-    }
-
-    // --- Endpoint allowlist ---
-    const allowed = ALLOWED_ENDPOINTS.some((re) => re.test(pathname));
-    if (!allowed) {
-      return jsonResponse({ error: 'Not found' }, 404);
-    }
-
-    // --- CF Cache API: check for cached response ---
-    const cache = caches.default;
-    const cacheKey = new Request(url.toString(), request);
-    const cachedResponse = await cache.match(cacheKey);
-    if (cachedResponse) {
-      const response = new Response(cachedResponse.body, cachedResponse);
-      response.headers.set('X-Cache', 'HIT');
-      // Ensure CORS headers on cached responses
-      for (const [k, v] of Object.entries(CORS_HEADERS)) {
-        response.headers.set(k, v);
-      }
-      return response;
-    }
-
-    // --- Resolve API key ---
-    const { key: apiKey, error: keyError } = resolveApiKey(url, env, pathname);
-    if (keyError) return keyError;
-
-    // --- Build upstream TM URL ---
-    const upstreamBase = env.UPSTREAM_BASE || 'https://app.ticketmaster.com/discovery/v2';
-    const upstreamUrl = new URL(`${upstreamBase}${pathname}`);
-
-    // Forward all query params from the original request
-    for (const [k, v] of url.searchParams.entries()) {
-      upstreamUrl.searchParams.set(k, v);
-    }
-    // Inject the API key
-    upstreamUrl.searchParams.set('apikey', apiKey);
-
-    // --- Fetch from TM ---
-    const tmResponse = await fetch(upstreamUrl.toString(), {
-      headers: { 'Accept': 'application/json' },
-    });
-
-    if (!tmResponse.ok) {
-      return jsonResponse(
-        { error: 'Upstream error', status: tmResponse.status },
-        tmResponse.status,
-      );
-    }
-
-    // --- Build response with cache headers ---
-    const ttl = getCacheTtl(pathname);
-    const responseBody = await tmResponse.text();
-
-    const response = new Response(responseBody, {
-      status: 200,
-      headers: {
-        'Content-Type': 'application/json',
-        'Cache-Control': `public, max-age=${ttl}`,
-        'X-Cache': 'MISS',
-        ...CORS_HEADERS,
-      },
-    });
-
-    // Store in CF edge cache (non-blocking)
-    const cacheResponse = new Response(responseBody, {
-      status: 200,
-      headers: {
-        'Content-Type': 'application/json',
-        'Cache-Control': `public, max-age=${ttl}`,
-      },
-    });
-    ctx.waitUntil(cache.put(cacheKey, cacheResponse));
-
-    return response;
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(refreshAll(env, {}));
   },
 };
+
+async function handle(request, env, ctx) {
+  const url = new URL(request.url);
+
+  if (request.method === 'OPTIONS') {
+    return new Response(null, { status: 204, headers: CORS_HEADERS });
+  }
+  if (request.method === 'POST' && url.pathname === '/admin/refresh') {
+    return adminRefresh(request, url, env);
+  }
+  if (request.method !== 'GET') {
+    return jsonResponse({ error: 'Method not allowed' }, 405);
+  }
+  if (url.pathname === '/health') return health(env);
+
+  const res = await siteRoute(url, env, ctx);
+  return res ?? jsonResponse({ error: 'Not found' }, 404);
+}

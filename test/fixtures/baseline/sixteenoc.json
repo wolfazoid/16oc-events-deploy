@@ -1,0 +1,3032 @@
+{
+  "site": "sixteenoc",
+  "capturedAt": "2026-10-30T19:04:29.769Z",
+  "page": "https://www.16oncenterchicago.com/",
+  "code": "legacy/event-feed-widget.16oc.live-2026-10-30.js (venue 'all', no filters selected)",
+  "requests": [
+    {
+      "params": {
+        "size": "200",
+        "sort": "date,asc",
+        "venueId": "KovZpZAId16A,rZ7HnEZ178O8A,rZ7HnEZ17a4Af,KovZ917AEIJ,KovZ917AEEX,KovZpZAFJ1EA,KovZpZAFEFAA,KovZpaptBe,KovZpaptYe,KovZpZAkt67A,KovZ917AEIJ,rZ7HnEZaeir,rZ7HnEZ178gfg,rZ7HnEZ17bbPI"
+      },
+      "totalElements": 75,
+      "pagesRead": 1,
+      "truncated": false
+    },
+    {
+      "params": {
+        "size": "200",
+        "sort": "date,asc",
+        "promoterId": "6084"
+      },
+      "totalElements": 1,
+      "pagesRead": 1,
+      "truncated": false
+    },
+    {
+      "params": {
+        "size": "200",
+        "sort": "date,asc",
+        "venueId": "KovZ917AI5F,KovZ917Amf0,rZ7HnEZ17_Skd"
+      },
+      "totalElements": 53,
+      "pagesRead": 1,
+      "truncated": false
+    },
+    {
+      "params": {
+        "size": "200",
+        "sort": "date,asc",
+        "venueId": "KovZpakJQe,rZ7HnEZ173FQ4,rZ7HnEZ17fSA4,KovZ917At8O"
+      },
+      "totalElements": 104,
+      "pagesRead": 1,
+      "truncated": false
+    },
+    {
+      "params": {
+        "size": "200",
+        "sort": "date,asc",
+        "promoterId": "6085"
+      },
+      "totalElements": 2,
+      "pagesRead": 1,
+      "truncated": false
+    },
+    {
+      "params": {
+        "size": "200",
+        "sort": "date,asc",
+        "venueId": "rZ7HnEZ17aJq7,rZ7HnEZ17aJq0,KovZpZAktlaA"
+      },
+      "totalElements": 67,
+      "pagesRead": 1,
+      "truncated": false
+    }
+  ],
+  "listHasDescription": 0,
+  "listEventCount": 302,
+  "events": [
+    {
+      "id": "rZ7HnEZ1AfZE0f",
+      "name": "Hard Country Honky Tonk with The Hoyle Brothers",
+      "localDate": "2026-10-30",
+      "localTime": "17:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/hard-country-honky-tonk-with-empty-bottle-tickets/14027914"
+    },
+    {
+      "id": "rZ7HnEZ1Afa84f",
+      "name": "Sanctum Dark Music Festival - 2 DAY PASS",
+      "localDate": "2026-10-30",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/sanctum-dark-music-festival-thalia-hall-tickets/14250554"
+    },
+    {
+      "id": "rZ7HnEZ1Afa8fV",
+      "name": "Sanctum Dark Music Festival",
+      "localDate": "2026-10-30",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/sanctum-dark-music-festival-thalia-hall-tickets/14250534"
+    },
+    {
+      "id": "rZ7HnEZ1AfuO47",
+      "name": "Honey After Dark: The Masquerade with DJ Ca$h Era",
+      "localDate": "2026-10-30",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17_Skd",
+      "venueName": "Three Top Lounge",
+      "url": "https://www.ticketweb.com/event/honey-after-dark-the-masquerade-three-top-lounge-tickets/14360544"
+    },
+    {
+      "id": "rZ7HnEZ1AfGv07",
+      "name": "Rocks Off: Rolling Stones Tribute",
+      "localDate": "2026-10-30",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/rocks-off-rolling-stones-tribute-space-tickets/14301904"
+    },
+    {
+      "id": "rZ7HnEZ1Af08-N",
+      "name": "*SOLD OUT* Sweeping Promises / Clickbait / Uniflora",
+      "localDate": "2026-10-30",
+      "localTime": "22:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/sold-out-sweeping-promises-empty-bottle-tickets/14910863"
+    },
+    {
+      "id": "rZ7HnEZ1A4ZUZN",
+      "name": "*SOLD OUT* The Empty Bottle Turns 34 with Post Animal / Gift (Early Show)",
+      "localDate": "2026-10-31",
+      "localTime": "18:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/sold-out-the-empty-bottle-empty-bottle-tickets/15036023"
+    },
+    {
+      "id": "rZ7HnEZ1AfGpF7",
+      "name": "The Soul Avengers: Tribute to Classic Soul",
+      "localDate": "2026-10-31",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/the-soul-avengers-tribute-to-space-tickets/14316204"
+    },
+    {
+      "id": "rZ7HnEZ1Afa847",
+      "name": "Sanctum Dark Music Festival",
+      "localDate": "2026-10-31",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/sanctum-dark-music-festival-thalia-hall-tickets/14250544"
+    },
+    {
+      "id": "vv1A7Zk38GkeOTpyZ",
+      "name": " Geese - Getting Killed Again Tour",
+      "localDate": "2026-10-31",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/geese-getting-killed-again-tour-chicago-illinois-10-31-2026/event/04006490A0FD6E40"
+    },
+    {
+      "id": "rZ7HnEZ1A4ZaZd",
+      "name": "*SOLD OUT* The Empty Bottle Turns 34 with Post Animal / Gift (Late Show)",
+      "localDate": "2026-10-31",
+      "localTime": "22:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/sold-out-the-empty-bottle-empty-bottle-tickets/15009003"
+    },
+    {
+      "id": "rZ7HnEZ1Af8ep7",
+      "name": "Fess Grandiose (DJ Set)",
+      "localDate": "2026-10-31",
+      "localTime": "22:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17_Skd",
+      "venueName": "Three Top Lounge",
+      "url": "https://www.ticketweb.com/event/fess-grandiose-dj-set-three-top-lounge-tickets/14402584"
+    },
+    {
+      "id": "rZ7HnEZ1AfaMPf",
+      "name": "Davis Plays Davis: A Tribute to Miles Davis by Orbert Davis",
+      "localDate": "2026-11-01",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/davis-plays-davis-a-tribute-space-tickets/14277954"
+    },
+    {
+      "id": "rZ7HnEZ1Afa0G7",
+      "name": "New Constellations: It Comes In Waves Tour with Vox Rea",
+      "localDate": "2026-11-01",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/new-constellations-it-comes-in-thalia-hall-tickets/14264304"
+    },
+    {
+      "id": "vv178Z_aGkRGd_NX",
+      "name": " Geese - Getting Killed Again Tour",
+      "localDate": "2026-11-01",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/geese-getting-killed-again-tour-chicago-illinois-11-01-2026/event/0400649BCC0D98FE"
+    },
+    {
+      "id": "rZ7HnEZ1AfaZjf",
+      "name": "Elanor Moss with Max Subar and Magnus Ferguson",
+      "localDate": "2026-11-01",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ178PQ4",
+      "venueName": "Tack Room",
+      "url": "https://www.ticketweb.com/event/elanor-moss-with-max-subar-tack-room-tickets/14240714"
+    },
+    {
+      "id": "rZ7HnEZ1AfGp_f",
+      "name": "International Anthem Presents: Jeremiah Chiu and Josh Johnson - Edge Conditions and Animative Dual Release Show",
+      "localDate": "2026-11-01",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/international-anthem-presents-jeremiah-chiu-empty-bottle-tickets/14316654"
+    },
+    {
+      "id": "rZ7HnEZ1AfFeCf",
+      "name": "The Blasting Company plays Over The Garden Wall with Patrick McHale & J.R. Kaufman",
+      "localDate": "2026-11-02",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/the-blasting-company-plays-over-thalia-hall-tickets/14202394"
+    },
+    {
+      "id": "rZ7HnEZ1AfC7A7",
+      "name": "FREE MONDAY w/ Chocolate Labs / Tri-County Liquidators / Joe Glass / Rent Party",
+      "localDate": "2026-11-02",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/free-monday-w-chocolate-labs-empty-bottle-tickets/14384144"
+    },
+    {
+      "id": "rZ7HnEZ1AfPKqd",
+      "name": "Best Friends Podcast",
+      "localDate": "2026-11-03",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/best-friends-podcast-thalia-hall-tickets/14953743"
+    },
+    {
+      "id": "rZ7HnEZ1AfGt8V",
+      "name": "Tear Dungeon / Bussy Kween Power Trip / Bliss Cemetery",
+      "localDate": "2026-11-03",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/tear-dungeon-bussy-kween-empty-bottle-tickets/14329434"
+    },
+    {
+      "id": "rZ7HnEZ1AfCK-7",
+      "name": "Salsa on a School Night",
+      "localDate": "2026-11-04",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17_Skd",
+      "venueName": "Three Top Lounge",
+      "url": "https://www.ticketweb.com/event/salsa-on-a-school-night-three-top-lounge-tickets/14393844"
+    },
+    {
+      "id": "vvG18Z_ueUZbii",
+      "name": "BOYNEXTDOOR TOUR 'KNOCK ON Vol.2' IN NORTH AMERICA",
+      "localDate": "2026-11-04",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/boynextdoor-tour-knock-on-vol2-in-chicago-illinois-11-04-2026/event/040064D0B6018B2C"
+    },
+    {
+      "id": "vvG18Z_uFjaSTT",
+      "name": "Béla Fleck: My Bluegrass Heart",
+      "localDate": "2026-11-04",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917At8O",
+      "venueName": "Cahn Auditorium",
+      "url": "https://www.ticketmaster.com/bela-fleck-my-bluegrass-heart-evanston-illinois-11-04-2026/event/040064D21C273FFF"
+    },
+    {
+      "id": "rZ7HnEZ1AfC7-0",
+      "name": "Rikki G. Godd (Album Release) / Sarah Lutkenhaus / Mr. Yipeman / DJ Pluto",
+      "localDate": "2026-11-04",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/rikki-g-godd-album-release-empty-bottle-tickets/14384864"
+    },
+    {
+      "id": "rZ7HnEZ1Af06PS",
+      "name": "Teddy Thompson w. Jenna Nicholls",
+      "localDate": "2026-11-05",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/teddy-thompson-w-jenna-nicholls-space-tickets/14907973"
+    },
+    {
+      "id": "rZ7HnEZ1AfOVGN",
+      "name": "Donny Benét with OTNES",
+      "localDate": "2026-11-05",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/donny-bent-with-otnes-thalia-hall-tickets/14834323"
+    },
+    {
+      "id": "rZ7HnEZ1Af0gQd",
+      "name": "Desire / Johnny Jewel / Mothermary / Omar S",
+      "localDate": "2026-11-05",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/desire-johnny-jewel-empty-bottle-tickets/14935683"
+    },
+    {
+      "id": "rZ7HnEZ1AfZE-7",
+      "name": "Hard Country Honky Tonk with The Hoyle Brothers",
+      "localDate": "2026-11-06",
+      "localTime": "17:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/hard-country-honky-tonk-with-empty-bottle-tickets/14027844"
+    },
+    {
+      "id": "rZ7HnEZ1AfqIAd",
+      "name": "Phoebe Robinson: Feral & Fired Up!",
+      "localDate": "2026-11-06",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/phoebe-robinson-feral-fired-thalia-hall-tickets/14768143"
+    },
+    {
+      "id": "rZ7HnEZ1AfaMG0",
+      "name": "Jon Cleary & The Absolute Monster Gentlemen",
+      "localDate": "2026-11-06",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/jon-cleary-the-absolute-space-tickets/14277324"
+    },
+    {
+      "id": "rZ7HnEZ1AfCoCf",
+      "name": "Strapped Presents: STUFFED",
+      "localDate": "2026-11-06",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/strapped-presents-stuffed-empty-bottle-tickets/14391394"
+    },
+    {
+      "id": "rZ7HnEZ1Afuzr7",
+      "name": "Slow Jamz",
+      "localDate": "2026-11-06",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17_Skd",
+      "venueName": "Three Top Lounge",
+      "url": "https://www.ticketweb.com/event/slow-jamz-three-top-lounge-tickets/14378784"
+    },
+    {
+      "id": "rZ7HnEZ1AfCkZf",
+      "name": "Cocktail Class - Fall Cocktails",
+      "localDate": "2026-11-07",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/cocktail-class-fall-space-tickets/14386014"
+    },
+    {
+      "id": "rZ7HnEZ1Af8A40",
+      "name": "White Claw Happy Hour",
+      "localDate": "2026-11-07",
+      "localTime": "17:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17_Skd",
+      "venueName": "Three Top Lounge",
+      "url": "https://www.ticketweb.com/event/white-claw-happy-hour-three-top-lounge-tickets/14405564"
+    },
+    {
+      "id": "vvG18Z_2KQ5Cld",
+      "name": "Orville Peck - Man Turned Mule Tour",
+      "localDate": "2026-11-07",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/orville-peck-man-turned-mule-tour-chicago-illinois-11-07-2026/event/040064F4DA2CEAC3"
+    },
+    {
+      "id": "rZ7HnEZ1AfaMuf",
+      "name": "Jon Cleary & The Absolute Monster Gentlemen",
+      "localDate": "2026-11-07",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/jon-cleary-the-absolute-space-tickets/14277354"
+    },
+    {
+      "id": "rZ7HnEZ1AfGoGf",
+      "name": "Agriculture / Genital Shame / Pure Hex",
+      "localDate": "2026-11-07",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/agriculture-genital-shame-empty-bottle-tickets/14311314"
+    },
+    {
+      "id": "rZ7HnEZ1Af0MZd",
+      "name": "Adam Ezra Group w. Sirsy",
+      "localDate": "2026-11-08",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/adam-ezra-group-w-sirsy-space-tickets/14937003"
+    },
+    {
+      "id": "rZ7HnEZ1AfF_Ff",
+      "name": "*SOLD OUT* Agriculture / Genital Shame / Pure Hex",
+      "localDate": "2026-11-08",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/sold-out-agriculture-genital-empty-bottle-tickets/14219214"
+    },
+    {
+      "id": "rZ7HnEZ1AfC837",
+      "name": "To Leave You",
+      "localDate": "2026-11-09",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17_Skd",
+      "venueName": "Three Top Lounge",
+      "url": "https://www.ticketweb.com/event/to-leave-you-three-top-lounge-tickets/14390484"
+    },
+    {
+      "id": "rZ7HnEZ1A4Zt0d",
+      "name": "SOLD OUT - Bill Callahan (solo) w. Rick Maguire (of Pile)",
+      "localDate": "2026-11-09",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/sold-out-bill-space-tickets/15029903"
+    },
+    {
+      "id": "rZ7HnEZ1A4ZeoS",
+      "name": "Los Gaiteros de San Jacinto and Carmelo Torres Present: Madre Cumbia",
+      "localDate": "2026-11-09",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/los-gaiteros-de-san-jacinto-empty-bottle-tickets/15002473"
+    },
+    {
+      "id": "rZ7HnEZ1AfOIJK",
+      "name": "Tyler Ballgame w. Evan Blix",
+      "localDate": "2026-11-10",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/tyler-ballgame-w-evan-blix-space-tickets/14828993"
+    },
+    {
+      "id": "rZ7HnEZ1AfJ94S",
+      "name": "To Leave You",
+      "localDate": "2026-11-10",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17_Skd",
+      "venueName": "Three Top Lounge",
+      "url": "https://www.ticketweb.com/event/to-leave-you-three-top-lounge-tickets/14997573"
+    },
+    {
+      "id": "rZ7HnEZ1Af0z0N",
+      "name": "*SOLD OUT* Genesis Owusu / After Louise",
+      "localDate": "2026-11-10",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/sold-out-genesis-owusu-empty-bottle-tickets/14938923"
+    },
+    {
+      "id": "rZ7HnEZ1Afk9rf",
+      "name": "Great Lake Swimmers w. Colleen Brown",
+      "localDate": "2026-11-11",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/great-lake-swimmers-w-colleen-space-tickets/14197794"
+    },
+    {
+      "id": "rZ7HnEZ1AfGVf0",
+      "name": "Liana Zhen-Ai & Astrid Sonne present \"Normal Dreams”",
+      "localDate": "2026-11-11",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17_Skd",
+      "venueName": "Three Top Lounge",
+      "url": "https://www.ticketweb.com/event/liana-zhen-ai-astrid-three-top-lounge-tickets/14334524"
+    },
+    {
+      "id": "rZ7HnEZ1Af0oqd",
+      "name": "Hovvdy with Christian Lee Hutson",
+      "localDate": "2026-11-11",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/hovvdy-with-christian-lee-hutson-thalia-hall-tickets/14911743"
+    },
+    {
+      "id": "rZ7HnEZ1Af0-Gd",
+      "name": "*SOLD OUT* mary in the junkyard / Lefty Parker",
+      "localDate": "2026-11-11",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/sold-out-mary-in-the-empty-bottle-tickets/14921303"
+    },
+    {
+      "id": "rZ7HnEZ1A4Zv8d",
+      "name": "John Carroll Kirby w. Erin Durant",
+      "localDate": "2026-11-12",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/john-carroll-kirby-w-erin-space-tickets/15001403"
+    },
+    {
+      "id": "vvG18Z_1D9_cGm",
+      "name": "Charles Wesley Godwin with Tyler Nance - Christian Name Tour",
+      "localDate": "2026-11-12",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/charles-wesley-godwin-with-tyler-nance-chicago-illinois-11-12-2026/event/040064AED766D32E"
+    },
+    {
+      "id": "rZ7HnEZ1AfAke7",
+      "name": "Hiss Golden Messenger - I'm People Tour with Sam Amidon",
+      "localDate": "2026-11-12",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/hiss-golden-messenger-thalia-hall-tickets/14146084"
+    },
+    {
+      "id": "rZ7HnEZ1Afap-V",
+      "name": "Improvement Movement / Jalen Reyes",
+      "localDate": "2026-11-12",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/improvement-movement-jalen-reyes-empty-bottle-tickets/14256874"
+    },
+    {
+      "id": "rZ7HnEZ1AfZEPV",
+      "name": "Hard Country Honky Tonk with The Hoyle Brothers",
+      "localDate": "2026-11-13",
+      "localTime": "17:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/hard-country-honky-tonk-with-empty-bottle-tickets/14027974"
+    },
+    {
+      "id": "rZ7HnEZ1AfPpaK",
+      "name": "Ethan Regan - Young Regan Tour with Lily Kershaw",
+      "localDate": "2026-11-13",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/ethan-regan-young-thalia-hall-tickets/14956253"
+    },
+    {
+      "id": "vv1kvZv00aGACHUYR",
+      "name": "Palace with Willie J Healey - USA & Canada Tour 2026",
+      "localDate": "2026-11-13",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/palace-with-willie-j-healey-usa-chicago-illinois-11-13-2026/event/040064909EF36C2F"
+    },
+    {
+      "id": "rZ7HnEZ1AfPS_N",
+      "name": "Tyrone Wells w. Tony Lucca",
+      "localDate": "2026-11-13",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/tyrone-wells-w-tony-lucca-space-tickets/14973663"
+    },
+    {
+      "id": "rZ7HnEZ1AfuKP0",
+      "name": "Handmade Market",
+      "localDate": "2026-11-14",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/handmade-market-empty-bottle-tickets/14353964"
+    },
+    {
+      "id": "vvG18Z_1k0JQAc",
+      "name": "The Menzingers: Everything I Ever Saw North American Tour",
+      "localDate": "2026-11-14",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/the-menzingers-everything-i-ever-saw-chicago-illinois-11-14-2026/event/040064A1A499A16D"
+    },
+    {
+      "id": "Z7r9jZ1A70t3k",
+      "name": "Amythyst Kiah",
+      "localDate": "2026-11-14",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "ZFr9jZF6k7",
+      "venueName": "SPACE",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A70t3k"
+    },
+    {
+      "id": "rZ7HnEZ1Af0-vd",
+      "name": "Amythyst Kiah w. Buffalo Nichols",
+      "localDate": "2026-11-14",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/amythyst-kiah-w-buffalo-nichols-space-tickets/14921043"
+    },
+    {
+      "id": "rZ7HnEZ1AfFdbf",
+      "name": "Victor Wooten & The Wooten Brothers",
+      "localDate": "2026-11-14",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/victor-wooten-the-wooten-thalia-hall-tickets/14203614"
+    },
+    {
+      "id": "rZ7HnEZ1AfFbof",
+      "name": "Heavens To Betsy / Bonfire Madigan",
+      "localDate": "2026-11-14",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/heavens-to-betsy-bonfire-empty-bottle-tickets/14218454"
+    },
+    {
+      "id": "rZ7HnEZ1AfC8f7",
+      "name": "Reflections: Afterparty w/ Purelink (DJ)",
+      "localDate": "2026-11-14",
+      "localTime": "22:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17_Skd",
+      "venueName": "Three Top Lounge",
+      "url": "https://www.ticketweb.com/event/reflections-afterparty-w-purelink-dj-three-top-lounge-tickets/14390504"
+    },
+    {
+      "id": "rZ7HnEZ1AfGIu0",
+      "name": "Michael J. Miles & Jill Kaeding",
+      "localDate": "2026-11-15",
+      "localTime": "13:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/michael-j-miles-jill-space-tickets/14328364"
+    },
+    {
+      "id": "rZ7HnEZ1A4varK",
+      "name": "Lucid Dreams w/ Griffin Maxwell Brooks",
+      "localDate": "2026-11-15",
+      "localTime": "17:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17_Skd",
+      "venueName": "Three Top Lounge",
+      "url": "https://www.ticketweb.com/event/lucid-dreams-w-griffin-maxwell-three-top-lounge-tickets/15049793"
+    },
+    {
+      "id": "rZ7HnEZ1AfGoO0",
+      "name": "Hamilton Leithauser + Rostam - The Joint Tour with Johanna Samuels",
+      "localDate": "2026-11-15",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/hamilton-leithauser-rostam-thalia-hall-tickets/14311824"
+    },
+    {
+      "id": "rZ7HnEZ1AfaM80",
+      "name": "Jason Narducy Book Release Show with Special Performance by Jason & Alison",
+      "localDate": "2026-11-15",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/jason-narducy-book-release-show-space-tickets/14277424"
+    },
+    {
+      "id": "rZ7HnEZ1AfFtGV",
+      "name": "Heavens To Betsy / NO MEN",
+      "localDate": "2026-11-15",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/heavens-to-betsy-no-empty-bottle-tickets/14229334"
+    },
+    {
+      "id": "rZ7HnEZ1Af18f0",
+      "name": "Laura Anglade",
+      "localDate": "2026-11-16",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/laura-anglade-space-tickets/14290524"
+    },
+    {
+      "id": "rZ7HnEZ1AfCeQ7",
+      "name": "FREE MONDAY w/ Rent Control featuring Nonnie Parry / Twice Told Tale / Timelife / Tender Object Systems",
+      "localDate": "2026-11-16",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/free-monday-w-rent-control-empty-bottle-tickets/14382684"
+    },
+    {
+      "id": "vvG18Z_2nCWJfG",
+      "name": "Ana Gasteyer: Sugar & Booze Holiday Spectacular",
+      "localDate": "2026-11-17",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917At8O",
+      "venueName": "Cahn Auditorium",
+      "url": "https://www.ticketmaster.com/ana-gasteyer-sugar-booze-holiday-spectacular-evanston-illinois-11-17-2026/event/040064FA8EF6650C"
+    },
+    {
+      "id": "rZ7HnEZ1Afudkf",
+      "name": "Porcelain / Zastava / Attic Reels",
+      "localDate": "2026-11-17",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/porcelain-zastava-attic-empty-bottle-tickets/14343194"
+    },
+    {
+      "id": "rZ7HnEZ1Afu_f0",
+      "name": "Mountainfilm On Tour",
+      "localDate": "2026-11-18",
+      "localTime": "18:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/mountainfilm-on-tour-thalia-hall-tickets/14359524"
+    },
+    {
+      "id": "rZ7HnEZ1AfaY87",
+      "name": "Humbird w. Bad Posture Club",
+      "localDate": "2026-11-18",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/humbird-w-bad-posture-club-space-tickets/14270404"
+    },
+    {
+      "id": "rZ7HnEZ1AfG377",
+      "name": "*SOLD OUT* Makaya McCraven",
+      "localDate": "2026-11-18",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/sold-out-makaya-mccraven-empty-bottle-tickets/14312104"
+    },
+    {
+      "id": "vvG18Z_1N6xT5T",
+      "name": "Slow Pulp",
+      "localDate": "2026-11-19",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/slow-pulp-chicago-illinois-11-19-2026/event/040064A8C78BF2FF"
+    },
+    {
+      "id": "rZ7HnEZ1AfFw0V",
+      "name": "Anthony Geraci Band ft. Oscar Wilson and Dave Specter",
+      "localDate": "2026-11-19",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/anthony-geraci-band-ft-oscar-space-tickets/14232934"
+    },
+    {
+      "id": "rZ7HnEZ1AfaZA7",
+      "name": "Edgar Alejandro",
+      "localDate": "2026-11-19",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/edgar-alejandro-thalia-hall-tickets/14240144"
+    },
+    {
+      "id": "rZ7HnEZ1AfPMkd",
+      "name": "Packaging / Discus / Leo",
+      "localDate": "2026-11-19",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/packaging-discus-leo-empty-bottle-tickets/14977183"
+    },
+    {
+      "id": "rZ7HnEZ1AfZE-f",
+      "name": "Hard Country Honky Tonk with The Hoyle Brothers",
+      "localDate": "2026-11-20",
+      "localTime": "17:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/hard-country-honky-tonk-with-empty-bottle-tickets/14027854"
+    },
+    {
+      "id": "rZ7HnEZ1AfGeFf",
+      "name": "The Flat Five",
+      "localDate": "2026-11-20",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/the-flat-five-space-tickets/14302214"
+    },
+    {
+      "id": "vvG18Z_GlvFWtL",
+      "name": "Fetty Wap: Nostalgia Tour",
+      "localDate": "2026-11-20",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/fetty-wap-nostalgia-tour-chicago-illinois-11-20-2026/event/040064CAC123DA5F"
+    },
+    {
+      "id": "rZ7HnEZ1Af0obS",
+      "name": "Squirrel Flower with Sour Widows and Free Range",
+      "localDate": "2026-11-20",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/squirrel-flower-with-sour-widows-thalia-hall-tickets/14911633"
+    },
+    {
+      "id": "rZ7HnEZ1Af13q7",
+      "name": "Omni (Deluxe 10 Year Anniversary)",
+      "localDate": "2026-11-20",
+      "localTime": "22:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/omni-deluxe-10-year-anniversary-empty-bottle-tickets/14292744"
+    },
+    {
+      "id": "rZ7HnEZ1AfCkv7",
+      "name": "Cocktail Class - Savory Cocktails",
+      "localDate": "2026-11-21",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/cocktail-class-savory-space-tickets/14386044"
+    },
+    {
+      "id": "rZ7HnEZ1AfCkvf",
+      "name": "Cocktail Class - Savory Cocktails",
+      "localDate": "2026-11-21",
+      "localTime": "13:45:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/cocktail-class-savory-space-tickets/14386054"
+    },
+    {
+      "id": "vvG18Z_CEj4L_D",
+      "name": "2026 Beyond Hunger Benefit with Death Cab for Cutie",
+      "localDate": "2026-11-21",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/2026-beyond-hunger-benefit-with-death-chicago-illinois-11-21-2026/event/040064E9DC55F67B"
+    },
+    {
+      "id": "Z7r9jZ1AAZ7_J",
+      "name": "Steve Poltz",
+      "localDate": "2026-11-21",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "ZFr9jZF6k7",
+      "venueName": "SPACE",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZ7_J"
+    },
+    {
+      "id": "rZ7HnEZ1Afa-0f",
+      "name": "Steve Poltz",
+      "localDate": "2026-11-21",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/steve-poltz-space-tickets/14261914"
+    },
+    {
+      "id": "vv1kvZvPeoGAG8zv4",
+      "name": "The Wood Brothers",
+      "localDate": "2026-11-21",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917At8O",
+      "venueName": "Cahn Auditorium",
+      "url": "https://www.ticketmaster.com/the-wood-brothers-evanston-illinois-11-21-2026/event/040065091C438055"
+    },
+    {
+      "id": "rZ7HnEZ1Afu7uf",
+      "name": "Blue Earth Sound (Album Release) / PXM / Ferny DJ Set",
+      "localDate": "2026-11-21",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/blue-earth-sound-album-release-empty-bottle-tickets/14344354"
+    },
+    {
+      "id": "rZ7HnEZ1Af1K_f",
+      "name": "The Rock and Roll Playhouse plays Music of Taylor Swift for Kids",
+      "localDate": "2026-11-22",
+      "localTime": "11:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/the-rock-and-roll-playhouse-thalia-hall-tickets/14293654"
+    },
+    {
+      "id": "rZ7HnEZ1AfGxCf",
+      "name": "Bears vs Saints At The Bottle",
+      "localDate": "2026-11-22",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/bears-vs-saints-at-the-empty-bottle-tickets/14322394"
+    },
+    {
+      "id": "rZ7HnEZ1AfCd00",
+      "name": "The Rock and Roll Playhouse plays Music of The Beatles + More for Kids",
+      "localDate": "2026-11-22",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/the-rock-and-roll-playhouse-space-tickets/14383924"
+    },
+    {
+      "id": "rZ7HnEZ1Af184V",
+      "name": "John McEuen of Nitty Gritty Dirt Band",
+      "localDate": "2026-11-22",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/john-mceuen-of-nitty-gritty-space-tickets/14290574"
+    },
+    {
+      "id": "rZ7HnEZ1AfOV7S",
+      "name": "Kyle Kinane",
+      "localDate": "2026-11-23",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/kyle-kinane-thalia-hall-tickets/14834133"
+    },
+    {
+      "id": "vv178ZbwGklTPKsE",
+      "name": "Sabaton: Legends on Tour",
+      "localDate": "2026-11-24",
+      "localTime": "19:00:00",
+      "status": "rescheduled",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/sabaton-legends-on-tour-chicago-illinois-11-24-2026/event/0400632AFF953C67"
+    },
+    {
+      "id": "rZ7HnEZ1AfuN77",
+      "name": "Nick Moss Band feat. Dennis Gruenling",
+      "localDate": "2026-11-24",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/nick-moss-band-feat-dennis-space-tickets/14363104"
+    },
+    {
+      "id": "rZ7HnEZ1AfOVAd",
+      "name": "Kyle Kinane",
+      "localDate": "2026-11-24",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/kyle-kinane-thalia-hall-tickets/14834143"
+    },
+    {
+      "id": "rZ7HnEZ1AfG717",
+      "name": "Rivkah Reyes / mozey",
+      "localDate": "2026-11-24",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/rivkah-reyes-mozey-empty-bottle-tickets/14304284"
+    },
+    {
+      "id": "rZ7HnEZ1AfuPuV",
+      "name": "E-town Get Down: 80's and 90's R&B and House",
+      "localDate": "2026-11-25",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/e-town-get-down-80s-space-tickets/14365374"
+    },
+    {
+      "id": "rZ7HnEZ1A4ZfCK",
+      "name": "Venna with Khal!l",
+      "localDate": "2026-11-25",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/venna-with-khall-thalia-hall-tickets/15014393"
+    },
+    {
+      "id": "rZ7HnEZ1AfGPuV",
+      "name": "Jaff Graffner (Album Release Show) / Earl Gary / AJ / Jacob Ciocci DJ Set",
+      "localDate": "2026-11-25",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/jaff-graffner-album-release-show-empty-bottle-tickets/14325374"
+    },
+    {
+      "id": "vvG18Z_CEvDGHI",
+      "name": "Daily Bread - Vanishing Point Tour - 2 Day GA Pass (Valid 11/27-11/28)",
+      "localDate": "2026-11-27",
+      "localTime": null,
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/daily-bread-vanishing-point-tour-2-chicago-illinois-11-27-2026/event/040064E9C1ECCF28"
+    },
+    {
+      "id": "rZ7HnEZ1AfZEj0",
+      "name": "Hard Country Honky Tonk with The Hoyle Brothers",
+      "localDate": "2026-11-27",
+      "localTime": "17:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/hard-country-honky-tonk-with-empty-bottle-tickets/14027724"
+    },
+    {
+      "id": "vvG18Z_CEvUGHA",
+      "name": "Daily Bread - Vanishing Point Tour",
+      "localDate": "2026-11-27",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/daily-bread-vanishing-point-tour-chicago-illinois-11-27-2026/event/040064E9C1D8CF05"
+    },
+    {
+      "id": "rZ7HnEZ1AfuJoV",
+      "name": "Brooklyn Charmers (Steely Dan Tribute)",
+      "localDate": "2026-11-27",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/brooklyn-charmers-steely-dan-tribute-space-tickets/14366474"
+    },
+    {
+      "id": "rZ7HnEZ1AfG_-0",
+      "name": "Pigface with En Esch and I Speak Machine",
+      "localDate": "2026-11-27",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/pigface-with-en-esch-and-thalia-hall-tickets/14319864"
+    },
+    {
+      "id": "rZ7HnEZ1AfGPa7",
+      "name": "*SOLD OUT* Petey USA / Linus Hablot",
+      "localDate": "2026-11-27",
+      "localTime": "22:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/sold-out-petey-usa-empty-bottle-tickets/14325244"
+    },
+    {
+      "id": "rZ7HnEZ1A4ZMPK",
+      "name": "Susan Werner (Early)",
+      "localDate": "2026-11-28",
+      "localTime": "17:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/susan-werner-early-space-tickets/15037953"
+    },
+    {
+      "id": "rZ7HnEZ1Af1bA7",
+      "name": "Standing On Christmas Live 2026 with Evrod Cassimy",
+      "localDate": "2026-11-28",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/standing-on-christmas-live-2026-thalia-hall-tickets/14298144"
+    },
+    {
+      "id": "vvG18Z_CEvzGH9",
+      "name": "Daily Bread - Vanishing Point Tour",
+      "localDate": "2026-11-28",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/daily-bread-vanishing-point-tour-chicago-illinois-11-28-2026/event/040064E9C1E0CF17"
+    },
+    {
+      "id": "rZ7HnEZ1A4ZMPS",
+      "name": "Susan Werner (Late)",
+      "localDate": "2026-11-28",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/susan-werner-late-space-tickets/15037973"
+    },
+    {
+      "id": "rZ7HnEZ1AfGt40",
+      "name": "*SOLD OUT* Petey USA / Linus Hablot",
+      "localDate": "2026-11-28",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/sold-out-petey-usa-empty-bottle-tickets/14329564"
+    },
+    {
+      "id": "vvG18Z_u5wRrjO",
+      "name": "Angine de Poitrine with zouz",
+      "localDate": "2026-11-29",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/angine-de-poitrine-with-zouz-chicago-illinois-11-29-2026/event/040064D2F2BDE720"
+    },
+    {
+      "id": "rZ7HnEZ1AfGFJf",
+      "name": "Cesar Rosas & The Chi-Town Playboys",
+      "localDate": "2026-11-29",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/cesar-rosas-the-chi-space-tickets/14308994"
+    },
+    {
+      "id": "rZ7HnEZ1AfGZ_7",
+      "name": "Kat Edmonson: Have Your Merry Christmas With Me",
+      "localDate": "2026-11-30",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/kat-edmonson-have-your-merry-space-tickets/14300644"
+    },
+    {
+      "id": "vvG18Z_u5wCX_d",
+      "name": "Angine de Poitrine with zouz",
+      "localDate": "2026-11-30",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/angine-de-poitrine-with-zouz-chicago-illinois-11-30-2026/event/040064D2F23BE643"
+    },
+    {
+      "id": "rZ7HnEZ1AfGZ17",
+      "name": "Michael Meyers Stand Up Comedy Special Recording (Early Show)",
+      "localDate": "2026-12-01",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/michael-meyers-stand-up-comedy-empty-bottle-tickets/14300284"
+    },
+    {
+      "id": "rZ7HnEZ1AfGZ1f",
+      "name": "Michael Meyers Stand Up Comedy Special Recording (Late Show)",
+      "localDate": "2026-12-01",
+      "localTime": "21:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/michael-meyers-stand-up-comedy-empty-bottle-tickets/14300294"
+    },
+    {
+      "id": "rZ7HnEZ1AfGV07",
+      "name": "Willy Porter & the Humans in a Room Quartet",
+      "localDate": "2026-12-02",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/willy-porter-the-humans-space-tickets/14334904"
+    },
+    {
+      "id": "rZ7HnEZ1AfFeGV",
+      "name": "Shintaro Sakamoto with Rudy De Anda",
+      "localDate": "2026-12-02",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/shintaro-sakamoto-with-rudy-de-thalia-hall-tickets/14202334"
+    },
+    {
+      "id": "rZ7HnEZ1AfuF0f",
+      "name": "Citric Dummies / Lost Legion / Lavender / The Alices",
+      "localDate": "2026-12-02",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/citric-dummies-lost-legion-empty-bottle-tickets/14348914"
+    },
+    {
+      "id": "rZ7HnEZ1AfG_Zf",
+      "name": "Heartless Bastards: ‘All This Time’ 20th Anniversary",
+      "localDate": "2026-12-03",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/heartless-bastards-all-this-time-space-tickets/14319014"
+    },
+    {
+      "id": "rZ7HnEZ1AfuUkf",
+      "name": "Krampusnacht feat. Wild Earp & the Free for Alls / Iris Marlowe / MEoW Puppet Show / MC Santa",
+      "localDate": "2026-12-03",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/krampusnacht-feat-wild-earp-empty-bottle-tickets/14376194"
+    },
+    {
+      "id": "rZ7HnEZ1AfZE0V",
+      "name": "Hard Country Honky Tonk with The Hoyle Brothers",
+      "localDate": "2026-12-04",
+      "localTime": "17:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/hard-country-honky-tonk-with-empty-bottle-tickets/14027934"
+    },
+    {
+      "id": "rZ7HnEZ1AfGIFf",
+      "name": "Mike Cooley (of Drive-By Truckers)",
+      "localDate": "2026-12-04",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/mike-cooley-of-drive-by-space-tickets/14328214"
+    },
+    {
+      "id": "rZ7HnEZ1Af0-Cd",
+      "name": "King Buffalo with Doom Gong",
+      "localDate": "2026-12-04",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/king-buffalo-with-doom-gong-thalia-hall-tickets/14921383"
+    },
+    {
+      "id": "vv167ZkfaAOZA2FA2k",
+      "name": "SOLD OUT - Laurie Berkner: A Holiday Concert (Early)",
+      "localDate": "2026-12-05",
+      "localTime": "11:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917At8O",
+      "venueName": "Cahn Auditorium",
+      "url": "https://www.ticketmaster.com/sold-out-laurie-berkner-a-holiday-evanston-illinois-12-05-2026/event/04006509160E74E5"
+    },
+    {
+      "id": "rZ7HnEZ1AfGZ40",
+      "name": "A Charlie Brown Christmas w. Kevin Fort Trio (Matinee)",
+      "localDate": "2026-12-05",
+      "localTime": "13:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/a-charlie-brown-christmas-w-space-tickets/14300564"
+    },
+    {
+      "id": "vv1A7ZkfbGkdZyQgq",
+      "name": "Laurie Berkner: A Holiday Concert (Late)",
+      "localDate": "2026-12-05",
+      "localTime": "15:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917At8O",
+      "venueName": "Cahn Auditorium",
+      "url": "https://www.ticketmaster.com/laurie-berkner-a-holiday-concert-late-evanston-illinois-12-05-2026/event/04006518C0E5AD5D"
+    },
+    {
+      "id": "rZ7HnEZ1Afuv1f",
+      "name": "Roses for the Roches ft. Nora O’Connor, Sima Cunningham, and Kelly Hogan",
+      "localDate": "2026-12-05",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/roses-for-the-roches-ft-space-tickets/14341294"
+    },
+    {
+      "id": "rZ7HnEZ1AfuZv7",
+      "name": "Dos Santos",
+      "localDate": "2026-12-05",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/dos-santos-empty-bottle-tickets/14340044"
+    },
+    {
+      "id": "rZ7HnEZ1AfCfAf",
+      "name": "House Calls 'In the Round' with Enzo Siragusa",
+      "localDate": "2026-12-05",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/house-calls-in-the-round-thalia-hall-tickets/14394154"
+    },
+    {
+      "id": "rZ7HnEZ1AfJ31K",
+      "name": "Brains On! LIVE: Your Brain is Magic! (Early)",
+      "localDate": "2026-12-06",
+      "localTime": "10:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/brains-on-live-your-brain-space-tickets/14992293"
+    },
+    {
+      "id": "rZ7HnEZ1AfGx87",
+      "name": "Bears vs Jaguars At The Bottle",
+      "localDate": "2026-12-06",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/bears-vs-jaguars-at-the-empty-bottle-tickets/14322404"
+    },
+    {
+      "id": "rZ7HnEZ1AfJ3oS",
+      "name": "Brains On! LIVE: Your Brain is Magic! (Late)",
+      "localDate": "2026-12-06",
+      "localTime": "13:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/brains-on-live-your-brain-space-tickets/14992473"
+    },
+    {
+      "id": "rZ7HnEZ1AfGsa0",
+      "name": "Roses for the Roches ft. Nora O’Connor, Sima Cunningham, and Kelly Hogan",
+      "localDate": "2026-12-06",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/roses-for-the-roches-ft-space-tickets/14331264"
+    },
+    {
+      "id": "rZ7HnEZ1A4ZfaS",
+      "name": "Jamila Woods: 10 Years of HEAVN featuring support from Ayanna Woods and a Sound Bath led by Shawnee Dez hosted by Raych Jackson",
+      "localDate": "2026-12-06",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/jamila-woods-10-years-of-thalia-hall-tickets/15014273"
+    },
+    {
+      "id": "rZ7HnEZ1A4Zw7S",
+      "name": "Whitmer Thomas with comedy from Clay Tatum",
+      "localDate": "2026-12-06",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/whitmer-thomas-with-comedy-from-empty-bottle-tickets/15032133"
+    },
+    {
+      "id": "rZ7HnEZ1AfuIof",
+      "name": "Wilco",
+      "localDate": "2026-12-07",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/wilco-thalia-hall-tickets/14368454"
+    },
+    {
+      "id": "rZ7HnEZ1AfuxP0",
+      "name": "Young Dro",
+      "localDate": "2026-12-07",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/young-dro-space-tickets/14362964"
+    },
+    {
+      "id": "rZ7HnEZ1AfuNO0",
+      "name": "FREE MONDAY w/ Answering Machines / Oildrum / Pebbles Inc",
+      "localDate": "2026-12-07",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/free-monday-w-answering-machines-empty-bottle-tickets/14363824"
+    },
+    {
+      "id": "rZ7HnEZ1Afut-0",
+      "name": "Elaine Dame: Cool Yule - A Holiday Jazz Collection",
+      "localDate": "2026-12-08",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/elaine-dame-cool-yule-space-tickets/14369864"
+    },
+    {
+      "id": "rZ7HnEZ1AfuIf0",
+      "name": "Wilco",
+      "localDate": "2026-12-08",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/wilco-thalia-hall-tickets/14368524"
+    },
+    {
+      "id": "rZ7HnEZ1AfuIk7",
+      "name": "Genre Is Death / The Art Gray Noizz Quintet",
+      "localDate": "2026-12-08",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/genre-is-death-the-empty-bottle-tickets/14368184"
+    },
+    {
+      "id": "rZ7HnEZ1AfGy70",
+      "name": "SistaStrings",
+      "localDate": "2026-12-09",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/sistastrings-space-tickets/14339124"
+    },
+    {
+      "id": "rZ7HnEZ1AfPEjS",
+      "name": "Jalen Ngonda: Doctrine of Love Tour with Brooke Combe",
+      "localDate": "2026-12-09",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/jalen-ngonda-doctrine-of-love-thalia-hall-tickets/14967733"
+    },
+    {
+      "id": "rZ7HnEZ1Afu7G7",
+      "name": "JEFF The Brotherhood",
+      "localDate": "2026-12-09",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/jeff-the-brotherhood-empty-bottle-tickets/14344304"
+    },
+    {
+      "id": "rZ7HnEZ1AfJ_bS",
+      "name": "Jon McLaughlin: Home For The Holidays",
+      "localDate": "2026-12-10",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/jon-mclaughlin-home-for-the-space-tickets/14999633"
+    },
+    {
+      "id": "rZ7HnEZ1A4Za_K",
+      "name": "*SOLD OUT* Thee Sinseers: Love Stories Tour with Taylor Williams",
+      "localDate": "2026-12-10",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/sold-out-thee-sinseers-love-thalia-hall-tickets/15009653"
+    },
+    {
+      "id": "rZ7HnEZ1AfZEjf",
+      "name": "Hard Country Honky Tonk with The Hoyle Brothers",
+      "localDate": "2026-12-11",
+      "localTime": "17:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/hard-country-honky-tonk-with-empty-bottle-tickets/14027714"
+    },
+    {
+      "id": "rZ7HnEZ1AfCAqV",
+      "name": "Funkadesi: 30th Anniversary Concert",
+      "localDate": "2026-12-11",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/funkadesi-30th-anniversary-concert-space-tickets/14385774"
+    },
+    {
+      "id": "rZ7HnEZ1AfGZjf",
+      "name": "Hollyy - 6th Annual Hollyy-Days Celebration with Nico Segal",
+      "localDate": "2026-12-11",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/hollyy-6th-annual-thalia-hall-tickets/14300714"
+    },
+    {
+      "id": "rZ7HnEZ1AfPv_K",
+      "name": "HEATHEN AXE / Prime Angel Weather / Mild Violence / DJ Bill Roe",
+      "localDate": "2026-12-11",
+      "localTime": "22:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/heathen-axe-prime-angel-empty-bottle-tickets/14941653"
+    },
+    {
+      "id": "rZ7HnEZ1AfC3Z0",
+      "name": "Intonation Student Showcase",
+      "localDate": "2026-12-12",
+      "localTime": "10:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/intonation-student-showcase-thalia-hall-tickets/14392024"
+    },
+    {
+      "id": "rZ7HnEZ1AfuKPV",
+      "name": "Handmade Market",
+      "localDate": "2026-12-12",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/handmade-market-empty-bottle-tickets/14353974"
+    },
+    {
+      "id": "rZ7HnEZ1AfCkZ0",
+      "name": "Cocktail Class - Fizzes",
+      "localDate": "2026-12-12",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/cocktail-class-fizzes-space-tickets/14386024"
+    },
+    {
+      "id": "rZ7HnEZ1Af1_pf",
+      "name": "A Charlie Brown Christmas w. Chris White Trio & Choir (Matinee)",
+      "localDate": "2026-12-12",
+      "localTime": "16:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/a-charlie-brown-christmas-w-space-tickets/14299594"
+    },
+    {
+      "id": "rZ7HnEZ1Af1_bV",
+      "name": "A Charlie Brown Christmas w. Chris White Trio & Choir (Early)",
+      "localDate": "2026-12-12",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/a-charlie-brown-christmas-w-space-tickets/14299634"
+    },
+    {
+      "id": "rZ7HnEZ1Af-e8S",
+      "name": "Temples: The BLISS Tour with GIFT",
+      "localDate": "2026-12-12",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/temples-the-bliss-tour-with-thalia-hall-tickets/14842433"
+    },
+    {
+      "id": "rZ7HnEZ1AfGJ0f",
+      "name": "FACS / PARKiNG / TEMPS.",
+      "localDate": "2026-12-12",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/facs-parking-temps-empty-bottle-tickets/14326914"
+    },
+    {
+      "id": "rZ7HnEZ1Af1__7",
+      "name": "A Charlie Brown Christmas w. Chris White Trio & Choir (Late)",
+      "localDate": "2026-12-12",
+      "localTime": "21:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/a-charlie-brown-christmas-w-space-tickets/14299644"
+    },
+    {
+      "id": "rZ7HnEZ1Af8a8V",
+      "name": "The Rock and Roll Playhouse plays Music of The Beatles for Kids",
+      "localDate": "2026-12-13",
+      "localTime": "11:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/the-rock-and-roll-playhouse-thalia-hall-tickets/14409434"
+    },
+    {
+      "id": "rZ7HnEZ1AfGx8f",
+      "name": "Bears vs Dolphins At The Bottle",
+      "localDate": "2026-12-13",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/bears-vs-dolphins-at-the-empty-bottle-tickets/14322414"
+    },
+    {
+      "id": "rZ7HnEZ1AfCkZV",
+      "name": "Cocktail Class - Fizzes",
+      "localDate": "2026-12-13",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/cocktail-class-fizzes-space-tickets/14386034"
+    },
+    {
+      "id": "rZ7HnEZ1Af1_j7",
+      "name": "A Charlie Brown Christmas w. Chris White Trio & Choir (Matinee)",
+      "localDate": "2026-12-13",
+      "localTime": "15:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/a-charlie-brown-christmas-w-space-tickets/14299704"
+    },
+    {
+      "id": "rZ7HnEZ1Af1_j0",
+      "name": "A Charlie Brown Christmas w. Chris White Trio & Choir (Early)",
+      "localDate": "2026-12-13",
+      "localTime": "18:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/a-charlie-brown-christmas-w-space-tickets/14299724"
+    },
+    {
+      "id": "rZ7HnEZ1Af1_q7",
+      "name": "A Charlie Brown Christmas w. Chris White Trio & Choir (Late)",
+      "localDate": "2026-12-13",
+      "localTime": "20:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/a-charlie-brown-christmas-w-space-tickets/14299744"
+    },
+    {
+      "id": "rZ7HnEZ1AfuNv7",
+      "name": "Blue Monday: Remembering Barrelhouse Chuck w. Lee Kanehira, Johnny Iguana, Gerry Hundt, Billy Flynn & friends",
+      "localDate": "2026-12-14",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/blue-monday-remembering-barrelhouse-chuck-space-tickets/14363044"
+    },
+    {
+      "id": "rZ7HnEZ1A4vK7d",
+      "name": "Songs to Light a Winter's Night ft. Katie Dahl, Anne Heaton, and Jenny Bienemann",
+      "localDate": "2026-12-15",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/songs-to-light-a-winters-space-tickets/15053103"
+    },
+    {
+      "id": "rZ7HnEZ1AfC4p7",
+      "name": "Leroy from the North with The Hoyle Brothers",
+      "localDate": "2026-12-16",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/leroy-from-the-north-with-space-tickets/14395584"
+    },
+    {
+      "id": "rZ7HnEZ1AfGIf7",
+      "name": "Dave Specter's Cool Azul Organ Trio ft. Chris Foreman and Greg Rockingham",
+      "localDate": "2026-12-17",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/dave-specters-cool-azul-organ-space-tickets/14328504"
+    },
+    {
+      "id": "rZ7HnEZ1AfGOf7",
+      "name": "Dogs In A Pile presented by Thalia Hall and Deep Cut - TWO DAY PASS",
+      "localDate": "2026-12-17",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/dogs-in-a-pile-presented-thalia-hall-tickets/14320504"
+    },
+    {
+      "id": "rZ7HnEZ1AfZEOV",
+      "name": "Hard Country Honky Tonk with The Hoyle Brothers",
+      "localDate": "2026-12-18",
+      "localTime": "17:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/hard-country-honky-tonk-with-empty-bottle-tickets/14027834"
+    },
+    {
+      "id": "rZ7HnEZ1AfGOof",
+      "name": "Dogs In A Pile presented by Thalia Hall and Deep Cut",
+      "localDate": "2026-12-18",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/dogs-in-a-pile-presented-thalia-hall-tickets/14320454"
+    },
+    {
+      "id": "vv1A7ZkfdGkd2ZjNJ",
+      "name": "Svdden Death",
+      "localDate": "2026-12-18",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/svdden-death-chicago-illinois-12-18-2026/event/04006503CF01C8E6"
+    },
+    {
+      "id": "rZ7HnEZ1AfaaOV",
+      "name": "Friendship and Charlotte Cornfield w. Fred Thomas",
+      "localDate": "2026-12-18",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/friendship-and-charlotte-cornfield-w-space-tickets/14249834"
+    },
+    {
+      "id": "rZ7HnEZ1AfCv1f",
+      "name": "Cocktail Class - Holiday Cocktails",
+      "localDate": "2026-12-19",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/cocktail-class-holiday-space-tickets/14381294"
+    },
+    {
+      "id": "rZ7HnEZ1Af1_q0",
+      "name": "A Charlie Brown Christmas w. Chris White Trio & Choir (Matinee)",
+      "localDate": "2026-12-19",
+      "localTime": "16:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/a-charlie-brown-christmas-w-space-tickets/14299764"
+    },
+    {
+      "id": "rZ7HnEZ1Af1_OV",
+      "name": "A Charlie Brown Christmas w. Chris White Trio & Choir (Early)",
+      "localDate": "2026-12-19",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/a-charlie-brown-christmas-w-space-tickets/14299834"
+    },
+    {
+      "id": "vvG18Z_26EhPpx",
+      "name": "93XRT Winter Jam Presents - Ratboys w/ special guests Friko and Florry",
+      "localDate": "2026-12-19",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/93xrt-winter-jam-presents-ratboys-w-chicago-illinois-12-19-2026/event/040064F1E76E55A2"
+    },
+    {
+      "id": "rZ7HnEZ1AfCkFf",
+      "name": "Pivot Gang x Saba - John Walt Day + 10 years of Bucket List Celebration",
+      "localDate": "2026-12-19",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/pivot-gang-x-saba-thalia-hall-tickets/14386214"
+    },
+    {
+      "id": "rZ7HnEZ1Af1_-f",
+      "name": "A Charlie Brown Christmas w. Chris White Trio & Choir (Late)",
+      "localDate": "2026-12-19",
+      "localTime": "21:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/a-charlie-brown-christmas-w-space-tickets/14299854"
+    },
+    {
+      "id": "rZ7HnEZ1AfGZb7",
+      "name": "A Charlie Brown Christmas w. Kevin Fort Trio (Matinee)",
+      "localDate": "2026-12-20",
+      "localTime": "13:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/a-charlie-brown-christmas-w-space-tickets/14300604"
+    },
+    {
+      "id": "rZ7HnEZ1AfCofV",
+      "name": "Joel Paterson Hi-Fi Christmas ft. Oscar Wilson (Early)",
+      "localDate": "2026-12-20",
+      "localTime": "18:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/joel-paterson-hi-fi-christmas-space-tickets/14391534"
+    },
+    {
+      "id": "rZ7HnEZ1A4Z0jN",
+      "name": "Mariachi Herencia De México - A Mariachi Christmas",
+      "localDate": "2026-12-20",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/mariachi-herencia-de-mxico-thalia-hall-tickets/15024723"
+    },
+    {
+      "id": "rZ7HnEZ1AfCo47",
+      "name": "Joel Paterson Hi-Fi Christmas ft. Oscar Wilson (Late)",
+      "localDate": "2026-12-20",
+      "localTime": "20:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/joel-paterson-hi-fi-christmas-space-tickets/14391544"
+    },
+    {
+      "id": "rZ7HnEZ1Af8kjf",
+      "name": "Oscarbate Film Collective Presents: The All-Chicago Tenants Alliance Fundraiser",
+      "localDate": "2026-12-20",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/oscarbate-film-collective-presents-the-empty-bottle-tickets/14406714"
+    },
+    {
+      "id": "rZ7HnEZ1AfCobf",
+      "name": "Ouray",
+      "localDate": "2026-12-21",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/ouray-space-tickets/14391614"
+    },
+    {
+      "id": "rZ7HnEZ1AfGZZV",
+      "name": "A Charlie Brown Christmas w. The Commercialists",
+      "localDate": "2026-12-22",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/a-charlie-brown-christmas-w-space-tickets/14300034"
+    },
+    {
+      "id": "rZ7HnEZ1AfuUA0",
+      "name": "John Prine Tribute with Illegal Smiles",
+      "localDate": "2026-12-23",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/john-prine-tribute-with-illegal-space-tickets/14376164"
+    },
+    {
+      "id": "rZ7HnEZ1A4vK4S",
+      "name": "Android Paranoid: Tribute to Radiohead",
+      "localDate": "2026-12-26",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/android-paranoid-tribute-to-radiohead-space-tickets/15053573"
+    },
+    {
+      "id": "rZ7HnEZ1AfGK_7",
+      "name": "Ben Kweller w. Case Oats",
+      "localDate": "2026-12-30",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/ben-kweller-w-case-oats-space-tickets/14313644"
+    },
+    {
+      "id": "vvG18Z_CM8Huwe",
+      "name": "Greensky Bluegrass 2 Day GA Pass (Valid 12/30 - 12/31)",
+      "localDate": "2026-12-30",
+      "localTime": "20:30:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/greensky-bluegrass-2-day-ga-pass-chicago-illinois-12-30-2026/event/040064EDD0F0DC82"
+    },
+    {
+      "id": "vvG18Z_CM8zcsl",
+      "name": "Greensky Bluegrass",
+      "localDate": "2026-12-30",
+      "localTime": "20:30:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/greensky-bluegrass-chicago-illinois-12-30-2026/event/040064EDD0E2DC6B"
+    },
+    {
+      "id": "rZ7HnEZ1AfC3pf",
+      "name": "The Spits / Uranium Club",
+      "localDate": "2026-12-31",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/the-spits-uranium-club-empty-bottle-tickets/14392594"
+    },
+    {
+      "id": "vvG18Z_CM8BqsV",
+      "name": "Greensky Bluegrass",
+      "localDate": "2026-12-31",
+      "localTime": "21:30:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/greensky-bluegrass-chicago-illinois-12-31-2026/event/040064EDD0E9DC74"
+    },
+    {
+      "id": "rZ7HnEZ1AfGK_V",
+      "name": "Ben Kweller w. Case Oats - NYE Show",
+      "localDate": "2026-12-31",
+      "localTime": "21:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/ben-kweller-w-case-oats-space-tickets/14313674"
+    },
+    {
+      "id": "rZ7HnEZ1AfuIA7",
+      "name": "Don't Want To Go Fest 4 featuring Pure Intention / Heet Deth / Babe Report / Bog Power",
+      "localDate": "2027-01-08",
+      "localTime": "22:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/dont-want-to-go-fest-empty-bottle-tickets/14368144"
+    },
+    {
+      "id": "rZ7HnEZ1AfufZ7",
+      "name": "Handmade Market",
+      "localDate": "2027-01-09",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/handmade-market-empty-bottle-tickets/14354004"
+    },
+    {
+      "id": "rZ7HnEZ1AfuIA0",
+      "name": "Don't Want To Go Fest 4 featuring daarling / Plum / Tapegun / Snowcuffs",
+      "localDate": "2027-01-09",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/dont-want-to-go-fest-empty-bottle-tickets/14368164"
+    },
+    {
+      "id": "rZ7HnEZ1A4vKAN",
+      "name": "Blue Monday: Freddie Dixon Blues Band",
+      "localDate": "2027-01-11",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/blue-monday-freddie-dixon-blues-space-tickets/15053163"
+    },
+    {
+      "id": "rZ7HnEZ1Afu_j7",
+      "name": "FREE MONDAY w/ Astrobrite / Fauvely / Emily Jane Powers",
+      "localDate": "2027-01-11",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/free-monday-w-astrobrite-empty-bottle-tickets/14359704"
+    },
+    {
+      "id": "rZ7HnEZ1A4vKFS",
+      "name": "Antje Duvekot and David Berkeley",
+      "localDate": "2027-01-13",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/antje-duvekot-and-david-berkeley-space-tickets/15053233"
+    },
+    {
+      "id": "rZ7HnEZ1Af8ej0",
+      "name": "MANCHO sounds / Charlie Otto / Ryan Behling / Chromabeats",
+      "localDate": "2027-01-13",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/mancho-sounds-charlie-otto-empty-bottle-tickets/14402724"
+    },
+    {
+      "id": "rZ7HnEZ1AfC4_f",
+      "name": "Great Moments in Vinyl tells the stories of The Doobie Brothers",
+      "localDate": "2027-01-14",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/great-moments-in-vinyl-tells-space-tickets/14395654"
+    },
+    {
+      "id": "vv1kvZvPodGA5phKX",
+      "name": "The Roots",
+      "localDate": "2027-01-15",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/the-roots-chicago-illinois-01-15-2027/event/040065443B59B4FE"
+    },
+    {
+      "id": "rZ7HnEZ1Afq4FS",
+      "name": "Anna von Hausswolff presented by Thalia Hall and Empty Bottle",
+      "localDate": "2027-01-15",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/anna-von-hausswolff-presented-by-thalia-hall-tickets/14755233"
+    },
+    {
+      "id": "rZ7HnEZ1Af400d",
+      "name": "*MOVED TO THALIA HALL* Anna von Hausswolff",
+      "localDate": "2027-01-15",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/moved-to-thalia-hall-anna-empty-bottle-tickets/14564903"
+    },
+    {
+      "id": "rZ7HnEZ1AfGIO0",
+      "name": "Wild Horses w. The Spine Stealers",
+      "localDate": "2027-01-16",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/wild-horses-w-the-spine-space-tickets/14328824"
+    },
+    {
+      "id": "rZ7HnEZ1AfC4bV",
+      "name": "Story Jam Presents: A Celebration of MLK Day",
+      "localDate": "2027-01-18",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/story-jam-presents-a-celebration-space-tickets/14395634"
+    },
+    {
+      "id": "rZ7HnEZ1AfGI_7",
+      "name": "Warren Zevon Birthday Bash",
+      "localDate": "2027-01-20",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/warren-zevon-birthday-bash-space-tickets/14328644"
+    },
+    {
+      "id": "rZ7HnEZ1AfuKFf",
+      "name": "Jess Williamson with Riley Downing",
+      "localDate": "2027-01-21",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/jess-williamson-with-riley-downing-thalia-hall-tickets/14353214"
+    },
+    {
+      "id": "vv178Z_3GkzcW09p",
+      "name": "TWINSICK's Good Company 2027",
+      "localDate": "2027-01-22",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/twinsicks-good-company-2027-chicago-illinois-01-22-2027/event/0400652E2DF645D6"
+    },
+    {
+      "id": "rZ7HnEZ1A4vKaS",
+      "name": "The Western Elstons",
+      "localDate": "2027-01-22",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/the-western-elstons-space-tickets/15053273"
+    },
+    {
+      "id": "rZ7HnEZ1AfuKbV",
+      "name": "State Radio Performing Us Against The Crown",
+      "localDate": "2027-01-22",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/state-radio-performing-us-against-thalia-hall-tickets/14353634"
+    },
+    {
+      "id": "rZ7HnEZ1Afut-V",
+      "name": "S.G. Goodman Presents: Visiting Hours, An Evening of Songs and Stories",
+      "localDate": "2027-01-23",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/sg-goodman-presents-visiting-hours-space-tickets/14369874"
+    },
+    {
+      "id": "rZ7HnEZ1AfuZF7",
+      "name": "Willi Carlisle",
+      "localDate": "2027-01-23",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/willi-carlisle-empty-bottle-tickets/14340204"
+    },
+    {
+      "id": "rZ7HnEZ1AfCZJf",
+      "name": "Alela Diane w. Shannon Lay",
+      "localDate": "2027-01-25",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/alela-diane-w-shannon-lay-space-tickets/14380994"
+    },
+    {
+      "id": "rZ7HnEZ1AfuYef",
+      "name": "Matt the Electrician and Tim Easton",
+      "localDate": "2027-01-26",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/matt-the-electrician-and-tim-space-tickets/14370094"
+    },
+    {
+      "id": "rZ7HnEZ1Afk3u0",
+      "name": "The War And Treaty",
+      "localDate": "2027-01-27",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/the-war-and-treaty-thalia-hall-tickets/14192364"
+    },
+    {
+      "id": "rZ7HnEZ1AfGY_V",
+      "name": "Yonder Mountain String Band",
+      "localDate": "2027-01-27",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/yonder-mountain-string-band-space-tickets/14330674"
+    },
+    {
+      "id": "rZ7HnEZ1AfGYQf",
+      "name": "Yonder Mountain String Band",
+      "localDate": "2027-01-28",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/yonder-mountain-string-band-space-tickets/14330694"
+    },
+    {
+      "id": "rZ7HnEZ1AfuYf7",
+      "name": "Hot Flash Dance feat. DJ Mary Nisi. A Punctual Party for Rowdy Women",
+      "localDate": "2027-01-29",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/hot-flash-dance-feat-dj-space-tickets/14370504"
+    },
+    {
+      "id": "rZ7HnEZ1Af8F0f",
+      "name": "Empty Bottle presents KatzPascale w/ ridgeclub @ Epiphany Center for the Arts",
+      "localDate": "2027-01-30",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17bbPI",
+      "venueName": "Epiphany Center for the Arts",
+      "url": "https://www.ticketweb.com/event/empty-bottle-presents-katzpascale-w-epiphany-center-for-the-arts-tickets/14408914"
+    },
+    {
+      "id": "rZ7HnEZ1AfGNFf",
+      "name": "Rayland Baxter: The True Violet Tour with Dylan LeBlanc",
+      "localDate": "2027-02-01",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/rayland-baxter-the-true-violet-thalia-hall-tickets/14323214"
+    },
+    {
+      "id": "rZ7HnEZ1Afk4ZV",
+      "name": "Ibeyi",
+      "localDate": "2027-02-02",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/ibeyi-thalia-hall-tickets/14195034"
+    },
+    {
+      "id": "rZ7HnEZ1Afu0v0",
+      "name": "Girl Ultra: el Tour de RRRomeo",
+      "localDate": "2027-02-03",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/girl-ultra-el-tour-de-empty-bottle-tickets/14364064"
+    },
+    {
+      "id": "rZ7HnEZ1AfGK8f",
+      "name": "Tophouse",
+      "localDate": "2027-02-05",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/tophouse-thalia-hall-tickets/14313414"
+    },
+    {
+      "id": "rZ7HnEZ1Af8a77",
+      "name": "Lydia Loveless",
+      "localDate": "2027-02-06",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/lydia-loveless-space-tickets/14409104"
+    },
+    {
+      "id": "rZ7HnEZ1AfGZG0",
+      "name": "La Roux - The Old Flames Tour",
+      "localDate": "2027-02-09",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/la-roux-the-thalia-hall-tickets/14300324"
+    },
+    {
+      "id": "rZ7HnEZ1AfGIx7",
+      "name": "American Patchwork Quartet",
+      "localDate": "2027-02-10",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/american-patchwork-quartet-space-tickets/14328884"
+    },
+    {
+      "id": "rZ7HnEZ1AfufZf",
+      "name": "Handmade Market",
+      "localDate": "2027-02-13",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/handmade-market-empty-bottle-tickets/14354014"
+    },
+    {
+      "id": "vv1A7Zk49GkdpMBhC",
+      "name": "Meshuggah: The Forty-Year Anomaly w/ Testament & Blood Incantation",
+      "localDate": "2027-02-17",
+      "localTime": "18:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/meshuggah-the-fortyyear-anomaly-w-testament-chicago-illinois-02-17-2027/event/04006557D6DFA6CE"
+    },
+    {
+      "id": "rZ7HnEZ1AfG3F0",
+      "name": "Rhiannon Giddens",
+      "localDate": "2027-02-17",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/rhiannon-giddens-thalia-hall-tickets/14312224"
+    },
+    {
+      "id": "vv178Z_KGkS8xDpl",
+      "name": "Chelsea Cutler - IS THIS THE END? Tour",
+      "localDate": "2027-02-19",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/chelsea-cutler-is-this-the-end-chicago-illinois-02-19-2027/event/0400653CD08BB5AB"
+    },
+    {
+      "id": "rZ7HnEZ1A4v8qS",
+      "name": "Dogpark with Never Ending Fall",
+      "localDate": "2027-02-19",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/dogpark-with-never-ending-fall-thalia-hall-tickets/15050773"
+    },
+    {
+      "id": "vv1A7Zk4vGkdZyDmT",
+      "name": "LEVEL UP - The Ritual Tour 2027 - Chicago",
+      "localDate": "2027-02-20",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/level-up-the-ritual-tour-2027-chicago-illinois-02-20-2027/event/04006541C0E7BBBF"
+    },
+    {
+      "id": "rZ7HnEZ1AfGOb0",
+      "name": "*SOLD OUT* Ikkimel: Gib Mir Die Bratwurst Tour",
+      "localDate": "2027-02-20",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/sold-out-ikkimel-gib-mir-thalia-hall-tickets/14320624"
+    },
+    {
+      "id": "vv1A7Zk4fGkembJ7D",
+      "name": "CHVRCHES LIVE 2027",
+      "localDate": "2027-02-25",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/chvrches-live-2027-chicago-illinois-02-25-2027/event/04006554AE62613B"
+    },
+    {
+      "id": "rZ7HnEZ1AfJo4d",
+      "name": "Vansire",
+      "localDate": "2027-02-25",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/vansire-thalia-hall-tickets/14991543"
+    },
+    {
+      "id": "rZ7HnEZ1AfGZZ0",
+      "name": "Andrew Sa 'In the Round'",
+      "localDate": "2027-02-26",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/andrew-sa-in-the-round-thalia-hall-tickets/14300024"
+    },
+    {
+      "id": "vv1A7Zk49GkdwciqA",
+      "name": "MERSIV - Nostalgia Tour",
+      "localDate": "2027-02-27",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/mersiv-nostalgia-tour-chicago-illinois-02-27-2027/event/04006557F2B6C745"
+    },
+    {
+      "id": "rZ7HnEZ1Afu7rf",
+      "name": "Mei Semones + aron!",
+      "localDate": "2027-03-02",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/mei-semones-aron-thalia-hall-tickets/14344794"
+    },
+    {
+      "id": "rZ7HnEZ1AfaMA7",
+      "name": "Dessa w. Aby Wolf and Eric Mayson welcomed by CHIRP Radio",
+      "localDate": "2027-03-04",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/dessa-w-aby-wolf-and-space-tickets/14277144"
+    },
+    {
+      "id": "vv1A7ZkfMGkdNj7uD",
+      "name": "Cory Wong feat. dodie with PREP",
+      "localDate": "2027-03-05",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/cory-wong-feat-dodie-with-prep-chicago-illinois-03-05-2027/event/04006537E370437B"
+    },
+    {
+      "id": "rZ7HnEZ1Af0UON",
+      "name": "*SOLD OUT* Way Dynamic / Star Moles",
+      "localDate": "2027-03-05",
+      "localTime": "22:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/sold-out-way-dynamic-empty-bottle-tickets/14936823"
+    },
+    {
+      "id": "rZ7HnEZ1A4Z_jK",
+      "name": "Brendan James w. Jordan Frye",
+      "localDate": "2027-03-08",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/brendan-james-w-jordan-frye-space-tickets/15019713"
+    },
+    {
+      "id": "vv1A7Zk4FGkdb7-A0",
+      "name": "Remi Wolf: The Mud Tour",
+      "localDate": "2027-03-09",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/remi-wolf-the-mud-tour-chicago-illinois-03-09-2027/event/04006548D8121164"
+    },
+    {
+      "id": "rZ7HnEZ1AfFy0f",
+      "name": "SOLD OUT - Dan and Peggy Reeder",
+      "localDate": "2027-03-10",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/sold-out-dan-space-tickets/14239914"
+    },
+    {
+      "id": "vv1A7Zk4FGkdbs-1K",
+      "name": " Remi Wolf - The Mud Tour",
+      "localDate": "2027-03-10",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/remi-wolf-the-mud-tour-chicago-illinois-03-10-2027/event/04006548D8C61293"
+    },
+    {
+      "id": "rZ7HnEZ1AfPs7d",
+      "name": "Conor Moore: Me, myself and IRELAND",
+      "localDate": "2027-03-11",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/conor-moore-me-myself-and-thalia-hall-tickets/14971103"
+    },
+    {
+      "id": "rZ7HnEZ1AfufZ0",
+      "name": "Handmade Market",
+      "localDate": "2027-03-13",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/handmade-market-empty-bottle-tickets/14354024"
+    },
+    {
+      "id": "vv178Z_KGkwL0UjC",
+      "name": "Michael Shannon & Jason Narducy and Friends play R.E.M.'s Document",
+      "localDate": "2027-03-13",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/michael-shannon-jason-narducy-and-friends-chicago-illinois-03-13-2027/event/0400653C9F93670E"
+    },
+    {
+      "id": "rZ7HnEZ1AfG_G7",
+      "name": "Jake Xerxes Fussell",
+      "localDate": "2027-03-13",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/jake-xerxes-fussell-empty-bottle-tickets/14319304"
+    },
+    {
+      "id": "rZ7HnEZ1AfC770",
+      "name": "Caroline Rose - Uncle Carols World of Fun Tour",
+      "localDate": "2027-03-16",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/caroline-rose-uncle-thalia-hall-tickets/14384124"
+    },
+    {
+      "id": "rZ7HnEZ1Afxfqd",
+      "name": "Death From Above 1979 - Private Lives Tour",
+      "localDate": "2027-03-17",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/death-from-above-1979-thalia-hall-tickets/14894743"
+    },
+    {
+      "id": "rZ7HnEZ1AfCdr7",
+      "name": "Cory Branan (solo)",
+      "localDate": "2027-03-19",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/cory-branan-solo-space-tickets/14383784"
+    },
+    {
+      "id": "rZ7HnEZ1AfCKo7",
+      "name": "Alex Cameron",
+      "localDate": "2027-03-19",
+      "localTime": "22:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/alex-cameron-empty-bottle-tickets/14393444"
+    },
+    {
+      "id": "rZ7HnEZ1AfGOF7",
+      "name": "The Lemonheads",
+      "localDate": "2027-03-20",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/the-lemonheads-empty-bottle-tickets/14320204"
+    },
+    {
+      "id": "rZ7HnEZ1AfCdO7",
+      "name": "D.K. Harrell",
+      "localDate": "2027-03-21",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/dk-harrell-space-tickets/14383804"
+    },
+    {
+      "id": "vv178Z_fGkTl4FP8",
+      "name": "Lucky Daye - The ALOUD! Tour",
+      "localDate": "2027-03-27",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/lucky-daye-the-aloud-tour-chicago-illinois-03-27-2027/event/0400654FEB548950"
+    },
+    {
+      "id": "rZ7HnEZ1Afuwbf",
+      "name": "Ruby Waters - Suppre$$ions North America Tour",
+      "localDate": "2027-03-29",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/ruby-waters-suppreions-thalia-hall-tickets/14372614"
+    },
+    {
+      "id": "vvG18Z_1MEDmi2",
+      "name": "Julian Lage Quartet feat. John Medeski, Jorge Roeder, Kenny Wollesen",
+      "localDate": "2027-03-29",
+      "localTime": "20:00:00",
+      "status": "rescheduled",
+      "venueId": "KovZ917At8O",
+      "venueName": "Cahn Auditorium",
+      "url": "https://www.ticketmaster.com/julian-lage-quartet-feat-john-medeski-evanston-illinois-03-29-2027/event/040064ADE7EEEB0F"
+    },
+    {
+      "id": "rZ7HnEZ1Afuvp7",
+      "name": "Gustavo Santaolalla Ronroco North America Tour 2027",
+      "localDate": "2027-04-05",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/gustavo-santaolalla-ronroco-north-america-thalia-hall-tickets/14341584"
+    },
+    {
+      "id": "rZ7HnEZ1AfCob0",
+      "name": "Destroy Boys with illuminati hotties and The Rat Utopia Experiment presented by Thalia Hall & Riot Fest",
+      "localDate": "2027-04-06",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/destroy-boys-with-illuminati-hotties-thalia-hall-tickets/14391624"
+    },
+    {
+      "id": "rZ7HnEZ1AfCAf7",
+      "name": "Cornelius",
+      "localDate": "2027-04-07",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/cornelius-thalia-hall-tickets/14385504"
+    },
+    {
+      "id": "rZ7HnEZ1A4Zf8N",
+      "name": "Iceage",
+      "localDate": "2027-04-08",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/iceage-thalia-hall-tickets/15014423"
+    },
+    {
+      "id": "Z7r9jZ1AA7N7K",
+      "name": "Fenne Lily",
+      "localDate": "2027-04-08",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "ZFr9jZ6dF1",
+      "venueName": "The Empty Bottle",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1AA7N7K"
+    },
+    {
+      "id": "rZ7HnEZ1AfC71f",
+      "name": "Fenne Lily / villagerrr",
+      "localDate": "2027-04-08",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/fenne-lily-villagerrr-empty-bottle-tickets/14384294"
+    },
+    {
+      "id": "rZ7HnEZ1AfCp7f",
+      "name": "DIIV - ZIRP! The World with Grumpy",
+      "localDate": "2027-04-09",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/diiv-zirp-the-thalia-hall-tickets/14396114"
+    },
+    {
+      "id": "rZ7HnEZ1AfufZV",
+      "name": "Handmade Market",
+      "localDate": "2027-04-10",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/handmade-market-empty-bottle-tickets/14354034"
+    },
+    {
+      "id": "vv1A7Zkf0Gkeg3XcY",
+      "name": "Beirut",
+      "localDate": "2027-04-10",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/beirut-chicago-illinois-04-10-2027/event/04006524B54BEB70"
+    },
+    {
+      "id": "vvG18Z_5OUBqPe",
+      "name": "Nothing But Thieves: The Stray Dogs World Tour",
+      "localDate": "2027-04-12",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/nothing-but-thieves-the-stray-dogs-chicago-illinois-04-12-2027/event/040064B836E9D942"
+    },
+    {
+      "id": "vv1A7Zk49GkdedFI4",
+      "name": "The Plot In You: WORLD TOUR: PART 1",
+      "localDate": "2027-04-15",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/the-plot-in-you-world-tour-chicago-illinois-04-15-2027/event/04006557C20C8A15"
+    },
+    {
+      "id": "rZ7HnEZ1Af8eA0",
+      "name": "Gyasi",
+      "localDate": "2027-04-15",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/gyasi-empty-bottle-tickets/14402164"
+    },
+    {
+      "id": "rZ7HnEZ1Af7f-V",
+      "name": "Foy Vance World Tour: Celebrating \"The Wake\" And The Songs of \"If\" with Bonnie Bishop and Ryan McMullan",
+      "localDate": "2027-04-17",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/foy-vance-world-tour-celebrating-thalia-hall-tickets/14114874"
+    },
+    {
+      "id": "vv1k8Z_f1pG7V9F6",
+      "name": "Warren Zeiders: No Brakes Tour",
+      "localDate": "2027-04-17",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/warren-zeiders-no-brakes-tour-chicago-illinois-04-17-2027/event/0400654296D17207"
+    },
+    {
+      "id": "vv178Z_4GkUvAe26",
+      "name": "Tally Hall",
+      "localDate": "2027-04-18",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/tally-hall-chicago-illinois-04-18-2027/event/0400655D811423C7"
+    },
+    {
+      "id": "vv118Z_f13ZkQ9",
+      "name": "LOLA YOUNG - Everything Begins",
+      "localDate": "2027-04-20",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/lola-young-everything-begins-chicago-illinois-04-20-2027/event/0400654292006697"
+    },
+    {
+      "id": "vv1kvZvPoeGA5wBhb",
+      "name": "LOLA YOUNG - Everything Begins",
+      "localDate": "2027-04-21",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "KovZ917AI5F",
+      "venueName": "The Salt Shed Indoors (Shed)",
+      "url": "https://www.ticketmaster.com/lola-young-everything-begins-chicago-illinois-04-21-2027/event/040065442BCBA6D8"
+    },
+    {
+      "id": "rZ7HnEZ1AfutP7",
+      "name": "We Three",
+      "localDate": "2027-04-22",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/we-three-space-tickets/14369944"
+    },
+    {
+      "id": "rZ7HnEZ1AfCdOV",
+      "name": "The Last Revel",
+      "localDate": "2027-04-23",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/the-last-revel-space-tickets/14383834"
+    },
+    {
+      "id": "rZ7HnEZ1AfOVFS",
+      "name": "French 79 - CLOSE TO THE GIANTS",
+      "localDate": "2027-04-27",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/french-79-close-thalia-hall-tickets/14834233"
+    },
+    {
+      "id": "vv1k8Z_fkfG7zJno",
+      "name": "Fontaines D.C.",
+      "localDate": "2027-04-28",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917Amf0",
+      "venueName": "The Salt Shed Outdoors (Fairgrounds)",
+      "url": "https://www.ticketmaster.com/fontaines-dc-chicago-illinois-04-28-2027/event/0400654194E26A91"
+    },
+    {
+      "id": "rZ7HnEZ1AfCd0f",
+      "name": "The Sheepdogs - Out All Night Tour",
+      "localDate": "2027-04-30",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/the-sheepdogs-out-thalia-hall-tickets/14383914"
+    },
+    {
+      "id": "rZ7HnEZ1AfC737",
+      "name": "Clap Your Hands Say Yeah",
+      "localDate": "2027-05-08",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17aJq7",
+      "venueName": "Thalia Hall",
+      "url": "https://www.ticketweb.com/event/clap-your-hands-say-yeah-thalia-hall-tickets/14384484"
+    },
+    {
+      "id": "rZ7HnEZ1AfOUjS",
+      "name": "The Limiñanas / Native Sun",
+      "localDate": "2027-05-09",
+      "localTime": "21:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZaeqM",
+      "venueName": "Empty Bottle",
+      "url": "https://www.ticketweb.com/event/the-limianas-native-sun-empty-bottle-tickets/14836733"
+    },
+    {
+      "id": "vvG18Z_5UYQl9j",
+      "name": "FKJ - TYBER TOUR",
+      "localDate": "2027-05-27",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917Amf0",
+      "venueName": "The Salt Shed Outdoors (Fairgrounds)",
+      "url": "https://www.ticketmaster.com/fkj-tyber-tour-chicago-illinois-05-27-2027/event/040064BDB06AB5DC"
+    },
+    {
+      "id": "rZ7HnEZ1Af0t4S",
+      "name": "Winnetka Music Festival 2027 - (2-Day Pass)",
+      "localDate": "2027-06-18",
+      "localTime": "16:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17fSA4",
+      "venueName": "Downtown Winnetka",
+      "url": "https://www.ticketweb.com/event/winnetka-music-festival-2027-downtown-winnetka-tickets/14929573"
+    },
+    {
+      "id": "vv178Z_3Gkmzl562",
+      "name": "Yacht Rock Revue - 2 DAY PASS (6.25-6.26)",
+      "localDate": "2027-06-25",
+      "localTime": "18:30:00",
+      "status": "onsale",
+      "venueId": "KovZ917Amf0",
+      "venueName": "The Salt Shed Outdoors (Fairgrounds)",
+      "url": "https://www.ticketmaster.com/yacht-rock-revue-2-day-pass-chicago-illinois-06-25-2027/event/0400652BB8ACB1CF"
+    },
+    {
+      "id": "rZ7HnEZ1AfGa17",
+      "name": "Evanston Folk Festival 2027 (2-Day Pass)",
+      "localDate": "2027-09-11",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17QpPS",
+      "venueName": "Dawes Park ",
+      "url": "https://www.ticketweb.com/event/evanston-folk-festival-2027-2-dawes-park-tickets/14309284"
+    },
+    {
+      "id": "rZ7HnEZ1AfuY8f",
+      "name": "LEVI.SCT - LEVITATE TOUR",
+      "localDate": "2027-09-29",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/levisct-levitate-tour-space-tickets/14370414"
+    }
+  ]
+}
