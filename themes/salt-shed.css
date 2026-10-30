@@ -117,6 +117,79 @@
   color: #2d3b97;
 }
 
+/* Presale: info-button label override and modal signup section */
+[data-venue-events] .ve-events__card-venue-label--presale,
+[data-ve-curated] .ve-events__card-venue-label--presale {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.ve-events__modal-section--presale {
+  background: rgba(45, 59, 151, 0.06);
+  border-left: 3px solid #2d3b97;
+  padding: 16px;
+  border-radius: 2px;
+}
+
+.ve-events__modal-presale-date {
+  font-weight: 700;
+  color: #2d3b97;
+}
+
+.ve-events__presale-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.ve-events__presale-input {
+  flex: 1 1 200px;
+  padding: 8px 12px;
+  background: #FBF6DF;
+  border: 1px solid rgba(45, 59, 151, 0.3);
+  border-radius: 2px;
+  font-family: purista-web, 'Rajdhani', sans-serif;
+  color: #2d3b97;
+}
+
+.ve-events__presale-input::placeholder {
+  color: rgba(45, 59, 151, 0.4);
+}
+
+.ve-events__presale-submit {
+  padding: 8px 20px;
+  background: #2d3b97;
+  color: #FBF6DF;
+  border: none;
+  border-radius: 0;
+  font-family: purista-web, 'Rajdhani', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+.ve-events__presale-submit:hover {
+  background: #232E78;
+}
+
+.ve-events__presale-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ve-events__presale-status {
+  flex-basis: 100%;
+  margin: 8px 0 0;
+  font-size: 0.9em;
+  color: #2d3b97;
+}
+
+.ve-events__presale-status:empty {
+  display: none;
+}
+
 [data-venue-events] .ve-events__loading {
   background: #2D3B97;
   color: #F8D89E;

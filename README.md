@@ -140,6 +140,25 @@ The curated strip defaults (label, heading level, event option, column count) ar
 - Override defaults on a specific element: `<div data-ve-curated data-label="Just Announced" data-count="8">`
 - Or change the loader defaults so every `[data-ve-curated]` on the site picks them up.
 
+### Wire up the presale signup form
+
+Events with an upcoming Ticketmaster presale window (and a public on-sale that hasn't started yet) are auto-flagged by the loader. Their info button shows "Presale" instead of the venue short name, and the info modal gets a top section with the presale start time and an email signup form.
+
+To make the form actually send signups to Hive, edit the `PRESALE` config object near the top of `venues/salt-shed.js`:
+
+```javascript
+var PRESALE = {
+  // ...
+  hiveFormAction: 'https://forms.hive.co/...',  // paste Hive form action URL
+  hiveListField: 'list_id',                     // field name Hive expects
+  hiveListValue: 'YOUR_LIST_ID',                // value to send
+};
+```
+
+The form POSTs `email` plus the list field via `fetch` in `no-cors` mode. Until `hiveFormAction` is set, the section still renders (with copy + presale date), but submitting shows a "not configured" notice instead of sending.
+
+Detection logic lives in `detectPresaleStart()` — it picks the earliest currently-active or upcoming presale window from `event.sales.presales[]`, and skips events whose public on-sale has already started.
+
 ### Reactivate "Presale" / "Rescheduled" badges
 
 Badges are off by default as of widget 1.3.18. To turn them back on for a specific widget, add `data-show-status-badges="true"` to the element. The theme CSS for the badges (in `themes/salt-shed.css`) is still in place.
