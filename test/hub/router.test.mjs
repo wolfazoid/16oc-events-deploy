@@ -1,13 +1,20 @@
-import { test, afterEach } from "node:test";
+import { test, beforeEach, afterEach } from "node:test";
 import assert from "node:assert/strict";
 import worker from "../../worker/src/index.js";
 import { SITES } from "../../worker/src/sites.js";
 
 const realFetch = globalThis.fetch;
 const realCaches = globalThis.caches;
+const realConsoleError = console.error;
+let errorLogs = [];
+beforeEach(() => {
+  errorLogs = [];
+  console.error = (...args) => errorLogs.push(args);
+});
 afterEach(() => {
   globalThis.fetch = realFetch;
   globalThis.caches = realCaches;
+  console.error = realConsoleError;
 });
 
 function memoryCache() {
@@ -218,6 +225,18 @@ test("KV failure on events returns 503 JSON with CORS", async () => {
   assert.equal(res.headers.get("access-control-allow-origin"), "*");
   const text = await res.text();
   assert.deepEqual(JSON.parse(text), { error: "unavailable" });
+});
+
+test("swallowed errors are logged by name only", async () => {
+  const kv = throwingKV();
+  kv.get = async () => {
+    const err = new TypeError("kv down SECRETKEY-saltshed");
+    throw err;
+  };
+  const res = await get("/v1/saltshed/events.json", mkEnv(kv));
+  assert.equal(res.status, 503);
+  assert.deepEqual(await res.json(), { error: "unavailable" });
+  assert.deepEqual(errorLogs, [["hub request failed", "TypeError"]]);
 });
 
 test("KV failure on health returns 503 JSON with CORS", async () => {

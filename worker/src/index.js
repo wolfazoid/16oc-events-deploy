@@ -97,7 +97,9 @@ export default {
   async fetch(request, env, ctx) {
     try {
       return await handle(request, env, ctx);
-    } catch {
+    } catch (err) {
+      // Name only: messages can contain upstream URLs with an API key.
+      console.error('hub request failed', err && err.name);
       return jsonResponse({ error: 'unavailable' }, 503);
     }
   },
