@@ -1,0 +1,1112 @@
+{
+  "site": "space",
+  "capturedAt": "2026-10-30T19:04:29.769Z",
+  "page": "https://evanstonspace.com/all-shows",
+  "code": "legacy/event-feed-widget.venues.live-2026-10-30.js (venue 'space') + legacy/recently-announced-widget.live-2026-10-30.js (feed 'space')",
+  "requests": [
+    {
+      "params": {
+        "size": "200",
+        "venueId": "KovZpakJQe,KovZ917At8O"
+      },
+      "totalElements": 103,
+      "pagesRead": 1,
+      "truncated": false
+    },
+    {
+      "params": {
+        "size": "200",
+        "promoterId": "6085"
+      },
+      "totalElements": 2,
+      "pagesRead": 1,
+      "truncated": false
+    }
+  ],
+  "listHasDescription": 0,
+  "listEventCount": 105,
+  "events": [
+    {
+      "id": "rZ7HnEZ1AfGv07",
+      "name": "Rocks Off: Rolling Stones Tribute",
+      "localDate": "2026-10-30",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/rocks-off-rolling-stones-tribute-space-tickets/14301904"
+    },
+    {
+      "id": "rZ7HnEZ1AfGpF7",
+      "name": "The Soul Avengers: Tribute to Classic Soul",
+      "localDate": "2026-10-31",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/the-soul-avengers-tribute-to-space-tickets/14316204"
+    },
+    {
+      "id": "rZ7HnEZ1AfaMPf",
+      "name": "Davis Plays Davis: A Tribute to Miles Davis by Orbert Davis",
+      "localDate": "2026-11-01",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/davis-plays-davis-a-tribute-space-tickets/14277954"
+    },
+    {
+      "id": "vvG18Z_uFjaSTT",
+      "name": "Béla Fleck: My Bluegrass Heart",
+      "localDate": "2026-11-04",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917At8O",
+      "venueName": "Cahn Auditorium",
+      "url": "https://www.ticketmaster.com/bela-fleck-my-bluegrass-heart-evanston-illinois-11-04-2026/event/040064D21C273FFF"
+    },
+    {
+      "id": "rZ7HnEZ1Af06PS",
+      "name": "Teddy Thompson w. Jenna Nicholls",
+      "localDate": "2026-11-05",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/teddy-thompson-w-jenna-nicholls-space-tickets/14907973"
+    },
+    {
+      "id": "rZ7HnEZ1AfaMG0",
+      "name": "Jon Cleary & The Absolute Monster Gentlemen",
+      "localDate": "2026-11-06",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/jon-cleary-the-absolute-space-tickets/14277324"
+    },
+    {
+      "id": "rZ7HnEZ1AfCkZf",
+      "name": "Cocktail Class - Fall Cocktails",
+      "localDate": "2026-11-07",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/cocktail-class-fall-space-tickets/14386014"
+    },
+    {
+      "id": "rZ7HnEZ1AfaMuf",
+      "name": "Jon Cleary & The Absolute Monster Gentlemen",
+      "localDate": "2026-11-07",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/jon-cleary-the-absolute-space-tickets/14277354"
+    },
+    {
+      "id": "rZ7HnEZ1Af0MZd",
+      "name": "Adam Ezra Group w. Sirsy",
+      "localDate": "2026-11-08",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/adam-ezra-group-w-sirsy-space-tickets/14937003"
+    },
+    {
+      "id": "rZ7HnEZ1A4Zt0d",
+      "name": "SOLD OUT - Bill Callahan (solo) w. Rick Maguire (of Pile)",
+      "localDate": "2026-11-09",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/sold-out-bill-space-tickets/15029903"
+    },
+    {
+      "id": "rZ7HnEZ1AfOIJK",
+      "name": "Tyler Ballgame w. Evan Blix",
+      "localDate": "2026-11-10",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/tyler-ballgame-w-evan-blix-space-tickets/14828993"
+    },
+    {
+      "id": "rZ7HnEZ1Afk9rf",
+      "name": "Great Lake Swimmers w. Colleen Brown",
+      "localDate": "2026-11-11",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/great-lake-swimmers-w-colleen-space-tickets/14197794"
+    },
+    {
+      "id": "rZ7HnEZ1A4Zv8d",
+      "name": "John Carroll Kirby w. Erin Durant",
+      "localDate": "2026-11-12",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/john-carroll-kirby-w-erin-space-tickets/15001403"
+    },
+    {
+      "id": "rZ7HnEZ1AfPS_N",
+      "name": "Tyrone Wells w. Tony Lucca",
+      "localDate": "2026-11-13",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/tyrone-wells-w-tony-lucca-space-tickets/14973663"
+    },
+    {
+      "id": "rZ7HnEZ1Af0-vd",
+      "name": "Amythyst Kiah w. Buffalo Nichols",
+      "localDate": "2026-11-14",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/amythyst-kiah-w-buffalo-nichols-space-tickets/14921043"
+    },
+    {
+      "id": "Z7r9jZ1A70t3k",
+      "name": "Amythyst Kiah",
+      "localDate": "2026-11-14",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "ZFr9jZF6k7",
+      "venueName": "SPACE",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1A70t3k"
+    },
+    {
+      "id": "rZ7HnEZ1AfGIu0",
+      "name": "Michael J. Miles & Jill Kaeding",
+      "localDate": "2026-11-15",
+      "localTime": "13:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/michael-j-miles-jill-space-tickets/14328364"
+    },
+    {
+      "id": "rZ7HnEZ1AfaM80",
+      "name": "Jason Narducy Book Release Show with Special Performance by Jason & Alison",
+      "localDate": "2026-11-15",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/jason-narducy-book-release-show-space-tickets/14277424"
+    },
+    {
+      "id": "rZ7HnEZ1Af18f0",
+      "name": "Laura Anglade",
+      "localDate": "2026-11-16",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/laura-anglade-space-tickets/14290524"
+    },
+    {
+      "id": "vvG18Z_2nCWJfG",
+      "name": "Ana Gasteyer: Sugar & Booze Holiday Spectacular",
+      "localDate": "2026-11-17",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917At8O",
+      "venueName": "Cahn Auditorium",
+      "url": "https://www.ticketmaster.com/ana-gasteyer-sugar-booze-holiday-spectacular-evanston-illinois-11-17-2026/event/040064FA8EF6650C"
+    },
+    {
+      "id": "rZ7HnEZ1AfaY87",
+      "name": "Humbird w. Bad Posture Club",
+      "localDate": "2026-11-18",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/humbird-w-bad-posture-club-space-tickets/14270404"
+    },
+    {
+      "id": "rZ7HnEZ1AfFw0V",
+      "name": "Anthony Geraci Band ft. Oscar Wilson and Dave Specter",
+      "localDate": "2026-11-19",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/anthony-geraci-band-ft-oscar-space-tickets/14232934"
+    },
+    {
+      "id": "rZ7HnEZ1AfGeFf",
+      "name": "The Flat Five",
+      "localDate": "2026-11-20",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/the-flat-five-space-tickets/14302214"
+    },
+    {
+      "id": "rZ7HnEZ1AfCkv7",
+      "name": "Cocktail Class - Savory Cocktails",
+      "localDate": "2026-11-21",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/cocktail-class-savory-space-tickets/14386044"
+    },
+    {
+      "id": "rZ7HnEZ1AfCkvf",
+      "name": "Cocktail Class - Savory Cocktails",
+      "localDate": "2026-11-21",
+      "localTime": "13:45:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/cocktail-class-savory-space-tickets/14386054"
+    },
+    {
+      "id": "vv1kvZvPeoGAG8zv4",
+      "name": "The Wood Brothers",
+      "localDate": "2026-11-21",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917At8O",
+      "venueName": "Cahn Auditorium",
+      "url": "https://www.ticketmaster.com/the-wood-brothers-evanston-illinois-11-21-2026/event/040065091C438055"
+    },
+    {
+      "id": "Z7r9jZ1AAZ7_J",
+      "name": "Steve Poltz",
+      "localDate": "2026-11-21",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "ZFr9jZF6k7",
+      "venueName": "SPACE",
+      "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZ7_J"
+    },
+    {
+      "id": "rZ7HnEZ1Afa-0f",
+      "name": "Steve Poltz",
+      "localDate": "2026-11-21",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/steve-poltz-space-tickets/14261914"
+    },
+    {
+      "id": "rZ7HnEZ1AfCd00",
+      "name": "The Rock and Roll Playhouse plays Music of The Beatles + More for Kids",
+      "localDate": "2026-11-22",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/the-rock-and-roll-playhouse-space-tickets/14383924"
+    },
+    {
+      "id": "rZ7HnEZ1Af184V",
+      "name": "John McEuen of Nitty Gritty Dirt Band",
+      "localDate": "2026-11-22",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/john-mceuen-of-nitty-gritty-space-tickets/14290574"
+    },
+    {
+      "id": "rZ7HnEZ1AfuN77",
+      "name": "Nick Moss Band feat. Dennis Gruenling",
+      "localDate": "2026-11-24",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/nick-moss-band-feat-dennis-space-tickets/14363104"
+    },
+    {
+      "id": "rZ7HnEZ1AfuPuV",
+      "name": "E-town Get Down: 80's and 90's R&B and House",
+      "localDate": "2026-11-25",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/e-town-get-down-80s-space-tickets/14365374"
+    },
+    {
+      "id": "rZ7HnEZ1AfuJoV",
+      "name": "Brooklyn Charmers (Steely Dan Tribute)",
+      "localDate": "2026-11-27",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/brooklyn-charmers-steely-dan-tribute-space-tickets/14366474"
+    },
+    {
+      "id": "rZ7HnEZ1A4ZMPK",
+      "name": "Susan Werner (Early)",
+      "localDate": "2026-11-28",
+      "localTime": "17:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/susan-werner-early-space-tickets/15037953"
+    },
+    {
+      "id": "rZ7HnEZ1A4ZMPS",
+      "name": "Susan Werner (Late)",
+      "localDate": "2026-11-28",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/susan-werner-late-space-tickets/15037973"
+    },
+    {
+      "id": "rZ7HnEZ1AfGFJf",
+      "name": "Cesar Rosas & The Chi-Town Playboys",
+      "localDate": "2026-11-29",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/cesar-rosas-the-chi-space-tickets/14308994"
+    },
+    {
+      "id": "rZ7HnEZ1AfGZ_7",
+      "name": "Kat Edmonson: Have Your Merry Christmas With Me",
+      "localDate": "2026-11-30",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/kat-edmonson-have-your-merry-space-tickets/14300644"
+    },
+    {
+      "id": "rZ7HnEZ1AfGV07",
+      "name": "Willy Porter & the Humans in a Room Quartet",
+      "localDate": "2026-12-02",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/willy-porter-the-humans-space-tickets/14334904"
+    },
+    {
+      "id": "rZ7HnEZ1AfG_Zf",
+      "name": "Heartless Bastards: ‘All This Time’ 20th Anniversary",
+      "localDate": "2026-12-03",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/heartless-bastards-all-this-time-space-tickets/14319014"
+    },
+    {
+      "id": "rZ7HnEZ1AfGIFf",
+      "name": "Mike Cooley (of Drive-By Truckers)",
+      "localDate": "2026-12-04",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/mike-cooley-of-drive-by-space-tickets/14328214"
+    },
+    {
+      "id": "vv167ZkfaAOZA2FA2k",
+      "name": "SOLD OUT - Laurie Berkner: A Holiday Concert (Early)",
+      "localDate": "2026-12-05",
+      "localTime": "11:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917At8O",
+      "venueName": "Cahn Auditorium",
+      "url": "https://www.ticketmaster.com/sold-out-laurie-berkner-a-holiday-evanston-illinois-12-05-2026/event/04006509160E74E5"
+    },
+    {
+      "id": "rZ7HnEZ1AfGZ40",
+      "name": "A Charlie Brown Christmas w. Kevin Fort Trio (Matinee)",
+      "localDate": "2026-12-05",
+      "localTime": "13:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/a-charlie-brown-christmas-w-space-tickets/14300564"
+    },
+    {
+      "id": "vv1A7ZkfbGkdZyQgq",
+      "name": "Laurie Berkner: A Holiday Concert (Late)",
+      "localDate": "2026-12-05",
+      "localTime": "15:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917At8O",
+      "venueName": "Cahn Auditorium",
+      "url": "https://www.ticketmaster.com/laurie-berkner-a-holiday-concert-late-evanston-illinois-12-05-2026/event/04006518C0E5AD5D"
+    },
+    {
+      "id": "rZ7HnEZ1Afuv1f",
+      "name": "Roses for the Roches ft. Nora O’Connor, Sima Cunningham, and Kelly Hogan",
+      "localDate": "2026-12-05",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/roses-for-the-roches-ft-space-tickets/14341294"
+    },
+    {
+      "id": "rZ7HnEZ1AfJ31K",
+      "name": "Brains On! LIVE: Your Brain is Magic! (Early)",
+      "localDate": "2026-12-06",
+      "localTime": "10:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/brains-on-live-your-brain-space-tickets/14992293"
+    },
+    {
+      "id": "rZ7HnEZ1AfJ3oS",
+      "name": "Brains On! LIVE: Your Brain is Magic! (Late)",
+      "localDate": "2026-12-06",
+      "localTime": "13:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/brains-on-live-your-brain-space-tickets/14992473"
+    },
+    {
+      "id": "rZ7HnEZ1AfGsa0",
+      "name": "Roses for the Roches ft. Nora O’Connor, Sima Cunningham, and Kelly Hogan",
+      "localDate": "2026-12-06",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/roses-for-the-roches-ft-space-tickets/14331264"
+    },
+    {
+      "id": "rZ7HnEZ1AfuxP0",
+      "name": "Young Dro",
+      "localDate": "2026-12-07",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/young-dro-space-tickets/14362964"
+    },
+    {
+      "id": "rZ7HnEZ1Afut-0",
+      "name": "Elaine Dame: Cool Yule - A Holiday Jazz Collection",
+      "localDate": "2026-12-08",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/elaine-dame-cool-yule-space-tickets/14369864"
+    },
+    {
+      "id": "rZ7HnEZ1AfGy70",
+      "name": "SistaStrings",
+      "localDate": "2026-12-09",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/sistastrings-space-tickets/14339124"
+    },
+    {
+      "id": "rZ7HnEZ1AfJ_bS",
+      "name": "Jon McLaughlin: Home For The Holidays",
+      "localDate": "2026-12-10",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/jon-mclaughlin-home-for-the-space-tickets/14999633"
+    },
+    {
+      "id": "rZ7HnEZ1AfCAqV",
+      "name": "Funkadesi: 30th Anniversary Concert",
+      "localDate": "2026-12-11",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/funkadesi-30th-anniversary-concert-space-tickets/14385774"
+    },
+    {
+      "id": "rZ7HnEZ1AfCkZ0",
+      "name": "Cocktail Class - Fizzes",
+      "localDate": "2026-12-12",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/cocktail-class-fizzes-space-tickets/14386024"
+    },
+    {
+      "id": "rZ7HnEZ1Af1_pf",
+      "name": "A Charlie Brown Christmas w. Chris White Trio & Choir (Matinee)",
+      "localDate": "2026-12-12",
+      "localTime": "16:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/a-charlie-brown-christmas-w-space-tickets/14299594"
+    },
+    {
+      "id": "rZ7HnEZ1Af1_bV",
+      "name": "A Charlie Brown Christmas w. Chris White Trio & Choir (Early)",
+      "localDate": "2026-12-12",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/a-charlie-brown-christmas-w-space-tickets/14299634"
+    },
+    {
+      "id": "rZ7HnEZ1Af1__7",
+      "name": "A Charlie Brown Christmas w. Chris White Trio & Choir (Late)",
+      "localDate": "2026-12-12",
+      "localTime": "21:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/a-charlie-brown-christmas-w-space-tickets/14299644"
+    },
+    {
+      "id": "rZ7HnEZ1AfCkZV",
+      "name": "Cocktail Class - Fizzes",
+      "localDate": "2026-12-13",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/cocktail-class-fizzes-space-tickets/14386034"
+    },
+    {
+      "id": "rZ7HnEZ1Af1_j7",
+      "name": "A Charlie Brown Christmas w. Chris White Trio & Choir (Matinee)",
+      "localDate": "2026-12-13",
+      "localTime": "15:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/a-charlie-brown-christmas-w-space-tickets/14299704"
+    },
+    {
+      "id": "rZ7HnEZ1Af1_j0",
+      "name": "A Charlie Brown Christmas w. Chris White Trio & Choir (Early)",
+      "localDate": "2026-12-13",
+      "localTime": "18:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/a-charlie-brown-christmas-w-space-tickets/14299724"
+    },
+    {
+      "id": "rZ7HnEZ1Af1_q7",
+      "name": "A Charlie Brown Christmas w. Chris White Trio & Choir (Late)",
+      "localDate": "2026-12-13",
+      "localTime": "20:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/a-charlie-brown-christmas-w-space-tickets/14299744"
+    },
+    {
+      "id": "rZ7HnEZ1AfuNv7",
+      "name": "Blue Monday: Remembering Barrelhouse Chuck w. Lee Kanehira, Johnny Iguana, Gerry Hundt, Billy Flynn & friends",
+      "localDate": "2026-12-14",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/blue-monday-remembering-barrelhouse-chuck-space-tickets/14363044"
+    },
+    {
+      "id": "rZ7HnEZ1A4vK7d",
+      "name": "Songs to Light a Winter's Night ft. Katie Dahl, Anne Heaton, and Jenny Bienemann",
+      "localDate": "2026-12-15",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/songs-to-light-a-winters-space-tickets/15053103"
+    },
+    {
+      "id": "rZ7HnEZ1AfC4p7",
+      "name": "Leroy from the North with The Hoyle Brothers",
+      "localDate": "2026-12-16",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/leroy-from-the-north-with-space-tickets/14395584"
+    },
+    {
+      "id": "rZ7HnEZ1AfGIf7",
+      "name": "Dave Specter's Cool Azul Organ Trio ft. Chris Foreman and Greg Rockingham",
+      "localDate": "2026-12-17",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/dave-specters-cool-azul-organ-space-tickets/14328504"
+    },
+    {
+      "id": "rZ7HnEZ1AfaaOV",
+      "name": "Friendship and Charlotte Cornfield w. Fred Thomas",
+      "localDate": "2026-12-18",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/friendship-and-charlotte-cornfield-w-space-tickets/14249834"
+    },
+    {
+      "id": "rZ7HnEZ1AfCv1f",
+      "name": "Cocktail Class - Holiday Cocktails",
+      "localDate": "2026-12-19",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/cocktail-class-holiday-space-tickets/14381294"
+    },
+    {
+      "id": "rZ7HnEZ1Af1_q0",
+      "name": "A Charlie Brown Christmas w. Chris White Trio & Choir (Matinee)",
+      "localDate": "2026-12-19",
+      "localTime": "16:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/a-charlie-brown-christmas-w-space-tickets/14299764"
+    },
+    {
+      "id": "rZ7HnEZ1Af1_OV",
+      "name": "A Charlie Brown Christmas w. Chris White Trio & Choir (Early)",
+      "localDate": "2026-12-19",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/a-charlie-brown-christmas-w-space-tickets/14299834"
+    },
+    {
+      "id": "rZ7HnEZ1Af1_-f",
+      "name": "A Charlie Brown Christmas w. Chris White Trio & Choir (Late)",
+      "localDate": "2026-12-19",
+      "localTime": "21:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/a-charlie-brown-christmas-w-space-tickets/14299854"
+    },
+    {
+      "id": "rZ7HnEZ1AfGZb7",
+      "name": "A Charlie Brown Christmas w. Kevin Fort Trio (Matinee)",
+      "localDate": "2026-12-20",
+      "localTime": "13:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/a-charlie-brown-christmas-w-space-tickets/14300604"
+    },
+    {
+      "id": "rZ7HnEZ1AfCofV",
+      "name": "Joel Paterson Hi-Fi Christmas ft. Oscar Wilson (Early)",
+      "localDate": "2026-12-20",
+      "localTime": "18:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/joel-paterson-hi-fi-christmas-space-tickets/14391534"
+    },
+    {
+      "id": "rZ7HnEZ1AfCo47",
+      "name": "Joel Paterson Hi-Fi Christmas ft. Oscar Wilson (Late)",
+      "localDate": "2026-12-20",
+      "localTime": "20:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/joel-paterson-hi-fi-christmas-space-tickets/14391544"
+    },
+    {
+      "id": "rZ7HnEZ1AfCobf",
+      "name": "Ouray",
+      "localDate": "2026-12-21",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/ouray-space-tickets/14391614"
+    },
+    {
+      "id": "rZ7HnEZ1AfGZZV",
+      "name": "A Charlie Brown Christmas w. The Commercialists",
+      "localDate": "2026-12-22",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/a-charlie-brown-christmas-w-space-tickets/14300034"
+    },
+    {
+      "id": "rZ7HnEZ1AfuUA0",
+      "name": "John Prine Tribute with Illegal Smiles",
+      "localDate": "2026-12-23",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/john-prine-tribute-with-illegal-space-tickets/14376164"
+    },
+    {
+      "id": "rZ7HnEZ1A4vK4S",
+      "name": "Android Paranoid: Tribute to Radiohead",
+      "localDate": "2026-12-26",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/android-paranoid-tribute-to-radiohead-space-tickets/15053573"
+    },
+    {
+      "id": "rZ7HnEZ1AfGK_7",
+      "name": "Ben Kweller w. Case Oats",
+      "localDate": "2026-12-30",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/ben-kweller-w-case-oats-space-tickets/14313644"
+    },
+    {
+      "id": "rZ7HnEZ1AfGK_V",
+      "name": "Ben Kweller w. Case Oats - NYE Show",
+      "localDate": "2026-12-31",
+      "localTime": "21:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/ben-kweller-w-case-oats-space-tickets/14313674"
+    },
+    {
+      "id": "rZ7HnEZ1A4vKAN",
+      "name": "Blue Monday: Freddie Dixon Blues Band",
+      "localDate": "2027-01-11",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/blue-monday-freddie-dixon-blues-space-tickets/15053163"
+    },
+    {
+      "id": "rZ7HnEZ1A4vKFS",
+      "name": "Antje Duvekot and David Berkeley",
+      "localDate": "2027-01-13",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/antje-duvekot-and-david-berkeley-space-tickets/15053233"
+    },
+    {
+      "id": "rZ7HnEZ1AfC4_f",
+      "name": "Great Moments in Vinyl tells the stories of The Doobie Brothers",
+      "localDate": "2027-01-14",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/great-moments-in-vinyl-tells-space-tickets/14395654"
+    },
+    {
+      "id": "rZ7HnEZ1AfGIO0",
+      "name": "Wild Horses w. The Spine Stealers",
+      "localDate": "2027-01-16",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/wild-horses-w-the-spine-space-tickets/14328824"
+    },
+    {
+      "id": "rZ7HnEZ1AfC4bV",
+      "name": "Story Jam Presents: A Celebration of MLK Day",
+      "localDate": "2027-01-18",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/story-jam-presents-a-celebration-space-tickets/14395634"
+    },
+    {
+      "id": "rZ7HnEZ1AfGI_7",
+      "name": "Warren Zevon Birthday Bash",
+      "localDate": "2027-01-20",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/warren-zevon-birthday-bash-space-tickets/14328644"
+    },
+    {
+      "id": "rZ7HnEZ1A4vKaS",
+      "name": "The Western Elstons",
+      "localDate": "2027-01-22",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/the-western-elstons-space-tickets/15053273"
+    },
+    {
+      "id": "rZ7HnEZ1Afut-V",
+      "name": "S.G. Goodman Presents: Visiting Hours, An Evening of Songs and Stories",
+      "localDate": "2027-01-23",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/sg-goodman-presents-visiting-hours-space-tickets/14369874"
+    },
+    {
+      "id": "rZ7HnEZ1AfCZJf",
+      "name": "Alela Diane w. Shannon Lay",
+      "localDate": "2027-01-25",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/alela-diane-w-shannon-lay-space-tickets/14380994"
+    },
+    {
+      "id": "rZ7HnEZ1AfuYef",
+      "name": "Matt the Electrician and Tim Easton",
+      "localDate": "2027-01-26",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/matt-the-electrician-and-tim-space-tickets/14370094"
+    },
+    {
+      "id": "rZ7HnEZ1AfGY_V",
+      "name": "Yonder Mountain String Band",
+      "localDate": "2027-01-27",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/yonder-mountain-string-band-space-tickets/14330674"
+    },
+    {
+      "id": "rZ7HnEZ1AfGYQf",
+      "name": "Yonder Mountain String Band",
+      "localDate": "2027-01-28",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/yonder-mountain-string-band-space-tickets/14330694"
+    },
+    {
+      "id": "rZ7HnEZ1AfuYf7",
+      "name": "Hot Flash Dance feat. DJ Mary Nisi. A Punctual Party for Rowdy Women",
+      "localDate": "2027-01-29",
+      "localTime": "19:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/hot-flash-dance-feat-dj-space-tickets/14370504"
+    },
+    {
+      "id": "rZ7HnEZ1Af8a77",
+      "name": "Lydia Loveless",
+      "localDate": "2027-02-06",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/lydia-loveless-space-tickets/14409104"
+    },
+    {
+      "id": "rZ7HnEZ1AfGIx7",
+      "name": "American Patchwork Quartet",
+      "localDate": "2027-02-10",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/american-patchwork-quartet-space-tickets/14328884"
+    },
+    {
+      "id": "rZ7HnEZ1AfaMA7",
+      "name": "Dessa w. Aby Wolf and Eric Mayson welcomed by CHIRP Radio",
+      "localDate": "2027-03-04",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/dessa-w-aby-wolf-and-space-tickets/14277144"
+    },
+    {
+      "id": "rZ7HnEZ1A4Z_jK",
+      "name": "Brendan James w. Jordan Frye",
+      "localDate": "2027-03-08",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/brendan-james-w-jordan-frye-space-tickets/15019713"
+    },
+    {
+      "id": "rZ7HnEZ1AfFy0f",
+      "name": "SOLD OUT - Dan and Peggy Reeder",
+      "localDate": "2027-03-10",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/sold-out-dan-space-tickets/14239914"
+    },
+    {
+      "id": "rZ7HnEZ1AfCdr7",
+      "name": "Cory Branan (solo)",
+      "localDate": "2027-03-19",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/cory-branan-solo-space-tickets/14383784"
+    },
+    {
+      "id": "rZ7HnEZ1AfCdO7",
+      "name": "D.K. Harrell",
+      "localDate": "2027-03-21",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/dk-harrell-space-tickets/14383804"
+    },
+    {
+      "id": "vvG18Z_1MEDmi2",
+      "name": "Julian Lage Quartet feat. John Medeski, Jorge Roeder, Kenny Wollesen",
+      "localDate": "2027-03-29",
+      "localTime": "20:00:00",
+      "status": "rescheduled",
+      "venueId": "KovZ917At8O",
+      "venueName": "Cahn Auditorium",
+      "url": "https://www.ticketmaster.com/julian-lage-quartet-feat-john-medeski-evanston-illinois-03-29-2027/event/040064ADE7EEEB0F"
+    },
+    {
+      "id": "rZ7HnEZ1AfutP7",
+      "name": "We Three",
+      "localDate": "2027-04-22",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/we-three-space-tickets/14369944"
+    },
+    {
+      "id": "rZ7HnEZ1AfCdOV",
+      "name": "The Last Revel",
+      "localDate": "2027-04-23",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/the-last-revel-space-tickets/14383834"
+    },
+    {
+      "id": "rZ7HnEZ1Af0t4S",
+      "name": "Winnetka Music Festival 2027 - (2-Day Pass)",
+      "localDate": "2027-06-18",
+      "localTime": "16:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17fSA4",
+      "venueName": "Downtown Winnetka",
+      "url": "https://www.ticketweb.com/event/winnetka-music-festival-2027-downtown-winnetka-tickets/14929573"
+    },
+    {
+      "id": "rZ7HnEZ1AfGa17",
+      "name": "Evanston Folk Festival 2027 (2-Day Pass)",
+      "localDate": "2027-09-11",
+      "localTime": "12:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZ17QpPS",
+      "venueName": "Dawes Park ",
+      "url": "https://www.ticketweb.com/event/evanston-folk-festival-2027-2-dawes-park-tickets/14309284"
+    },
+    {
+      "id": "rZ7HnEZ1AfuY8f",
+      "name": "LEVI.SCT - LEVITATE TOUR",
+      "localDate": "2027-09-29",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/levisct-levitate-tour-space-tickets/14370414"
+    }
+  ],
+  "recentlyAnnounced": [
+    {
+      "id": "rZ7HnEZ1Af8a77",
+      "name": "Lydia Loveless",
+      "localDate": "2027-02-06",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/lydia-loveless-space-tickets/14409104"
+    },
+    {
+      "id": "rZ7HnEZ1A4vK4S",
+      "name": "Android Paranoid: Tribute to Radiohead",
+      "localDate": "2026-12-26",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/android-paranoid-tribute-to-radiohead-space-tickets/15053573"
+    },
+    {
+      "id": "rZ7HnEZ1A4vK7d",
+      "name": "Songs to Light a Winter's Night ft. Katie Dahl, Anne Heaton, and Jenny Bienemann",
+      "localDate": "2026-12-15",
+      "localTime": "19:30:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/songs-to-light-a-winters-space-tickets/15053103"
+    },
+    {
+      "id": "rZ7HnEZ1A4vKAN",
+      "name": "Blue Monday: Freddie Dixon Blues Band",
+      "localDate": "2027-01-11",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "rZ7HnEZa5n1",
+      "venueName": "SPACE",
+      "url": "https://www.ticketweb.com/event/blue-monday-freddie-dixon-blues-space-tickets/15053163"
+    }
+  ]
+}

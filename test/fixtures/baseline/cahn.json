@@ -1,0 +1,81 @@
+{
+  "site": "cahn",
+  "capturedAt": "2026-10-30T19:04:29.769Z",
+  "page": "https://evanstonspace.com/cahn",
+  "code": "legacy/event-feed-widget.venues.live-2026-10-30.js (venue 'cahn')",
+  "requests": [
+    {
+      "params": {
+        "size": "200",
+        "venueId": "KovZ917At8O"
+      },
+      "totalElements": 6,
+      "pagesRead": 1,
+      "truncated": false
+    }
+  ],
+  "listHasDescription": 0,
+  "listEventCount": 6,
+  "events": [
+    {
+      "id": "vvG18Z_uFjaSTT",
+      "name": "Béla Fleck: My Bluegrass Heart",
+      "localDate": "2026-11-04",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917At8O",
+      "venueName": "Cahn Auditorium",
+      "url": "https://www.ticketmaster.com/bela-fleck-my-bluegrass-heart-evanston-illinois-11-04-2026/event/040064D21C273FFF"
+    },
+    {
+      "id": "vvG18Z_2nCWJfG",
+      "name": "Ana Gasteyer: Sugar & Booze Holiday Spectacular",
+      "localDate": "2026-11-17",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917At8O",
+      "venueName": "Cahn Auditorium",
+      "url": "https://www.ticketmaster.com/ana-gasteyer-sugar-booze-holiday-spectacular-evanston-illinois-11-17-2026/event/040064FA8EF6650C"
+    },
+    {
+      "id": "vv1kvZvPeoGAG8zv4",
+      "name": "The Wood Brothers",
+      "localDate": "2026-11-21",
+      "localTime": "20:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917At8O",
+      "venueName": "Cahn Auditorium",
+      "url": "https://www.ticketmaster.com/the-wood-brothers-evanston-illinois-11-21-2026/event/040065091C438055"
+    },
+    {
+      "id": "vv167ZkfaAOZA2FA2k",
+      "name": "SOLD OUT - Laurie Berkner: A Holiday Concert (Early)",
+      "localDate": "2026-12-05",
+      "localTime": "11:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917At8O",
+      "venueName": "Cahn Auditorium",
+      "url": "https://www.ticketmaster.com/sold-out-laurie-berkner-a-holiday-evanston-illinois-12-05-2026/event/04006509160E74E5"
+    },
+    {
+      "id": "vv1A7ZkfbGkdZyQgq",
+      "name": "Laurie Berkner: A Holiday Concert (Late)",
+      "localDate": "2026-12-05",
+      "localTime": "15:00:00",
+      "status": "onsale",
+      "venueId": "KovZ917At8O",
+      "venueName": "Cahn Auditorium",
+      "url": "https://www.ticketmaster.com/laurie-berkner-a-holiday-concert-late-evanston-illinois-12-05-2026/event/04006518C0E5AD5D"
+    },
+    {
+      "id": "vvG18Z_1MEDmi2",
+      "name": "Julian Lage Quartet feat. John Medeski, Jorge Roeder, Kenny Wollesen",
+      "localDate": "2027-03-29",
+      "localTime": "20:00:00",
+      "status": "rescheduled",
+      "venueId": "KovZ917At8O",
+      "venueName": "Cahn Auditorium",
+      "url": "https://www.ticketmaster.com/julian-lage-quartet-feat-john-medeski-evanston-illinois-03-29-2027/event/040064ADE7EEEB0F"
+    }
+  ]
+}
