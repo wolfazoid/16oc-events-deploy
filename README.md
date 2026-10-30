@@ -67,6 +67,17 @@ Optionally, add a featured hero and/or a curated strip to the same page:
 <div data-venue-events></div>
 ```
 
+To pull the search/filter bar out of the events grid and place it at the top of the page, add a `data-ve-top-filters` mount above the other widget elements:
+
+```html
+<div data-ve-top-filters></div>
+<div data-ve-featured></div>
+<div data-ve-curated data-label="Recently Announced" data-option="recently-added"></div>
+<div data-venue-events></div>
+```
+
+The loader detects this mount after the widget renders and moves `[data-venue-events]`'s built-in filter bar into it (listeners stay attached). Without the mount, the filter bar stays inside the events grid as before.
+
 The loader (`venues/salt-shed.js`) applies defaults to each of these elements, then calls `VenueEvents.init({...})` to pull events from Ticketmaster and render them. See [`sites/saltshed.html`](sites/saltshed.html) for the canonical snippet.
 
 ## Repo layout
