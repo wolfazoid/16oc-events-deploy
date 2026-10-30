@@ -1,8 +1,14 @@
 (function () {
-  var VERSION = '1.3.18';
+  var VERSION = '1.3.21';
   var CDN = 'https://cdn.jsdelivr.net/npm/ticketmaster-venue-widget@' + VERSION + '/dist';
   var PAGES = 'https://wolfazoid.github.io/16oc-events-deploy';
   var API_KEY = window.SALTSHED_API_KEY;
+
+  // Events to hide on every surface (grid, featured, curated). Managed by the
+  // client in Squarespace Code Injection, next to the API key:
+  //   <script>window.SALTSHED_EXCLUDE_EVENTS = ['https://www.ticketmaster.com/event/0400652BB8ACB1CF'];</script>
+  // Accepts an array or a comma-separated string of event ids / event URLs.
+  var EXCLUDE_EVENTS = parseExcludeEvents(window.SALTSHED_EXCLUDE_EVENTS);
 
   // Widget base CSS from CDN
   var widgetCss = document.createElement('link');
@@ -76,6 +82,7 @@
     VenueEvents.init({
       apiKey: API_KEY,
       venues: ['KovZ917AI5F', 'KovZ917Amf0'],
+      excludeEvents: EXCLUDE_EVENTS,
       tracking: {
         enabled: true,
         utmSource: 'saltshed-website',
@@ -112,6 +119,11 @@
       new MutationObserver(function () { moveFilters(gridEl, target); })
         .observe(gridEl, { childList: true });
     });
+  }
+
+  function parseExcludeEvents(value) {
+    var list = Array.isArray(value) ? value : String(value || '').split(',');
+    return list.map(function (s) { return String(s || '').trim(); }).filter(Boolean);
   }
 
   function moveFilters(gridEl, target) {
