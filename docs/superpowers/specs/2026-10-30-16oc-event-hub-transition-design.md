@@ -95,6 +95,12 @@ Reaching parity in the new widget: per-site short names, and the "presents" vari
 - **Decided — bundle hosting:** the hub serves each site's bundle at a fixed address (`/sites/{site}.js`), backed by immutable versioned files (`/sites/{site}@{version}.js`) and a per-site version pin in hub config. Releases and rollbacks change the pin, with no Squarespace edit. Sites are released one at a time. The Cloudflare account and the subdomain are owned by 16OC, with Wolf as a member. The last Squarespace-hosted bundle stays as an emergency fallback for 30 days after each cutover. Asset serving is built in Phase 2, alongside the Salt Shed cutover.
 - **Needed from 16OC before deploy:** Cloudflare account access and the subdomain (proposed: `events.16oncenterchicago.com`).
 
+## 3b. Phase 1 carry-forward (2026-10-30)
+Phase 1 (hub core) is implemented on `chore/hub-phase-0`. Local run against live Ticketmaster data: all six sites matched the live widgets exactly (shadow diff 0 unexpected). Production deploy (Task 8) is waiting on 16OC Cloudflare access. Open items:
+- **Before Phase 2:** add a timeout to the venues/classifications pass-through fetch and validate its `size`/`page`; measure CPU per page view, since every events request parses the whole KV snapshot (add a per-isolate cache keyed on `builtAt` if needed); check in production that the edge cache returns `X-Cache: HIT`.
+- **Before Phase 4 (Empty Bottle, Space):** the widget always sends `venueId=<config.venues>`. With promoter merging moved into the hub profile, `query.js` would filter out promoter events held at other venues. Either have the shadow diff send the widget's real parameters, or ignore `venueId` when it equals the profile's full venue set.
+- **Operational:** if every event at a site legitimately passes, the "never drop to zero" guard holds the old list. `/health` goes degraded, and `POST /admin/refresh?site=<id>&force=1` clears it.
+
 ## 4. Risks
 - **Parity drift.** Undocumented legacy rules (for example, the cancelled filter only catches TicketWeb's spelling) silently change which shows appear. Mitigation: Phase 0 baseline + Phase 1 shadow diff.
 - **Single point of failure.** If the hub goes down, every site's events go blank. Mitigations: Cloudflare edge plus the last good KV snapshot (endpoints never call TM live), and the widget keeps its localStorage cache. A loader fallback to direct TM is possible but would keep keys public, so it isn't recommended.
