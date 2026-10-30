@@ -5,7 +5,9 @@
   "description": "Cloudflare Worker proxy for 16OC venue Ticketmaster events",
   "scripts": {
     "dev": "npx wrangler dev",
-    "deploy": "npx wrangler deploy"
+    "deploy": "npx wrangler deploy",
+    "build:salt-shed": "node scripts/build-salt-shed-bundle.js",
+    "test": "node --test test/*.test.js"
   },
   "devDependencies": {
     "wrangler": "^3"
