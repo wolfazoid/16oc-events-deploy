@@ -76,7 +76,6 @@ For each site: a theme CSS + loader (Salt Shed pattern), an unlisted test page, 
 | 2 | Thalia `/home` | grid + recently-announced → `data-venue-events` + `data-ve-curated data-option="recently-added"` | `source=ticketweb` only |
 | 3 | Space `/all-shows`, `/cahn` | grid + recently-announced; Cahn as a separate profile | `KovZpakJQe,KovZ917At8O` + promoter 6085 merge; Cahn `KovZ917At8O` |
 | 4 | 16oncenterchicago.com `/` | `all` aggregator → grid with venue filter across all properties | profile = union of the site profiles; venue filter options from the snapshot |
-| 5 | Promontory | only if still in scope | `rZ7HnEZ178Zp4` |
 
 Reaching parity in the new widget: per-site short names, and the "presents" variants, which formerly used the dead `static2.16oncenterchicago.com` Eventbrite feeds (confirm they're unused). This is a **visual redesign** for the four legacy sites, so theming effort and client sign-off are the main schedule risks, not data.
 
@@ -92,7 +91,9 @@ Reaching parity in the new widget: per-site short names, and the "presents" vari
 - Baseline captured in `test/fixtures/baseline/` (`npm run baseline`). Events shown per touchpoint: Salt Shed 43, Thalia 66, Empty Bottle 72, Space 104, Cahn 6, 16OC all-venues 296. Thalia and Space also have 4 "recently announced" each. No query was cut off by paging.
 - **Descriptions:** `description` is absent from both list and detail responses. `info`, `pleaseNote`, `doorsTimes` and `ageRestrictions` all come in the list response, so the cron does not need per-event detail calls. Andy's 2023 constraint no longer applies.
 - **Cancelled shows:** TicketWeb sends `cancelled` and Ticketmaster sends `canceled`. The old widget hides only the TicketWeb spelling. The hub should hide both, as a deliberate and visible change from today's behavior.
-- **Still open:** Promontory scope, Aloompa app scope, hosting decision.
+- **Decided:** Promontory is out of scope. The Aloompa app covers the Salt Shed site's venues (Shed, Fairgrounds and the other saltshedchicago.com venues), so the Aloompa feed uses the `saltshed` profile.
+- **Decided — bundle hosting:** the hub serves each site's bundle at a fixed address (`/sites/{site}.js`), backed by immutable versioned files (`/sites/{site}@{version}.js`) and a per-site version pin in hub config. Releases and rollbacks change the pin, with no Squarespace edit. Sites are released one at a time. The Cloudflare account and the subdomain are owned by 16OC, with Wolf as a member. The last Squarespace-hosted bundle stays as an emergency fallback for 30 days after each cutover. Asset serving is built in Phase 2, alongside the Salt Shed cutover.
+- **Needed from 16OC before deploy:** Cloudflare account access and the subdomain (proposed: `events.16oncenterchicago.com`).
 
 ## 4. Risks
 - **Parity drift.** Undocumented legacy rules (for example, the cancelled filter only catches TicketWeb's spelling) silently change which shows appear. Mitigation: Phase 0 baseline + Phase 1 shadow diff.
