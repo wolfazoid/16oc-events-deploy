@@ -8,7 +8,8 @@
     "deploy": "npx wrangler deploy",
     "build:salt-shed": "node scripts/build-salt-shed-bundle.js",
     "test": "node --test test/*.test.js test/hub/*.test.mjs",
-    "baseline": "node scripts/capture-baseline.js"
+    "baseline": "node scripts/capture-baseline.js",
+    "shadow": "node scripts/shadow-diff.js"
   },
   "devDependencies": {
     "wrangler": "^3"
