@@ -4,9 +4,25 @@ import worker from "../../worker/src/index.js";
 import { SITES } from "../../worker/src/sites.js";
 
 const realFetch = globalThis.fetch;
+const realCaches = globalThis.caches;
 afterEach(() => {
   globalThis.fetch = realFetch;
+  globalThis.caches = realCaches;
 });
+
+function memoryCache() {
+  const store = new Map();
+  return {
+    keys: () => [...store.keys()],
+    async match(req) {
+      const hit = store.get(req.url);
+      return hit ? hit.clone() : undefined;
+    },
+    async put(req, res) {
+      store.set(req.url, res.clone());
+    },
+  };
+}
 
 function makeKV(seed = {}) {
   const store = new Map(Object.entries(seed).map(([k, v]) => [k, JSON.stringify(v)]));
@@ -221,4 +237,53 @@ test("upstream network failure on venues returns 502 JSON with CORS", async () =
   const text = await res.text();
   assert.ok(!text.includes("SECRETKEY"));
   assert.deepEqual(JSON.parse(text), { error: "upstream unavailable" });
+});
+
+test("pass-through ignores unknown params so they cannot bust the edge cache", async () => {
+  const cache = memoryCache();
+  globalThis.caches = { default: cache };
+  const seen = [];
+  globalThis.fetch = async (url) => {
+    seen.push(new URL(url));
+    return new Response(JSON.stringify({ ok: true }), { status: 200 });
+  };
+  const env = mkEnv(makeKV());
+  const a = await get("/v1/saltshed/classifications.json?r=1", env);
+  const b = await get("/v1/saltshed/classifications.json?r=2", env);
+  assert.equal(a.status, 200);
+  assert.equal(b.status, 200);
+  assert.equal(b.headers.get("x-cache"), "HIT");
+  assert.equal(seen.length, 1);
+  assert.equal(seen[0].searchParams.get("r"), null);
+  assert.equal(cache.keys().length, 1);
+});
+
+test("pass-through forwards only allowed params, sorted into the cache key", async () => {
+  const cache = memoryCache();
+  globalThis.caches = { default: cache };
+  const seen = [];
+  globalThis.fetch = async (url) => {
+    seen.push(new URL(url));
+    return new Response(JSON.stringify({ ok: true }), { status: 200 });
+  };
+  const env = mkEnv(makeKV());
+  await get("/v1/saltshed/venues/X.json?foo=1&locale=en&apikey=CLIENTKEY", env);
+  const v = seen[0];
+  assert.deepEqual([...v.searchParams.keys()].sort(), ["apikey", "locale"]);
+  assert.equal(v.searchParams.get("locale"), "en");
+  assert.equal(v.searchParams.get("apikey"), "SECRETKEY-saltshed");
+
+  await get("/v1/saltshed/classifications.json?size=5&foo=bar&page=2&locale=en&sort=x", env);
+  const c = seen[1];
+  assert.deepEqual([...c.searchParams.keys()].sort(), ["apikey", "locale", "page", "size"]);
+
+  // Same allowed params in a different order hit the same cache entry.
+  await get("/v1/saltshed/classifications.json?locale=en&page=2&size=5", env);
+  assert.equal(seen.length, 2);
+  const keys = cache.keys();
+  assert.equal(keys.length, 2);
+  for (const k of keys) {
+    assert.ok(k.includes("/saltshed/"), k);
+    assert.ok(!k.includes("foo") && !k.includes("apikey") && !k.includes("CLIENTKEY"), k);
+  }
 });

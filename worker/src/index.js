@@ -81,6 +81,7 @@ async function siteRoute(url, env, ctx) {
     const pathname = venue ? `/venues/${venue[1]}.json` : '/classifications.json';
     return proxyToTicketmaster(pathname, url.searchParams, {
       apiKey,
+      siteId: site.id,
       baseUrl: env.UPSTREAM_BASE,
       cache: globalThis.caches?.default,
       ttl: getCacheTtl(pathname),
