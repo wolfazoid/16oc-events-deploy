@@ -100,6 +100,22 @@ test("refreshAll treats a missing key binding as a failed site and never leaks k
   for (const v of kv.store.values()) assert.ok(!v.includes("k4"));
 });
 
+test("refreshAll times out a hung site and still refreshes the next", async () => {
+  const kv = makeKV();
+  const fetchImpl = (url, init) => {
+    if (new URL(url).searchParams.get("apikey") === "k4") {
+      return new Promise((_, reject) => init.signal.addEventListener("abort", () => reject(init.signal.reason)));
+    }
+    return fakeFetch(() => ({ events: [ev("t1")] }))(url, init);
+  };
+  const res = await refreshAll(envFor(kv), { fetchImpl, now: NOW, delayMs: 0, timeoutMs: 20, siteIds: ["space", "thalia"] });
+  assert.equal(res[0].saved, false);
+  assert.match(res[0].error, /timeout/);
+  assert.match((await kv.get("meta:space", "json")).lastError, /timeout/);
+  assert.equal(res[1].saved, true);
+  assert.equal((await kv.get("snapshot:thalia", "json")).events.length, 1);
+});
+
 test("drop guard refuses a collapse", async () => {
   const prev = { site: "space", builtAt: "old", events: Array.from({ length: 20 }, (_, i) => ev(`p${i}`)), requests: [] };
   const kv = makeKV({ "snapshot:space": prev });

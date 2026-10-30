@@ -64,3 +64,18 @@ test("sends apikey, size and sort", async () => {
   assert.equal(u.searchParams.get("venueId"), "A,B");
   assert.equal(u.searchParams.get("source"), "ticketweb");
 });
+
+test("times out a hung request with a key-free error", async () => {
+  const signals = [];
+  const fetchImpl = (url, init) =>
+    new Promise((_, reject) => {
+      signals.push(init?.signal);
+      init?.signal?.addEventListener("abort", () => reject(init.signal.reason));
+    });
+  await assert.rejects(
+    fetchAllEvents({}, { apiKey: "SECRETKEY", baseUrl: base, fetchImpl, delayMs: 0, timeoutMs: 20 }),
+    (err) => /TM timeout/.test(err.message) && !err.message.includes("SECRETKEY") && !err.message.includes("http"),
+  );
+  assert.equal(signals.length, 1);
+  assert.ok(signals[0]);
+});

@@ -7,12 +7,12 @@ const DROP_GUARD_RATIO = 0.5;
 
 export async function buildSnapshot(
   site,
-  { apiKey, baseUrl, fetchImpl = globalThis.fetch, now = new Date(), delayMs = 250 },
+  { apiKey, baseUrl, fetchImpl = globalThis.fetch, now = new Date(), delayMs = 250, timeoutMs = 15000 },
 ) {
   const all = [];
   const requests = [];
   for (const { params } of site.requests) {
-    const r = await fetchAllEvents(params, { apiKey, baseUrl, fetchImpl, delayMs });
+    const r = await fetchAllEvents(params, { apiKey, baseUrl, fetchImpl, delayMs, timeoutMs });
     all.push(...r.events);
     requests.push({ params, totalElements: r.totalElements, pagesRead: r.pagesRead, capped: r.capped });
   }
@@ -42,7 +42,13 @@ function errorMessage(err, apiKey) {
 
 export async function refreshAll(
   env,
-  { fetchImpl = globalThis.fetch, now = new Date(), delayMs = 250, siteIds = Object.keys(SITES) } = {},
+  {
+    fetchImpl = globalThis.fetch,
+    now = new Date(),
+    delayMs = 250,
+    timeoutMs = 15000,
+    siteIds = Object.keys(SITES),
+  } = {},
 ) {
   const kv = env.SNAPSHOTS;
   const results = [];
@@ -59,7 +65,7 @@ export async function refreshAll(
       capped = prevMeta.capped ?? false;
       if (!site) throw new Error(`unknown site ${id}`);
       if (!apiKey) throw new Error(`missing key binding ${site.keyBinding}`);
-      const snapshot = await buildSnapshot(site, { apiKey, baseUrl: env.UPSTREAM_BASE, fetchImpl, now, delayMs });
+      const snapshot = await buildSnapshot(site, { apiKey, baseUrl: env.UPSTREAM_BASE, fetchImpl, now, delayMs, timeoutMs });
       const prevCount = (await loadSnapshot(kv, id))?.events?.length ?? 0;
       const saved = await saveSnapshot(kv, snapshot);
       capped = snapshot.requests.some((r) => r.capped);

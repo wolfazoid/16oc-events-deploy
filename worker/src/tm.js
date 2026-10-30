@@ -5,7 +5,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 export async function fetchAllEvents(
   params,
-  { apiKey, baseUrl, fetchImpl = globalThis.fetch, delayMs = 250 },
+  { apiKey, baseUrl, fetchImpl = globalThis.fetch, delayMs = 250, timeoutMs = 15000 },
 ) {
   async function getPage(page) {
     const qs = new URLSearchParams(params);
@@ -13,9 +13,15 @@ export async function fetchAllEvents(
     qs.set("size", String(PAGE_SIZE));
     qs.set("sort", "date,asc");
     if (page > 0) qs.set("page", String(page));
-    const res = await fetchImpl(`${baseUrl}/events.json?${qs}`);
-    if (!res.ok) throw new Error(`TM ${res.status}`);
-    return res.json();
+    try {
+      const res = await fetchImpl(`${baseUrl}/events.json?${qs}`, { signal: AbortSignal.timeout(timeoutMs) });
+      if (!res.ok) throw new Error(`TM ${res.status}`);
+      return await res.json();
+    } catch (err) {
+      // Never surface the URL (it carries the key) on a timeout.
+      if (err?.name === "TimeoutError" || err?.name === "AbortError") throw new Error("TM timeout");
+      throw err;
+    }
   }
 
   const first = await getPage(0);
