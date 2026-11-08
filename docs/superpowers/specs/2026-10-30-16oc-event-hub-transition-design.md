@@ -13,6 +13,7 @@
 | emptybottle.com | `/home` (grid) | Legacy, `#widget-full-feed.empty-bottle` | Browser → TM, hardcoded key, + promoter 6084 merge |
 | evanstonspace.com | `/all-shows` (grid + recently announced), `/cahn` | Legacy, `.space` / `.cahn` | Browser → TM, + promoter 6085 merge, `queue`-source filter |
 | 16oncenterchicago.com | `/` | Legacy `all` mode (venue/genre/date filters across properties) | Browser → TM |
+| threetoploungechicago.com | `/home` (`#widget-full-feed` + `#widget-coming-up`) | Legacy, its **own variant** (`.three-top`), venue `rZ7HnEZ17_Skd` only. Found 2026-11-08; archived in `legacy/` | Browser → TM |
 | promontorychicago.com | — | Site unreachable; `promontory` branch commented out in live legacy widget | **Confirm with 16OC whether it's still in scope** |
 | Aloompa app | — | Manual entry | None (new) |
 
@@ -75,6 +76,7 @@ For each site: a theme CSS + loader (Salt Shed pattern), an unlisted test page, 
 | 1 | Empty Bottle `/home` | grid → `data-venue-events` | 13 venue IDs + promoter 6084 merge |
 | 2 | Thalia `/home` | grid + recently-announced → `data-venue-events` + `data-ve-curated data-option="recently-added"` | `source=ticketweb` only |
 | 3 | Space `/all-shows`, `/cahn` | grid + recently-announced; Cahn as a separate profile | `KovZpakJQe,KovZ917At8O` + promoter 6085 merge; Cahn `KovZ917At8O` |
+| 3b | Three Top Lounge `/home` | grid + coming-up → `data-venue-events` + `data-ve-curated` | new `threetop` profile (`rZ7HnEZ17_Skd`); needs a baseline first; optional include-list for crossover Salt Shed events |
 | 4 | 16oncenterchicago.com `/` | `all` aggregator → grid with venue filter across all properties | profile = union of the site profiles; venue filter options from the snapshot |
 
 Reaching parity in the new widget: per-site short names, and the "presents" variants, which formerly used the dead `static2.16oncenterchicago.com` Eventbrite feeds (confirm they're unused). This is a **visual redesign** for the four legacy sites, so theming effort and client sign-off are the main schedule risks, not data.
@@ -100,6 +102,41 @@ Phase 1 (hub core) is implemented on `chore/hub-phase-0`. Local run against live
 - **Before Phase 2:** add a timeout to the venues/classifications pass-through fetch and validate its `size`/`page`; measure CPU per page view, since every events request parses the whole KV snapshot (add a per-isolate cache keyed on `builtAt` if needed); check in production that the edge cache returns `X-Cache: HIT`.
 - **Before Phase 4 (Empty Bottle, Space):** the widget always sends `venueId=<config.venues>`. With promoter merging moved into the hub profile, `query.js` would filter out promoter events held at other venues. Either have the shadow diff send the widget's real parameters, or ignore `venueId` when it equals the profile's full venue set.
 - **Operational:** if every event at a site legitimately passes, the "never drop to zero" guard holds the old list. `/health` goes degraded, and `POST /admin/refresh?site=<id>&force=1` clears it.
+
+## 3c. Aloompa feed mapping (Phase 3)
+Aloompa pulls `events`, `performers` and `places` hourly from our URLs. Each is paginated with `page`/`total_pages` per their Third-Party Feed Guide. The source is the `saltshed` snapshot. The app covers the Salt Shed site's venues only.
+
+**Events** (from TM `event`):
+| Aloompa field | Source / rule |
+|---|---|
+| `id` | TM `event.id` |
+| `title` | `name` |
+| `start_time` | `localDate` + `localTime` (timezone to confirm with Aloompa) |
+| `end_time` | per-venue default length, unless Aloompa allows it empty |
+| `photo_large` | largest non-fallback 16:9 image, under 5 MB |
+| `performers[]` | `_embedded.attractions` |
+| `stage` | `_embedded.venues[0]`, with a room map where needed |
+| `description` | `info` + `pleaseNote` |
+| `common_button_*` | "Buy Tickets" → TM `url` |
+| `status_message` | postponed/rescheduled |
+| `is_published` | false for canceled, excluded or removed events |
+| `event_categories` | venue + genre |
+| `updated_at` | generated from a hash of the mapped record (TM provides none) |
+
+**Performers** (from attractions, deduped):
+- `id`, `title`, `image`, `description`
+- `externalLinks` → website, Twitter, Instagram, Facebook, Spotify, YouTube fields
+
+**Places** (from venues):
+- `id`, `title`, `place_type: "stage"`, `latitude`/`longitude`
+
+Events that disappear from TM stay in the feed with `is_published: false` for 30 days.
+
+Hosting note: the Aloompa feed alone (one site, hourly) fits the Workers free plan. Workers Paid is only needed once all websites run through the hub at a 10-minute refresh.
+
+## 3d. Findings after Phase 1 (2026-11-08)
+- **Events missing from the Discovery API.** An event can be live on ticketmaster.com by direct link but absent from the Discovery API under every key, source, locale and venue. That's a visibility/distribution setting on Ticketmaster's side. No widget or hub change can show it. The venue's TM rep has to make it public. The hub should gain a per-site **manual events** list for these, and for shows sold outside Ticketmaster. Manual events get merged into the snapshot, so they reach the websites and the Aloompa feed. *(Phase 2 plan.)*
+- **Crossover events.** Events ticketed under a Salt Shed venue but promoted by Three Top Lounge, such as afterparties, need a per-site include-list of event IDs on the `threetop` profile.
 
 ## 4. Risks
 - **Parity drift.** Undocumented legacy rules (for example, the cancelled filter only catches TicketWeb's spelling) silently change which shows appear. Mitigation: Phase 0 baseline + Phase 1 shadow diff.
