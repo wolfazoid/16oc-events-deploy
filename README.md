@@ -1,6 +1,8 @@
 # 16oc-events-deploy
 
-Deployment layer for the [ticketmaster-venue-widget](https://github.com/wolfazoid/ticketmaster-venue-widget) across the 16 On Center venue network. This repo contains per-venue loader scripts, brand themes, a Cloudflare Worker proxy (optional), and embed snippets for Squarespace.
+Deployment layer for the [ticketmaster-venue-widget](https://github.com/wolfazoid/ticketmaster-venue-widget) across the 16 On Center venue network. This repo contains per-venue loader scripts, brand themes, the 16OC event hub (a Cloudflare Worker), and embed snippets for Squarespace.
+
+> **Picking this work back up?** Start with [`docs/STATUS.md`](docs/STATUS.md) for the current state, blockers and next steps.
 
 **What lives where:**
 
@@ -91,9 +93,14 @@ The loader (`venues/salt-shed.js`) applies defaults to each of these elements, t
 | `sites/saltshed.html` | The exact snippet pasted into Squarespace (documentation only; not served) |
 | `demos/saltshed.html` | Full-page local demo with the Salt Shed chrome (nav, hero, footer) for design iteration |
 | `demos/lib/` | Local copies of the widget JS+CSS for offline demo use |
-| `worker/src/` | Cloudflare Worker proxy — hides TM API keys server-side (optional; not currently in the Salt Shed loader path) |
-| `wrangler.toml` | Cloudflare Worker config |
-| `event-feed-widget-original.js` | Archived copy of the legacy 16 On Center widget — reference only |
+| `bundle/salt-shed/`, `scripts/build-salt-shed-bundle.js` | Source and build for the self-contained bundle the live Salt Shed site runs |
+| `worker/src/` | The event hub: per-site snapshots, Ticketmaster-compatible API, health, admin refresh (see [Event hub](#event-hub-worker)). Not deployed yet |
+| `wrangler.toml` | Hub Worker config (cron, KV binding) |
+| `baseline/`, `scripts/capture-baseline.js`, `scripts/shadow-diff.js` | Records what each live site shows, and diffs the hub against it |
+| `test/fixtures/baseline/` | Captured per-site baseline (2026-10-30) |
+| `legacy/` | Live copies of the legacy widgets (API keys redacted). These are the reference for parity |
+| `event-feed-widget-original.js` | Older archived copy of the legacy widget. Superseded by `legacy/` |
+| `docs/` | `STATUS.md` (start here), plus specs and plans under `docs/superpowers/` |
 
 ## Common maintenance tasks
 
@@ -227,47 +234,61 @@ open /Users/wolf/workspace/github.com/wolfazoid/16oc-events-deploy/demos/saltshe
 
 The demo file uses the TM Discovery API key directly in a data attribute (no proxy). Replace with a real key value for local tests; don't commit a real key.
 
-## Cloudflare Worker (optional proxy)
+## Event hub (worker/)
 
-The `worker/` directory contains a Cloudflare Worker that proxies Ticketmaster Discovery API requests with server-side API keys. This lets venues embed the widget without exposing their API key in the client.
+The Cloudflare Worker in `worker/` is the 16OC event hub. It snapshots Ticketmaster events for each site every 10 minutes and serves them through a Ticketmaster-compatible API. A widget can then switch to it by setting only `proxyUrl`, and API keys stay server-side.
 
-**Current status:** the Salt Shed loader does **not** use the worker — it passes `window.SALTSHED_API_KEY` directly to `VenueEvents.init()`. The worker is fully built and ready to wire up if the client-side key becomes a concern.
+**Status:** built and tested, but **not deployed**, and no live site uses it yet. See [`docs/STATUS.md`](docs/STATUS.md).
 
-### Deployment
+| Piece | File |
+|---|---|
+| Site profiles (venue/promoter IDs, rules per site) | `worker/src/sites.js` |
+| Selection rules (dedupe, cancelled, past, exclusions, sort) | `worker/src/select.js` |
+| Paged Ticketmaster fetch (15 s timeout, 1,000-result cap) | `worker/src/tm.js` |
+| Snapshots in KV, failure isolation, drop guards | `worker/src/snapshot.js` |
+| Ticketmaster-compatible query over a snapshot | `worker/src/query.js` |
+| Venues/classifications pass-through (allow-listed params, edge cache) | `worker/src/passthrough.js` |
+| Routes, cron, health | `worker/src/index.js` |
+
+Sites: `saltshed`, `thalia`, `emptybottle`, `space`, `cahn`, `sixteenoc`.
+
+| Route | Purpose |
+|---|---|
+| `GET /v1/{site}/events.json` | Events from the snapshot. Accepts the widget's params (`venueId`, `keyword`, `classificationName`, `localStartDateTime`/`localEndDateTime`, `id`, `promoterId`, `sort`, `size`, `page`). Returns 503 if the site has no snapshot yet |
+| `GET /v1/{site}/events/{id}.json` | One event from the snapshot |
+| `GET /v1/{site}/venues/{id}.json`, `/v1/{site}/classifications.json` | Passed through to Ticketmaster with the site's key, edge-cached |
+| `GET /health` | Last attempt, last success, last error and `capped` for each site. 503 `degraded` if any site has gone more than 30 min without a success, is capped, or has never refreshed |
+| `POST /admin/refresh[?site=x][&force=1]` | Refresh now. Requires `Authorization: Bearer <ADMIN_TOKEN>`. `force=1` bypasses the drop guards for that run |
+
+**Guards:**
+- One site failing never stops the others.
+- A snapshot is never replaced by one that has fallen below 50% of a previous list of 10 or more events.
+- A snapshot is never replaced by one that went to zero events.
+- A snapshot is never replaced when one of its requests went to zero results.
+
+A refused refresh shows up as `lastError` on `/health`.
+
+### Deploy
 
 ```bash
-npm install                    # installs wrangler
-npx wrangler login             # first time only
-npx wrangler deploy            # deploys to Cloudflare
+npx wrangler login                              # 16OC's Cloudflare account
+npx wrangler kv namespace create SNAPSHOTS      # paste the id into wrangler.toml
+npx wrangler secret put TM_KEY_SALTSHED         # repeat for TM_KEY_THALIA, TM_KEY_EMPTYBOTTLE, TM_KEY_SPACE, TM_KEY_DEFAULT
+npx wrangler secret put ADMIN_TOKEN             # e.g. openssl rand -hex 32
+npx wrangler deploy
+curl -X POST -H "Authorization: Bearer $ADMIN_TOKEN" https://<hub>/admin/refresh
+curl https://<hub>/health
 ```
 
-### Setting secrets
+Cron runs every 10 minutes (`wrangler.toml`). The full checklist, including the 3-day shadow diff, is Task 8 in `docs/superpowers/plans/2026-10-30-16oc-hub-phase-1.md`.
 
-Each venue group uses its own key. Store them as Worker secrets:
+### Local run and shadow diff
 
-```bash
-npx wrangler secret put TM_KEY_SALTSHED
-npx wrangler secret put TM_KEY_THALIA
-npx wrangler secret put TM_KEY_SPACE
-npx wrangler secret put TM_KEY_EMPTYBOTTLE
-npx wrangler secret put TM_KEY_PROMONTORY
-npx wrangler secret put TM_KEY_DEFAULT
-```
+See "How to run things" in [`docs/STATUS.md`](docs/STATUS.md). In short: put keys in a gitignored `.dev.vars`, run `npx wrangler dev --local`, POST `/admin/refresh`, then run `HUB_URL=http://localhost:8787 TM_API_KEY=... npm run shadow`.
 
-### Wiring the loader to use the worker
+### Wiring a widget to the hub (Phase 2+)
 
-In `venues/salt-shed.js`, add `proxyUrl` to the init call and remove (or ignore) the `apiKey`:
-
-```javascript
-VenueEvents.init({
-  proxyUrl: 'https://16oc-events-proxy.<your-account>.workers.dev',
-  apiKey: 'placeholder',  // still required by the guard, not sent to TM
-  venues: ['KovZ917AI5F', 'KovZ917Amf0'],
-  // ...
-});
-```
-
-The worker routes requests to the correct secret by the `venueId` query parameter (see `worker/src/config.js` for the venue → secret map).
+Set `proxyUrl` to `https://<hub>/v1/<site>`, drop the API key, and set `promoterId: null`, because promoter merges happen in the hub profile. The widget builds the same request paths, so no other change is needed.
 
 ## Salt Shed venue ID reference
 
@@ -289,7 +310,7 @@ Both deployment surfaces are push-based.
 |---|---|---|
 | Loader + theme (this repo) | `https://wolfazoid.github.io/16oc-events-deploy/...` | Push to `main` — GitHub Pages auto-builds |
 | Widget JS/CSS | `https://cdn.jsdelivr.net/npm/ticketmaster-venue-widget@<VERSION>/dist/...` | `npm publish` from the widget repo, then bump `VERSION` here |
-| Cloudflare Worker (if used) | `https://16oc-events-proxy.<account>.workers.dev` | `npx wrangler deploy` from this repo |
+| Event hub (not deployed yet) | `https://events.16oncenterchicago.com` (planned) | `npx wrangler deploy` from this repo (see [Event hub](#event-hub-worker)) |
 
 ## Related
 
